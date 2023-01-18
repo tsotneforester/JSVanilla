@@ -1,0 +1,211 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+#wrapper {
+  min-height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(32, 31, 29);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.progress-box {
+  position: relative;
+  width: 520px;
+  height: 92px;
+  border-radius: 8px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 520px;
+}
+.progress-box .bar {
+  width: 0px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: rgb(26, 60, 177);
+  position: absolute;
+  top: 40px;
+  z-index: -1;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.progress-box .circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px #8f5566 solid;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.progress-box .circle:nth-of-type(1) {
+  border: 3px white solid;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgb(26, 60, 177);
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.progress-box .circle.active {
+  border: 3px white solid;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgb(26, 60, 177);
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.progress-controls .btn {
+  font-size: 24px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  background-color: #383838;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 30px;
+  margin: 5px;
+  cursor: no-drop;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.progress-controls .btn.active {
+  background-color: rgb(26, 60, 177);
+}
+.progress-controls .btn.active:hover {
+  cursor: pointer;
+}
