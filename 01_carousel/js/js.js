@@ -1,11 +1,9 @@
 let box = document.querySelectorAll(".box");
 let counter = 1;
 const boxCount = box.length;
-// box[0].style.flexGrow = "4";
 
 function reset() {
   for (let i = 0; i < boxCount; i++) {
-    //box[i].style.flexGrow = "0";
     for (let i = 0; i < boxCount; i++) {
       box[i].classList.remove("active");
     }
