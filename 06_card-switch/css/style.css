@@ -90,6 +90,7 @@ pre {
 
 body {
   min-height: 100vh;
+  background-image: url(../img/back.jpg);
   background-color: black;
   background-size: cover;
   display: -webkit-box;
@@ -125,6 +126,8 @@ body {
   height: 560px;
   border-radius: 10px;
   background-color: honeydew;
+  -webkit-box-shadow: 6px 2px 12px rgb(56, 56, 56);
+          box-shadow: 6px 2px 12px rgb(56, 56, 56);
   padding: 36px;
 }
 
