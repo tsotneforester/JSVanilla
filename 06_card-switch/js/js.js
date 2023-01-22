@@ -126,4 +126,4 @@ function clickPerson() {
   image.style.backgroundImage = "url('img/" + persons[startN].image + ".jpg')";
 }
 
-setInterval(clickPerson, 2000);
+setInterval(clickPerson, 3000);

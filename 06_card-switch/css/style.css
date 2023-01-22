@@ -179,8 +179,8 @@ body {
   background-color: #cfc009;
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-animation: fill 2s linear infinite;
-          animation: fill 2s linear infinite;
+  -webkit-animation: fill 3s linear infinite;
+          animation: fill 3s linear infinite;
 }
 
 @-webkit-keyframes fill {
