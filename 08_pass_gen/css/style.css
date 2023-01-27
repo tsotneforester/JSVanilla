@@ -90,7 +90,8 @@ pre {
 }
 
 body {
-  background-color: rgb(16, 89, 131);
+  background: rgb(55, 105, 255);
+  background: linear-gradient(150deg, rgb(55, 105, 255) 0%, rgb(2, 1, 4) 100%);
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,9 +150,19 @@ body {
 }
 .card #slider {
   width: 100%;
-  height: auto;
+  height: 12px;
   border-radius: 8px;
-  background-color: transparent;
+  background-color: blue;
+  -webkit-appearance: none;
+}
+.card #slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 22px;
+  width: 22px;
+  background: rgb(253, 1, 1);
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
 }
 .card section {
   display: -webkit-box;
