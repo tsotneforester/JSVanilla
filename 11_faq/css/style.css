@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+#wrapper {
+  min-height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #b8c6db;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ორივე იკონკა ერთდროულად უნდა დატრიალდეს და მერე პლიუსი გაქრეს, ამიტომ
+იკონკები უნდა მოექცეს ერთ ელემენტში, მაგალითად ღილაკში და ის დაატრიალო */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 1em;
+  margin: 2px;
+}
+
+.box {
+  position: relative;
+  max-width: 500px;
+  width: 86%;
+  height: 50px;
+  margin: 30px auto;
+  overflow: hidden;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px black solid;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.question,
+.answer {
+  padding: 2px;
+  overflow: visible;
+}
+
+.question {
+  /* border-bottom: gray 1px solid; */
+  width: calc(100% - 22px);
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  padding-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/*transparent button*/
+button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
+button:hover {
+  outline: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+i {
+  font-size: 24px;
+  color: #c59d5f;
+}
+
+/* i:hover {
+  transform: rotate(90deg);
+} */
