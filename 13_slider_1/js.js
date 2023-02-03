@@ -1,4 +1,4 @@
-slider("slider-container", "horizontal", false, "img/", true, true);
+slider("slider-container", "horizontal", 4000, "img/", true, true);
 //slider(containerID, "horizontal"/"vertical", timerMS/false, imagePath/, controls, dots);
 
 function slider(containerID, direction = "horizontal", timerMS, imagePath, controls, dots) {
