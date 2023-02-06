@@ -1,0 +1,163 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+h2 {
+  text-align: center;
+}
+
+[id^="line"] {
+  flex-wrap: nowrap;
+  display: inline-flex;
+  /* grid-gap: 0.4px; */
+  justify-content: end;
+  /* margin: 0.3px; */
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: solid 1px black;
+  width: 26px;
+  height: 26px;
+  user-select: none;
+  flex-shrink: 0;
+  margin-top: -1.3px;
+}
+
+#result {
+  font-size: 2em;
+  font-style: italic;
+  color: green;
+}
+
+.blackbox {
+  background-color: rgb(43, 42, 42);
+  color: rgb(43, 42, 42);
+}
+
+.whitebox {
+  background-color: rgb(255, 255, 255);
+}
+
+.hint {
+  background-color: rgb(175, 180, 180);
+  cursor: pointer;
+  padding-top: 2px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.noborder {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.hint_done {
+  background-image: url("../img/w.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 100%;
+}
+
+.checkhint {
+  border: green 3px solid;
+
+  color: rgb(43, 42, 42);
+  box-sizing: border-box;
+}
+
+.wronghint {
+  border: red 3px solid;
+  /* background-color: red; */
+  color: rgb(43, 42, 42);
+  box-sizing: border-box;
+}
+
+.thickh {
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.thickv {
+  border-right: 3px solid rgb(0, 0, 0);
+}
+
+#check {
+  padding: 3px 10px;
+  /* width: 100px; */
+  background-color: blue;
+  border-radius: 8px;
+  font-weight: bold;
+  color: wheat;
+}
+
+#check:active {
+  outline: rgb(0, 0, 0) 2px solid;
+}
+
+#check:hover {
+  background-color: rgb(64, 64, 234);
+  color: white;
+}
+
+#clear {
+  padding: 3px 10px;
+  /* width: 100px; */
+  background-color: green;
+  border-radius: 8px;
+  font-weight: bold;
+  color: wheat;
+}
+
+#clear:active {
+  outline: rgb(0, 0, 0) 2px solid;
+}
+
+#clear:hover {
+  background-color: rgb(25, 147, 25);
+  color: white;
+}
+
+#back {
+  padding: 3px 10px;
+  /* width: 100px; */
+  background-color: brown;
+  border-radius: 8px;
+  font-weight: bold;
+  color: wheat;
+}
+
+#back:active {
+  outline: rgb(0, 0, 0) 2px solid;
+}
+
+#back:hover {
+  background-color: rgb(148, 63, 63);
+  color: white;
+}
+
+.navbar {
+  text-align: center;
+  margin: 15px;
+  height: 25px;
+}
+
+.crossbox {
+  background-image: url("../img/g.png");
+  background-size: contain;
+  /* background-color: aqua; */
+}
