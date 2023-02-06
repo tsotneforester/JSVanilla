@@ -1,0 +1,137 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  width: 621px;
+  height: 530px;
+  /* border: 1px dotted red; */
+}
+#shore {
+  position: absolute;
+  width: 617px;
+  height: 529px;
+  display: block;
+  z-index: -100;
+}
+
+.pentagon {
+  width: 105px;
+  height: 94px;
+  transform-origin: 50% 50%;
+  position: relative;
+  /* border: red dashed 2px; */
+}
+.pentagon img {
+  height: 89px;
+  width: 100px;
+}
+
+.circle {
+  /* border: red dashed 1px; */
+  position: absolute;
+  top: 29px;
+  left: 34px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #ebcea6;
+  z-index: 100;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transform: rotateZ(-30deg);
+}
+.number {
+  margin-top: 5px auto 0 auto;
+  /* height: 14px; */
+  width: 20px;
+  /* border: blue dotted 1px; */
+  font-size: 15px;
+  line-height: 11px;
+  /* padding: 2px; */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  /* letter-spacing: 1px; */
+}
+.spot {
+  letter-spacing: -1px;
+  margin-top: 0px;
+  height: 5px;
+  /* width: 16px; */
+  /* border: blue dotted 1px; */
+  font-size: 12px;
+  line-height: 0px;
+  margin: -1px auto;
+  text-align: center;
+}
+#tile1 {
+  transform: translate(166px, 63px) rotateZ(30deg);
+}
+#tile2 {
+  transform: translate(256px, -33px) rotateZ(30deg);
+}
+#tile3 {
+  transform: translate(346px, -127px) rotateZ(30deg);
+}
+#tile4 {
+  transform: translate(392px, -144px) rotateZ(30deg);
+}
+#tile5 {
+  transform: translate(438px, -160px) rotateZ(30deg);
+}
+#tile6 {
+  transform: translate(393px, -174px) rotateZ(30deg);
+}
+#tile7 {
+  transform: translate(348px, -188px) rotateZ(30deg);
+}
+#tile8 {
+  transform: translate(255px, -281px) rotateZ(30deg);
+}
+#tile9 {
+  transform: translate(163px, -376px) rotateZ(30deg);
+}
+#tile10 {
+  transform: translate(118px, -550px) rotateZ(30deg);
+}
+#tile11 {
+  transform: translate(72px, -723px) rotateZ(30deg);
+}
+#tile12 {
+  transform: translate(118px, -893.4px) rotateZ(30deg);
+}
+#tile13 {
+  transform: translate(211px, -987px) rotateZ(30deg);
+}
+#tile14 {
+  transform: translate(300px, -1082px) rotateZ(30deg);
+}
+#tile15 {
+  transform: translate(346px, -1098px) rotateZ(30deg);
+}
+#tile16 {
+  transform: translate(301px, -1112px) rotateZ(30deg);
+}
+#tile17 {
+  transform: translate(210px, -1207px) rotateZ(30deg);
+}
+#tile18 {
+  transform: translate(164px, -1379px) rotateZ(30deg);
+}
+#tile19 {
+  transform: translate(254px, -1473px) rotateZ(30deg);
+}
