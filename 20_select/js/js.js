@@ -5,9 +5,12 @@
 //  ╙╢▒╢╖ ║╜,╢▒▒╝    ███▄▄███ ▐██▌--`  ▐██▌ ▐███ ▓███ ▐███▄███▌ ███▄▄▄▄
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀ '▀▀`     '▀▀`  ▀▀▀ ╙▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
-let selection = document.querySelector(".select");
+let country = document.querySelector(".country");
 let option = document.querySelector("ul");
 let input = document.querySelector("input");
+let content = document.querySelector(".content");
+let arrow = document.getElementById("arrow");
+
 let data = [
   "afghanistan",
   "albania",
@@ -214,7 +217,9 @@ for (let i = 0; i < data.length; i++) {
 let options = document.querySelectorAll(".options li");
 for (let i = 0; i < options.length; i++) {
   options[i].addEventListener("click", function () {
-    selection.innerHTML = options[i].innerHTML;
+    country.innerHTML = options[i].innerHTML;
+    content.style.opacity = "0";
+    console.log("object");
   });
 }
 
@@ -236,7 +241,7 @@ input.addEventListener("input", function () {
   let options1 = document.querySelectorAll(".options li");
   for (let i = 0; i < options1.length; i++) {
     options1[i].addEventListener("click", function () {
-      selection.innerHTML = options1[i].innerHTML;
+      country.innerHTML = options1[i].innerHTML;
     });
   }
 });
