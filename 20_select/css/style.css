@@ -109,6 +109,7 @@ body {
   font-family: "Poppins", sans-serif;
   scrollbar-width: thin;
   padding-top: 60px;
+  gap: 30px;
 }
 
 .select {
@@ -130,11 +131,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto; /*deleteeeeeeeeeeeeeeeeeeeeeeeeeeee*/
   font-size: 28px;
   color: black;
   font-weight: 400;
   text-align: left;
+  text-transform: capitalize;
 }
 
 .content {
@@ -157,7 +158,6 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch;
   gap: 10px;
-  margin: 20px auto; /*deleteeeeeeeeeeeeeeeeeeeeeeeeeeee*/
   padding: 20px;
 }
 .content .search {
@@ -203,6 +203,7 @@ body {
   background-color: transparent;
   font-size: 21px;
   overflow-y: auto;
+  text-transform: capitalize;
 }
 .content .options li {
   width: 100%;
