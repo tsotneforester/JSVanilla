@@ -192,24 +192,33 @@ let input = document.querySelector("input");
 let content = document.querySelector(".content");
 let arrow = document.querySelector(".arrow");
 
-arrow.addEventListener("click", function () {
+function toggle() {
   content.classList.toggle("toggle");
   arrow.classList.toggle("rotate");
-});
-
-for (let i = 0; i < data.length; i++) {
-  let text = `<li>${data[i]}</li>`;
-  option.insertAdjacentHTML("beforeend", text);
 }
 
-let options = document.querySelectorAll(".options li");
-for (let i = 0; i < options.length; i++) {
-  options[i].addEventListener("click", function () {
-    country.innerHTML = options[i].innerHTML;
-    content.classList.toggle("toggle");
-    arrow.classList.toggle("rotate");
-    console.log("object");
-  });
+function makeList(array) {
+  option.innerHTML = "";
+  input.innerHTML = "";
+  for (let i = 0; i < array.length; i++) {
+    let text = `<li onClick="zorg(this)">${array[i]}</li>`;
+    option.insertAdjacentHTML("beforeend", text);
+  }
+}
+
+arrow.addEventListener("click", function () {
+  console.log(content.classList.contains("toggle"));
+  if (!content.classList.contains("toggle")) {
+    makeList(data);
+    input.value = "";
+  }
+  toggle();
+});
+
+function zorg(e) {
+  input.value = "";
+  country.innerHTML = e.innerHTML;
+  toggle();
 }
 
 input.addEventListener("input", function () {
@@ -219,29 +228,9 @@ input.addEventListener("input", function () {
 
   if (newNumbers.length > 0) {
     option.innerHTML = "";
-    for (let i = 0; i < newNumbers.length; i++) {
-      let text = `<li>${newNumbers[i]}</li>`;
-      option.insertAdjacentHTML("beforeend", text);
-    }
+    makeList(newNumbers);
   } else {
     option.innerHTML = "";
     option.insertAdjacentHTML("beforeend", "ooops");
-  }
-  let options1 = document.querySelectorAll(".options li");
-  for (let i = 0; i < options1.length; i++) {
-    options1[i].addEventListener("click", function () {
-      country.innerHTML = options1[i].innerHTML;
-      content.classList.toggle("toggle");
-      arrow.classList.toggle("rotate");
-
-      //reset
-
-      input.value = "";
-      options.innerHTML = "";
-      for (let i = 0; i < data.length; i++) {
-        let text = `<li>${data[i]}</li>`;
-        option.insertAdjacentHTML("beforeend", text);
-      }
-    });
   }
 });
