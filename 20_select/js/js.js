@@ -4,12 +4,6 @@
 // ╢▒▒╖  ╢╗@╝  ╢▒▒╝  ███  ███ ▐███████  ▄▓█▓▓█▄       ▐██▌ ▐██▌ ██████
 //  ╙╢▒╢╖ ║╜,╢▒▒╝    ███▄▄███ ▐██▌--`  ▐██▌ ▐███ ▓███ ▐███▄███▌ ███▄▄▄▄
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀ '▀▀`     '▀▀`  ▀▀▀ ╙▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
-"use strict";
-let country = document.querySelector(".country");
-let option = document.querySelector("ul");
-let input = document.querySelector("input");
-let content = document.querySelector(".content");
-let arrow = document.getElementById("arrow");
 
 let data = [
   "afghanistan",
@@ -17,7 +11,6 @@ let data = [
   "algeria",
   "andorra",
   "angola",
-  "antigua and barbuda",
   "argentina",
   "armenia",
   "australia",
@@ -33,7 +26,6 @@ let data = [
   "benin",
   "bhutan",
   "bolivia",
-  "bosnia and herzegovina",
   "botswana",
   "brazil",
   "brunei",
@@ -45,30 +37,25 @@ let data = [
   "cambodia",
   "cameroon",
   "canada",
-  "central african republic",
   "chad",
   "chile",
   "china",
   "colombia",
   "comoros",
-  "congo (congo-brazzaville)",
   "costa rica",
   "croatia",
   "cuba",
   "cyprus",
-  "czechia (czech republic)",
-  "democratic republic of the congo",
+  "czechia",
   "denmark",
   "djibouti",
   "dominica",
-  "dominican republic",
   "ecuador",
   "egypt",
   "el salvador",
-  "equatorial guinea",
   "eritrea",
   "estonia",
-  'eswatini (fmr. "swaziland")',
+  "eswatini",
   "ethiopia",
   "fiji",
   "finland",
@@ -119,7 +106,6 @@ let data = [
   "maldives",
   "mali",
   "malta",
-  "marshall islands",
   "mauritania",
   "mauritius",
   "mexico",
@@ -130,7 +116,7 @@ let data = [
   "montenegro",
   "morocco",
   "mozambique",
-  "myanmar (formerly burma)",
+  "myanmar",
   "namibia",
   "nauru",
   "nepal",
@@ -145,9 +131,7 @@ let data = [
   "oman",
   "pakistan",
   "palau",
-  "palestine state",
   "panama",
-  "papua new guinea",
   "paraguay",
   "peru",
   "philippines",
@@ -157,12 +141,9 @@ let data = [
   "romania",
   "russia",
   "rwanda",
-  "saint kitts and nevis",
   "saint lucia",
-  "saint vincent and the grenadines",
   "samoa",
   "san marino",
-  "sao tome and principe",
   "saudi arabia",
   "senegal",
   "serbia",
@@ -171,7 +152,6 @@ let data = [
   "singapore",
   "slovakia",
   "slovenia",
-  "solomon islands",
   "somalia",
   "south africa",
   "south korea",
@@ -189,16 +169,12 @@ let data = [
   "timor-leste",
   "togo",
   "tonga",
-  "trinidad and tobago",
   "tunisia",
   "turkey",
   "turkmenistan",
   "tuvalu",
   "uganda",
   "ukraine",
-  "united arab emirates",
-  "united kingdom",
-  "united states of america",
   "uruguay",
   "uzbekistan",
   "vanuatu",
@@ -209,6 +185,18 @@ let data = [
   "zimbabwe",
 ];
 
+("use strict");
+let country = document.querySelector(".country");
+let option = document.querySelector("ul");
+let input = document.querySelector("input");
+let content = document.querySelector(".content");
+let arrow = document.querySelector(".arrow");
+
+arrow.addEventListener("click", function () {
+  content.classList.toggle("toggle");
+  arrow.classList.toggle("rotate");
+});
+
 for (let i = 0; i < data.length; i++) {
   let text = `<li>${data[i]}</li>`;
   option.insertAdjacentHTML("beforeend", text);
@@ -218,7 +206,8 @@ let options = document.querySelectorAll(".options li");
 for (let i = 0; i < options.length; i++) {
   options[i].addEventListener("click", function () {
     country.innerHTML = options[i].innerHTML;
-    content.style.opacity = "0";
+    content.classList.toggle("toggle");
+    arrow.classList.toggle("rotate");
     console.log("object");
   });
 }
@@ -242,6 +231,17 @@ input.addEventListener("input", function () {
   for (let i = 0; i < options1.length; i++) {
     options1[i].addEventListener("click", function () {
       country.innerHTML = options1[i].innerHTML;
+      content.classList.toggle("toggle");
+      arrow.classList.toggle("rotate");
+
+      //reset
+
+      input.value = "";
+      options.innerHTML = "";
+      for (let i = 0; i < data.length; i++) {
+        let text = `<li>${data[i]}</li>`;
+        option.insertAdjacentHTML("beforeend", text);
+      }
     });
   }
 });
