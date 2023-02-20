@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Itim&display=swap");
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+#wrapper {
+  min-height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+
+.passive {
+  width: 600px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: white;
+  font-family: "Itim", cursive;
+  overflow: hidden;
+  padding: 8px;
+  margin: 20px auto;
+  -webkit-transition: height 0.6s ease;
+  transition: height 0.6s ease;
+  border: 2px black solid;
+}
+
+.active {
+  width: 600px;
+  height: 108px;
+  border-radius: 8px;
+  background-color: white;
+  font-family: "Itim", cursive;
+  border: 2px black solid;
+  overflow: hidden;
+  padding: 8px;
+  margin: 20px auto;
+  -webkit-transition: height 0.6s ease;
+  transition: height 0.6s ease;
+}
+
+.active img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Itim", cursive;
+}
+
+h1 {
+  font-family: "Itim", cursive;
+  font-style: normal;
+  font-size: 26px;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  margin-bottom: 6px;
+}
+
+.answer {
+  line-height: 18px;
+  margin: 10px 0;
+  font-size: 22px;
+  color: #787887;
+  font-weight: 400;
+  text-align: left;
+}
+
+.zorg {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background-color: red;
+}
