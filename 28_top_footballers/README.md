@@ -1,6 +1,6 @@
 # **28 - Top Footballers**
 
-![Main](https://gpx.ge/challenge/frontend/img/28_top_footballers.gif "image")
+![Main](https://gpx.ge/challenge/js/img/28_top_footballers.gif "image")
 
 Another React project to skill:
 
