@@ -1,6 +1,6 @@
 # **12_accordion**
 
-![Main](https://gpx.ge/challenge/js/img/12_accordion.png "image")
+![Main](https://gpx.ge/challenge/js/img/12_accordion.gif "image")
 
 Another React project to skill:
 
