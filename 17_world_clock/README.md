@@ -1,4 +1,4 @@
-# **17_world_clock**
+# **17 - World Clock**
 
 ![Main](https://gpx.ge/challenge/js/img/17_world_clock.gif "image")
 
