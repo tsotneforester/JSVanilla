@@ -1,6 +1,6 @@
 # **29 - Tours (v1.01)**
 
-![Main](https://gpx.ge/challenge/frontend/img/29_tours_1.gif "image")
+![Main](https://gpx.ge/challenge/js/img/29_tours_1.gif "image")
 
 Another React project to skill:
 
