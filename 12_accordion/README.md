@@ -1,6 +1,6 @@
-# **16 - Interactive Rating**
+# **12_accordion**
 
-![Main](https://gpx.ge/challenge/frontend/img/12_accordion.png "image")
+![Main](https://gpx.ge/challenge/js/img/12_accordion.png "image")
 
 Another React project to skill:
 
