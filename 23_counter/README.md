@@ -1,4 +1,4 @@
-# **23_counter**
+# **23 - Simple Counter**
 
 ![Main](https://gpx.ge/challenge/js/img/23_counter.gif "image")
 
