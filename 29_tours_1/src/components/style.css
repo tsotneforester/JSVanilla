@@ -142,6 +142,8 @@ h4 {
   color: rgb(26, 7, 136);
   font-weight: 700;
   text-align: center;
+  width: 220px;
+  margin: 0 auto;
 }
 
 article {
@@ -171,7 +173,7 @@ article {
 
 img {
   width: 100%;
-  height: 100px;
+  height: 136px;
   border-radius: 0;
   background-color: transparent;
   -o-object-fit: cover;
@@ -180,9 +182,6 @@ img {
   border-top-right-radius: 20px;
 }
 
-.tour-info {
-  padding: 20px;
-}
 .tour-info .tour-price {
   width: auto;
   height: auto;
@@ -206,6 +205,14 @@ img {
   top: 0;
   right: 0;
   padding: 4px;
+}
+.tour-info .tour-details {
+  color: green;
+  width: 220px;
+  margin: 20px;
+}
+.tour-info .read-more {
+  color: blue;
 }
 
 button {

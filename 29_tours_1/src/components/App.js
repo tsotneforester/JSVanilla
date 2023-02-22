@@ -33,10 +33,12 @@ function App() {
 
   return (
     <>
-      <Header title="Favourite tours" />
+      <Header title="Our Tours" />
 
       <main>
-        <Tour tours={tours} handler={handler} />
+        {tours.map((item) => {
+          return <Tour key={item.id} {...item} handler={handler} />;
+        })}
       </main>
     </>
   );
