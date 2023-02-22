@@ -1,8 +1,8 @@
 import "./App.css";
-import Demo from "./components/Tour";
+import Appl from "./components/Appl";
 
 function App() {
-  return <Demo />;
+  return <Appl />;
 }
 
 export default App;
