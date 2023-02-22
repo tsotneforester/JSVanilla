@@ -4,8 +4,9 @@
 Another React project to skill:
 
 - ``useState``
+- Ternaty Operators
 - Conditional Rendering
-- ``props``
+
 
 ---
 ```sh
