@@ -1,10 +1,12 @@
-# **16 - Interactive Rating**
+# **31 Grocery Bud**
 
-![Main](https://gpx.ge/challenge/frontend/images/fr-mentor/16_interactive_rating.png "image")
+![Main](https://gpx.ge/challenge/js/img/31_grocery_bud.gif "image")
 
 Another React project to skill:
 
 - ``useState``
+- ``useEffect``
+- ``setTimeout``
 - Conditional Rendering
 - ``props``
 
