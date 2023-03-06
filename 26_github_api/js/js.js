@@ -10,11 +10,11 @@ const input = document.forms[0][0];
 
 document.forms[0].addEventListener("submit", function (e) {
   e.preventDefault();
-  zorg(input.value);
+  fetchApi(input.value);
   input.value = "";
 });
 
-async function zorg(name) {
+async function fetchApi(name) {
   try {
     let step1 = await fetch(`https://api.github.com/users/${name}`);
     if (step1.status == "404") {
