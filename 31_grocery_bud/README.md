@@ -4,11 +4,13 @@
 
 Another React project to skill:
 
-- ``useState``
+- ``useState/useReducer``
 - ``useEffect``
 - ``setTimeout``
 - Conditional Rendering
 - ``props``
+-
+
 
 ---
 ```sh
