@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useState } from "react";
 import Alert from "./Alert";
 import Remove from "./Remove";

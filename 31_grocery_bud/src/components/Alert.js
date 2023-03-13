@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 function Alert({ msg, type, data, removeAlert }) {
   useEffect(() => {
