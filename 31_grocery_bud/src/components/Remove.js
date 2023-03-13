@@ -1,6 +1,6 @@
-function Remove({ handler }) {
+function Remove({ handler, title }) {
   return (
-    <button className="clear-btn" onClick={handler}>
+    <button title={title} className="clear-btn" onClick={handler}>
       CLEAR LIST
     </button>
   );

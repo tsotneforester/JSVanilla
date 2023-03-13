@@ -22,7 +22,7 @@ function Todo() {
       setData(data);
       setInput("");
       setId(false);
-      setAlert({ show: true, msg: "Value Changed", type: "add" });
+      setAlert({ show: true, msg: "Value Changed", type: "edit" });
     } else {
       data.push({ id: id ? id : uniqueId(), value: input });
       setData(data);
@@ -39,7 +39,7 @@ function Todo() {
     });
     data = filtered;
     setData(filtered);
-    setAlert({ show: true, msg: "Removed", type: "remove" });
+    setAlert({ show: true, msg: "Item Removed", type: "remove" });
   }
 
   function editTask(ids) {
@@ -109,6 +109,7 @@ function Todo() {
         })}
 
         <Remove
+          title={"UseState"}
           handler={() => {
             setData([]);
             setAlert({ show: true, msg: "Empty List", type: "remove" });
