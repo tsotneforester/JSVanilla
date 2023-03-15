@@ -16,9 +16,7 @@ function Faq() {
 
   return (
     <>
-      {data.map((item) => {
-        return <Card key={item.id} className={active === item.id ? "active" : "passive"} question={item.question} answer={item.answer} id={item.id} handler={handler} />;
-      })}
+      <Card data={data} handler={handler} active={active} />
     </>
   );
 }
@@ -26,15 +24,21 @@ function Faq() {
 export default Faq;
 
 function Card(props) {
-  const { question, answer, id, handler, className } = props;
+  const { data, handler, active } = props;
 
   return (
-    <section className={className}>
-      <div className="line">
-        <h1>{question}</h1>
-        <img src={arrow} alt="arrow" onClick={() => handler(id)} />
-      </div>
-      <div className="answer">{answer}</div>
-    </section>
+    <>
+      {data.map((zorg) => {
+        return (
+          <section key={zorg.id} className={active === zorg.id ? "active" : "passive"}>
+            <div className="line">
+              <h1>{zorg.question}</h1>
+              <img src={arrow} alt="arrow" onClick={() => handler(zorg.id)} />
+            </div>
+            <div className="answer">{zorg.answer}</div>
+          </section>
+        );
+      })}
+    </>
   );
 }
