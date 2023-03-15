@@ -1,14 +1,13 @@
-# **31 Grocery Bud**
+# **32 Navbar**
 
-![Main](https://gpx.ge/challenge/js/img/31_grocery_bud.gif "image")
+![Main](https://gpx.ge/challenge/js/img/32_navbar.gif "image")
 
 Another React project to skill:
 
 - `useState`
-- `useEffect`
-- `setTimeout`
+- `useRef`
 - Conditional Rendering
-- `props`
+
 
 ---
 
