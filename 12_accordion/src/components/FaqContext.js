@@ -1,7 +1,5 @@
 import "./Faq.css";
 import { data } from "./data";
-
-import arrow from "./arrow.svg";
 import React, { useState, useContext } from "react";
 
 const PersonContext = React.createContext();
@@ -32,14 +30,14 @@ function Card(props) {
 
   return (
     <>
-      {mainData.data.map((zorg) => {
+      {mainData.data.map((e) => {
         return (
-          <section key={zorg.id} className={active === zorg.id ? "active" : "passive"}>
+          <section key={e.id} className={active === e.id ? "active" : "passive"}>
             <div className="line">
-              <h1>{zorg.question}</h1>
-              <img src={arrow} alt="arrow" onClick={() => handler(zorg.id)} />
+              <h1>{e.question}</h1>
+              <img src="assets/arrow.png" alt="arrow" onClick={() => handler(e.id)} />
             </div>
-            <div className="answer">{zorg.answer}</div>
+            <div className="answer">{e.answer}</div>
           </section>
         );
       })}
