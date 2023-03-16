@@ -98,7 +98,7 @@ pre {
   font-family: "Itim", cursive;
   overflow: hidden;
   padding: 8px;
-  margin: 20px auto;
+  margin: 0 auto 20px;
   -webkit-transition: height 0.6s ease;
   transition: height 0.6s ease;
   border: 2px black solid;
