@@ -1,5 +1,5 @@
 import "./Faq.css";
-import { data } from "./data";
+import  data  from "./data";
 import React, { useState, useContext } from "react";
 
 const PersonContext = React.createContext();

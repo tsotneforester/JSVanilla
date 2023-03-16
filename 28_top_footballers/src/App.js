@@ -1,5 +1,5 @@
 import "./App.css";
-import Demo from "./components/App";
+import Demo from "./components/AppContext";
 
 function App() {
   return <Demo />;
