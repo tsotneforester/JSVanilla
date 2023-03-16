@@ -24,7 +24,7 @@ function App() {
       <DataContext.Provider value={{ people }}>
         <section className="container">
           <h3>{people.length} Top Footballers</h3>
-          <List people={people} />
+          <List />
           <Button clickHandler={clickHandler} needsRefresh={needsRefresh} />
         </section>
       </DataContext.Provider>

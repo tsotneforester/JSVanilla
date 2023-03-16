@@ -20,7 +20,7 @@ function App() {
     <main>
       <section className="container">
         <h3>{people.length} Top Footballers</h3>
-        <List people={people} />
+        <List />
         <Button clickHandler={clickHandler} needsRefresh={needsRefresh} />
       </section>
     </main>
