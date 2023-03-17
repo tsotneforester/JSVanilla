@@ -1,12 +1,13 @@
-# **28 - Top Footballers**
+# **33 - Dad's Joke**
 
-![Main](https://gpx.ge/challenge/js/img/28_top_footballers.gif "image")
+![Main](https://gpx.ge/challenge/js/img/33_dad's_joke.gif "image")
 
 Another React project to skill:
 
 - ``useState``
+- ``useEffect``
 - Conditional Rendering
-- ``props``
+- ``useFetch`` - Custom Hook
 
 ---
 ```sh
