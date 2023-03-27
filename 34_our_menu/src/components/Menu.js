@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from "react";
-
 function Menu({ data }) {
   return data.map((e) => {
     return (
@@ -10,7 +8,7 @@ function Menu({ data }) {
 
         <section className="heading">
           <h2>{e.title}</h2>
-          <span className="price">{e.price}</span>
+          <span className="price">$ {e.price}</span>
         </section>
         <section className="desc">{e.desc}</section>
       </article>
