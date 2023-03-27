@@ -2,7 +2,7 @@ const data = [
   {
     id: 1,
     title: "buttermilk pancakes",
-    category: "breakfast",
+    category: "lunch",
     price: 15.99,
     img: "https://gpx.ge/root/img/menu/item-1.jpg",
     desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
@@ -10,7 +10,7 @@ const data = [
   {
     id: 2,
     title: "diner double",
-    category: "lunch",
+    category: "breakfast",
     price: 13.99,
     img: "https://gpx.ge/root/img/menu/item-2.jpg",
     desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing.`,
@@ -18,7 +18,7 @@ const data = [
   {
     id: 3,
     title: "godzilla milkshake",
-    category: "shakes",
+    category: "breakfast",
     price: 6.99,
     img: "https://gpx.ge/root/img/menu/item-3.jpg",
     desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
@@ -34,7 +34,7 @@ const data = [
   {
     id: 5,
     title: "egg attack",
-    category: "lunch",
+    category: "breakfast",
     price: 22.99,
     img: "https://gpx.ge/root/img/menu/item-5.jpg",
     desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
@@ -50,7 +50,7 @@ const data = [
   {
     id: 7,
     title: "bacon overflow",
-    category: "breakfast",
+    category: "shakes",
     price: 8.99,
     img: "https://gpx.ge/root/img/menu/item-7.jpg",
     desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
@@ -58,7 +58,7 @@ const data = [
   {
     id: 8,
     title: "american classic",
-    category: "lunch",
+    category: "shakes",
     price: 12.99,
     img: "https://gpx.ge/root/img/menu/item-8.jpg",
     desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
@@ -74,10 +74,42 @@ const data = [
   {
     id: 10,
     title: "Kvass",
-    category: "Drink",
+    category: "shakes",
     price: 5.99,
     img: "https://gpx.ge/root/img/menu/item-10.jpg",
-    desc: `Kvass is a fermented cereal-based low-alcohol beverage with a slightly cloudy appearance, light-brown colour and sweet-sour taste.`,
+    desc: `gentleman milk tribal suck infrastructure love ideal failure live side slam helicopter similarly leather draft screen.`,
+  },
+  {
+    id: 11,
+    title: "Khinkali",
+    category: "lunch",
+    price: 5.99,
+    img: "https://gpx.ge/root/img/menu/item-11.jpg",
+    desc: `calendar apparently consult direction estimate steal collector work manufacturer rain civil benefit broad.`,
+  },
+  {
+    id: 12,
+    title: "Cesar Salad",
+    category: "lunch",
+    price: 5.99,
+    img: "https://gpx.ge/root/img/menu/item-12.jpg",
+    desc: `traffic lawn publish pound grandmother can terms clear style array collector pop clinical daily vocal mess.`,
+  },
+  {
+    id: 13,
+    title: "Beer",
+    category: "lunch",
+    price: 13.99,
+    img: "https://gpx.ge/root/img/menu/item-13.jpg",
+    desc: `property fact till tip hidden cake plane Bible cat display rational prior rain receive unknown conflict.`,
+  },
+  {
+    id: 14,
+    title: "Mtsvadi",
+    category: "breakfast",
+    price: 25.99,
+    img: "https://gpx.ge/root/img/menu/item-14.jpg",
+    desc: `attraction touch steady acknowledge favor tongue composition cluster involvement gesture skilled insect freeze.`,
   },
 ];
 export default data;
