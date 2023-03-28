@@ -1,7 +1,7 @@
-function Button({ category, handler }) {
+function Button({ category, handler, status }) {
   return category.map((item, index) => {
     return (
-      <button key={index} className="btn" onClick={() => handler(item)}>
+      <button key={index} className={status === item ? "btn active" : "btn "} onClick={() => handler(item)}>
         {item}
       </button>
     );
