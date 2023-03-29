@@ -8,16 +8,15 @@ const allCategories = ["all", ...new Set(data.map((item) => item.category))];
 function App() {
   const [datas, setDatas] = useState(data);
   let [value, setValue] = useState("OUR MENU");
-  let [zorg, setZorg] = useState("all");
+  let [category, setCategory] = useState("all");
   function handler(name) {
-    console.log(allCategories);
     if (name === "all") {
       setDatas(data);
     } else {
       setDatas(data.filter((e) => e.category === name));
     }
     setValue(name.toUpperCase());
-    setZorg(name);
+    setCategory(name);
   }
 
   useEffect(() => {
@@ -29,7 +28,7 @@ function App() {
       <h1>Our Menu</h1>
       <div className="line"></div>
       <nav>
-        <Button category={allCategories} handler={handler} status={zorg} />
+        <Button category={allCategories} handler={handler} status={category} />
       </nav>
       <main>
         <Menu data={datas} />
