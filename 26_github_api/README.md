@@ -1,6 +1,6 @@
-# **26 - Github User Card**
+# **26 - Github API Card**
 
-![Main](https://gpx.ge/challenge/js/img/26_github_user.gif "image")
+![Main](https://gpx.ge/challenge/js/img/26_github_api.gif "image")
 
 ---
 ```sh
