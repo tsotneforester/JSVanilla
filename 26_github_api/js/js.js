@@ -36,7 +36,7 @@ function createCard(data) {
         <div class="frame"><img src="${data.avatar_url}" alt="avatar" /></div>
       </section>
       <section class="person">
-        <h1>${data.name}</h1>
+        <h1>${data.login}</h1>
       </section>
       <h3>${data.location}</h3>
       <section class="statistics">
@@ -46,7 +46,7 @@ function createCard(data) {
         </div>
         <div>
           <h4>${data.public_repos}</h4>
-          <h5>Likes</h5>
+          <h5>Repos</h5>
         </div>
         <div>
           <h4>${data.following}</h4>
