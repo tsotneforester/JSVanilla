@@ -1,12 +1,6 @@
-# **28 - Top Footballers**
+# **26 - Github User Card**
 
-![Main](https://gpx.ge/challenge/js/img/28_top_footballers.gif "image")
-
-Another React project to skill:
-
-- ``useState``
-- Conditional Rendering
-- ``props``
+![Main](https://gpx.ge/challenge/js/img/26_github_user.gif "image")
 
 ---
 ```sh
