@@ -11,19 +11,20 @@ const input = document.forms[0][0];
 document.forms[0].addEventListener("submit", function (e) {
   e.preventDefault();
   fetchApi(input.value);
-  input.value = "";
 });
 
 async function fetchApi(name) {
   try {
     let step1 = await fetch(`https://api.github.com/users/${name}`);
     if (step1.status == "404") {
+      input.value = "";
       //throw new Error("no such user");
       createError("No profile with this username");
       throw "No profile with this username";
     } else {
       let step2 = await step1.json();
       createCard(step2);
+      input.value = "";
     }
   } catch (e) {
     console.log(e);
