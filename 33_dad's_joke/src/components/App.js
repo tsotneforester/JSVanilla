@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./index.css";
 
 let url = "https://icanhazdadjoke.com/";
@@ -13,11 +14,9 @@ function App() {
   };
 
   useEffect(() => {
-    fetch(url, options)
-      .then((res) => res.json())
-      .then((date) => {
-        setJoke(date.joke);
-      });
+    axios.get(url, options).then((data) => {
+      setJoke(data.data.joke);
+    });
   }, []);
 
   return (

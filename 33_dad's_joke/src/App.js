@@ -1,5 +1,5 @@
 import "./App.css";
-import Demo from "./components/AppCustom";
+import Demo from "./components/App";
 
 function App() {
   return <Demo />;

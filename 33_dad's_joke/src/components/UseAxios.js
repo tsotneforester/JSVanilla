@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import axios from "axios";
 
-export function useFetch(url) {
+export function useAxios(url) {
   //must always start with "use"
   const [joke, setJoke] = useState("Loading");
 
@@ -11,12 +12,10 @@ export function useFetch(url) {
   };
 
   useEffect(() => {
-    fetch(url, options)
-      .then((res) => res.json())
-      .then((data) => {
-        setJoke(data.joke);
-      });
-  }, [url]);
+    axios.get(url, options).then((data) => {
+      setJoke(data.data.joke);
+    });
+  }, [joke]);
 
   return { joke };
 }

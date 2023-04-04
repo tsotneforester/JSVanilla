@@ -1,10 +1,10 @@
 import "./index.css";
-import { useFetch } from "./UseFetch";
+import { useAxios } from "./UseAxios";
 
 let url = "https://icanhazdadjoke.com/";
 
 function App() {
-  const { joke } = useFetch(url);
+  const { joke } = useAxios(url);
 
   return (
     <main>
