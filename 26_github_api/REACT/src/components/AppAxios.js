@@ -1,5 +1,6 @@
-import "./style.css";
 import React, { useState, useEffect } from "react";
+import axios from "axios";
+import "./style.css";
 import Search from "./Search";
 import Main from "./Main";
 
@@ -11,24 +12,26 @@ function Index() {
   function handler(e) {
     e.preventDefault();
     let user = e.target[0].value;
-    fetchApi(user);
+    axiosData(user);
   }
 
-  async function fetchApi(user) {
+  async function axiosData(user) {
     try {
-      let step1 = await fetch(`https://api.github.com/users/${user}`);
-      if (step1.status === "404") {
+      let request = await axios.get(`https://api.github.com/users/${user}`);
+      console.log(request);
+      setUser(request.data);
+      setStart(false);
+      setInput("");
+    } catch (error) {
+      console.log(error);
+      if (error.code === "ERR_BAD_REQUEST") {
         setStart(false);
         setInput("");
-        throw new Error("no such user");
-      } else {
-        let step2 = await step1.json();
-        setUser(step2);
-        setStart(false);
-        setInput("");
+        setUser("");
       }
-    } catch (e) {
-      console.log(e);
+      if (error.code === "ERR_NETWORK") {
+        throw new Error("Network error");
+      }
     }
   }
 

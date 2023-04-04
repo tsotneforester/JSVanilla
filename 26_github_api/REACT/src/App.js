@@ -1,4 +1,4 @@
-import Demo from "./components/App";
+import Demo from "./components/AppFetch";
 
 function App() {
   return <Demo />;
