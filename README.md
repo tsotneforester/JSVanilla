@@ -3,7 +3,7 @@
 
 <div align="center">
 
-<img src="https://gpx.ge/root/img/js/logo.png" alt="logo">
+<img src="https://gpx.ge/root/img/js/logos.png" alt="logo">
 
 
 </div>
