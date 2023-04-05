@@ -7,8 +7,7 @@
 <h3>Javascript Instances</h3>
   <div align="center">
     <br />
-
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://gpx.ge/challenge/js/" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </div>
