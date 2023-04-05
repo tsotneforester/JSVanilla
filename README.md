@@ -7,11 +7,8 @@
 <h3>Javascript Instances</h3>
   <div align="center">
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <
-    <
+
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </div>
