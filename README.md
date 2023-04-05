@@ -9,6 +9,8 @@
 ![Main](https://gpx.ge/root/img/js/4.png "image")
 ![Main](https://gpx.ge/root/img/js/5.png "image")
 
+[![My Skills](https://skills.thijs.gg/icons?i=js,html,css,wasm)](https://skills.thijs.gg)
+
 Another React project to skill:
 
 - ``useState``
