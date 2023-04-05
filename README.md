@@ -9,7 +9,7 @@
     <br />
     <a href="https://gpx.ge/challenge/js/" target="_blank">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/tsotneforester/Javascript/issues">Submit Issue</a>
   </div>
 <br/>
 
@@ -22,7 +22,9 @@
 ![Main](https://gpx.ge/root/img/js/4.png "image")
 ![Main](https://gpx.ge/root/img/js/5.png "image")
 
-[![My Skills](https://skills.thijs.gg/icons?i=js,html,css,wasm)](https://skills.thijs.gg)
+### Built With
+
+[![My Skills](https://skills.thijs.gg/icons?i=js,html,css,sass,styledcomponents,react,codepen,figma,git,ps,vscode)](https://skills.thijs.gg)
 
 Another React project to skill:
 
@@ -36,7 +38,7 @@ Another React project to skill:
 npm i
 npm start
 ```
-
+`` Using `single back ticks``
 # **VS Code** Genelar Setup
 
 ## **_Settings_**
@@ -59,7 +61,7 @@ npm start
 }
 ```
 
-`` Using `single back ticks``
+
 
 [AngularJS](http://angularjs.org)  
 ![Main](https://media.giphy.com/media/wKoPDy4mp8Lr6IJ9ce/giphy.gif "image")
@@ -147,9 +149,7 @@ Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 - [![Next][next.js]][next-url]
 - [![React][react.js]][react-url]
