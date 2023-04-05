@@ -1,5 +1,6 @@
 <h1 align="center">Javascript Instances<h1>
-<span align="center">Zorg</span>
+<div align="center"><span align="center">Zorg</span></div>
+
 <!-- https://github.com/tandpfun/skill-icons?ref=reactjsexample.com -->
 
 ![Main](https://gpx.ge/root/img/js/js.gif "image")
