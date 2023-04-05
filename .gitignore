@@ -2,8 +2,12 @@
 *.txt
 *.ini
 *.map
+*.ts
 *.zip
+*.fig
 *.code-workspace
 /.prettierignore
 **/root/*.scss
 **/root/*.css
+design/
+.htmlhintrc
