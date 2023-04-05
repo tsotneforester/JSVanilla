@@ -4,7 +4,9 @@
 <div align="center">
 
 <img src="https://gpx.ge/root/img/js/logos.png" alt="logo">
-
+<br/>
+<span>Javascript Instances</span>
+<br/>
 
 </div>
 
