@@ -24,7 +24,22 @@
 
 ### Built With
 
-[![My Skills](https://skills.thijs.gg/icons?i=js,html,css,sass,styledcomponents,react,codepen,figma,git,ps,vscode)](https://skills.thijs.gg)
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skills.thijs.gg/icons?i=js,html,css,sass,styledcomponents,react,codepen,figma,git,ps,vscode" />
+  </a>
+</p>
+
+
+
+
+## Contact
+
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+
+<!-- ///////////////////////////////////////////////////////////////////////// -->
 
 Another React project to skill:
 
