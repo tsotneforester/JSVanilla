@@ -1,6 +1,6 @@
-<h1>Javascript Instances<h1>
+<h1 align="center">Javascript Instances<h1>
 
-# **Javascript Instances**
+
 
 ![Main](https://gpx.ge/root/img/js/js.gif "image")
 ![Main](https://gpx.ge/root/img/js/1.png "image")
