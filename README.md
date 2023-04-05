@@ -1,6 +1,13 @@
 <h1 align="center">Javascript Instances<h1>
 <!-- https://github.com/tandpfun/skill-icons?ref=reactjsexample.com -->
 
+<div align="center">
+
+<img src="https://gpx.ge/root/img/js/logo.png" alt="">
+
+
+</div>
+
 ![Main](https://gpx.ge/root/img/js/js.gif "image")
 ![Main](https://gpx.ge/root/img/js/1.png "image")
 ![Main](https://gpx.ge/root/img/js/2.png "image")
