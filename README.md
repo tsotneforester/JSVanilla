@@ -16,11 +16,21 @@
 </div>
 
 ![Main](https://gpx.ge/root/img/js/js.gif "image")
+
+
+## Usage
+
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
 ![Main](https://gpx.ge/root/img/js/1.png "image")
 ![Main](https://gpx.ge/root/img/js/2.png "image")
 ![Main](https://gpx.ge/root/img/js/3.png "image")
 ![Main](https://gpx.ge/root/img/js/4.png "image")
 ![Main](https://gpx.ge/root/img/js/5.png "image")
+
+_For more examples, please refer to the [Documentation](https://example.com)_
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
@@ -215,13 +225,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <!-- USAGE EXAMPLES -->
 
-## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 
