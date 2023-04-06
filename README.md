@@ -288,7 +288,7 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=tsotneforester)](https://github.com/tsotneforester/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=tsotneforester&show_icons=true&theme=radical)](https://github.com/tsotneforester/github-readme-stats)
 
 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
