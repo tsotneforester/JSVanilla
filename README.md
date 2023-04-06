@@ -305,3 +305,5 @@ Use this space to list resources you find helpful and would like to give credit 
 
 
 <!-- https://reheader.glitch.me/home -->
+<!-- https://github-profile-summary-cards.vercel.app/demo.html -->
+<!-- https://www.terminalgif.com/ -->
