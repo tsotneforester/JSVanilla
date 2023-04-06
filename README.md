@@ -292,8 +292,13 @@ Use this space to list resources you find helpful and would like to give credit 
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tsotneforester&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&width=435&lines=%E1%83%92%E1%83%90%E1%83%9B%E1%83%90%E1%83%A0%E1%83%AF%E1%83%9D%E1%83%91%E1%83%90+%E1%83%90%E1%83%A4%E1%83%AE%E1%83%90%E1%83%96%E1%83%94%E1%83%97%E1%83%9D+%E1%83%A8%E1%83%94%E1%83%9C%E1%83%98!)](https://git.io/typing-svg)
+
 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 <!-- https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md -->
 <!-- https://github.com/tandpfun/skill-icons?ref=reactjsexample.com -->
 <!-- https://shields.io/ -->
+
+
+<!-- https://reheader.glitch.me/home -->
