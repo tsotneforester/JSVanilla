@@ -7,9 +7,9 @@
  
 <h3 align="center">Javascript Instances</h3>
   <div align="center">
-    <a href="https://gpx.ge/challenge/js/" target="_blank">View Demo</a>
+    <a href="https://gpx.ge/challenge/js/" target="_blank">🖥️ View Demo</a>
     ·
-    <a href="https://github.com/tsotneforester/Javascript/issues">Submit Issue</a>
+    <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
   </div>
 <br/>
 
@@ -18,7 +18,8 @@
 ![Main](https://gpx.ge/root/img/js/js.gif "image")
 
 ## About The Project
-Ancient Georgian (ქართული) proverb says: "The root of learning is bitter, but the crown is sweet"....
+
+_**"The root of learning is bitter, but the crown is sweet"**_.... - Ancient Georgian (:georgia:ქართული) proverb !🏹
 
 After first steps in Web Development (HTML+CSS), it was Javascript, which really drove my nuts, but now thing are getting better as experience growth. On my Js journey, I've come up to many interesting tasks and I am going to share it to you! :partying_face::partying_face::partying_face:
 
