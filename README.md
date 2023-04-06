@@ -290,6 +290,8 @@ Use this space to list resources you find helpful and would like to give credit 
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=tsotneforester&show_icons=true&theme=radical)](https://github.com/tsotneforester/github-readme-stats)
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tsotneforester&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 <!-- https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md -->
