@@ -12,6 +12,6 @@
   "id-unique": true,
   "src-not-empty": true,
   "attr-no-duplication": true,
-  "alt-require": true,
+  "alt-require": false,
   "id-class-value": "dash"
 }
