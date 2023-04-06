@@ -22,18 +22,11 @@
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-![Main](https://gpx.ge/root/img/js/1.png "image")
-![Main](https://gpx.ge/root/img/js/2.png "image")
-![Main](https://gpx.ge/root/img/js/3.png "image")
-![Main](https://gpx.ge/root/img/js/4.png "image")
-![Main](https://gpx.ge/root/img/js/5.png "image")
-
-
-![newbie](https://img.shields.io/badge/%201%20-newbie-6abecd?labelColor=6abecd "image")
-![junior](https://img.shields.io/badge/%201%20-junior-aad742?labelColor=aad742 "image")
-![intermediate](https://img.shields.io/badge/%201%20-intermediate-f1b604?labelColor=f1b604 "image")
-![advanced](https://img.shields.io/badge/%201%20-advanced-bf4605?labelColor=bf4605 "image")
-![guru](https://img.shields.io/badge/%201%20-guru-ed2c49?labelColor=ed2c49 "image")
+![newbie](https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd "image")
+![junior](https://img.shields.io/badge/%202%20-junior-aad742?labelColor=aad742 "image")
+![intermediate](https://img.shields.io/badge/%203%20-intermediate-f1b604?labelColor=f1b604 "image")
+![advanced](https://img.shields.io/badge/%204%20-advanced-bf4605?labelColor=bf4605 "image")
+![guru](https://img.shields.io/badge/%205%20-guru-ed2c49?labelColor=ed2c49 "image")
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
