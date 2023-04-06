@@ -28,7 +28,7 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 <div align="center">
 
 <img src="https://gpx.ge/root/img/js/front.png" />
-<img src="https://gpx.ge/root/img/js/backs.png" />
+<img src="https://gpx.ge/root/img/js/back.png" />
 <!-- ![Main](https://gpx.ge/root/img/js/front.png "image")
 ![Main](https://gpx.ge/root/img/js/back.png "image") -->
  </div>
