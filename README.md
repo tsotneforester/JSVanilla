@@ -19,8 +19,7 @@
 
 ## About The Project
 
-U+1F1E6 U+1F1E8
-&#127462 &#127464
+	\ud83c\uddfa\ud83c\uddf2
 
 _**"The root of learning is bitter, but the crown is sweet"**_.... - Ancient Georgian (:georgia:ქართული) proverb !🏹
 
