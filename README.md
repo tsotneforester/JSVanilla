@@ -1,61 +1,87 @@
-<!------------------------------------ Heading------------------------->
-<!-- # About The Project
-<h1 align="center"> About The Project </h1> -->
 
-<!----------------------------- Emphesize ------------------------------->
-<!-- **bold** / **bold** / <strong>bold</strong> -->
-<!-- _italic_ / _italic_ / <i>italic</i> -->
-<!-- **_italic + Bold_** -->
 
-<!----------------------------------- HR-------------------------------->
 
-<!-- *** / <hr> / --- -->
+<a name="readme-top"></a>
+<div align="center">
+ <img src="https://gpx.ge/root/img/js/logos.png" alt="logo"><br/>
+ 
+<h3 align="center">Javascript Instances</h3>
+  <div align="center">
+    <a href="https://gpx.ge/challenge/js/" target="_blank">🖥️ View Demo</a>
+    ·
+    <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
+  </div>
+<br/>
 
-<!----------------------------------- List-------------------------------->
-<!-- - item -->
-<!-- - item -->
+</div>
 
-<!-- 1. item 1 -->
-<!-- 2. item 2 -->
+![Main](https://gpx.ge/root/img/js/js.gif "image")
 
-<!----------------------------------- Link -------------------------------->
-<!-- [hi](link) -->
-<!-- <https://www.markdownguide.org> -->
-<!-- <fake@example.com> -->
+# About The Project
+<h1 align="center"> About The Project </h1> 
 
-<!----------------------- image and badge-------------------------------->
-<!-- ![txt](src "title") -->
-<!-- [![txt](src "title")](link) -->
-<!-- ![txt](https://img.shields.io/badge/Nvidia-RTX%204090-D212E1?style=for-the-badge&logo=nvidia&logoColor=white&labelColor=76B900 "image") -->
-<!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image") -->
+_**"The root of learning is bitter, but the crown is sweet"**_.... - Ancient Georgian (:bow_and_arrow:ქართული:crossed_swords:) proverb.
 
-<!----------------------- Blockquote -------------------------------->
-<!-- > blockquote -->
+After first steps in Web Development (HTML+CSS), it was Javascript, which really drove my nuts, but now thing are getting better as experience growth. On my Js journey, I've come up to many interesting tasks and I am going to share it to you! :partying_face::partying_face::partying_face:
 
-<!----------------------- Terminal -------------------------------->
-<!-- ```sh
-const hello= "hello";
-``` -->
+## Getting Started
 
-<!----------------------- Table-------------------------------->
-<!-- | name | surname | age |
-| :--- | :-----: | --: |
-| 4    |    5    |   6 | -->
-<!----------------------- Back To Top -------------------------------->
-<!-- <a name="readme-top"></a>
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+- Project GIF
+- Project Name
+- Main build language  
+![html](https://img.shields.io/badge/-HTML-6abecd "image")
+![css](https://img.shields.io/badge/-CSS-3e54a3 "image")
+![js](https://img.shields.io/badge/-Vanilla%20JS-cf6390 "image")
+![react](https://img.shields.io/badge/-React-f4cf0c "image")
+![api](https://img.shields.io/badge/-API-aad742 "image")
+- Difficulty Level  
+![newbie](https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd "image")
+![junior](https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742 "image")
+![intermediate](https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604 "image")
+![advanced](https://img.shields.io/badge/%204%20-advanced-white?labelColor=bf4605 "image")
+![guru](https://img.shields.io/badge/%205%20-guru-white?labelColor=ed2c49 "image")
+- Project Links
+- Summery
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=tsotneforester&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+<div align="center">
+
+<img src="https://gpx.ge/root/img/js/front.png" />
+<img src="https://gpx.ge/root/img/js/back.png" />
+<!-- ![Main](https://gpx.ge/root/img/js/front.png "image")
+![Main](https://gpx.ge/root/img/js/back.png "image") -->
+ </div>
+
+### Built With
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skills.thijs.gg/icons?i=js,html,css,sass,styledcomponents,react,codepen,figma,git,ps,vscode" />
+  </a>
+</p>
+
+
+### Prerequisites
+
+- npm (for React Projects)
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation & Usage
+
+For React Projects
+  1. In REACT folder install NPM package
+    ```sh
+    npm install
+    ```
+  2. Run React App
+    ```sh
+    npm start
+    ```
+
+## About Me
 
 [![Top Langs](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tsotneforester&theme=github_dark)](https://github.com/anuraghazra/github-readme-stats)
 
-<!----------------------- Links -------------------------------->
-<!-- https://readme-typing-svg.demolab.com/demo/ -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-<!-- https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md -->
-<!-- https://github.com/tandpfun/skill-icons?ref=reactjsexample.com -->
-<!-- https://shields.io/ -->
-<!-- https://readme-typing-svg.demolab.com/demo/ -->
-<!-- https://reheader.glitch.me/home -->
-<!-- https://github-profile-summary-cards.vercel.app/demo.html -->
-<!-- https://www.terminalgif.com/ -->
+
+<!-- https://home.aveek.io/GitHub-Profile-Badges/ -->
