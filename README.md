@@ -71,12 +71,12 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 
 
 
-- For React Projects
-  1. In REACT folder install NPM package
+1. For React Projects
+  - In REACT folder install NPM package
     ```sh
     npm install
     ```
-  2. Run React App
+  - Run React App
     ```sh
     npm start
     ```
