@@ -98,10 +98,15 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 
-## Contact
+## About Me
 
 [![Top Langs](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tsotneforester&theme=github_dark)](https://github.com/anuraghazra/github-readme-stats)
 
 
 
+
+![Main](https://img.shields.io/badge/Facebook-1877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white "image")
+![Main](https://img.shields.io/badge/LinkedIn-0A66C2.svg?style=for-the-badge&logo=LinkedIn&logoColor=white "image")
+![Main](https://img.shields.io/badge/Stack%20Overflow-F58025.svg?style=for-the-badge&logo=Stack-Overflow&logoColor=white "image")
+![Main](https://img.shields.io/badge/Google%20Maps-4285F4.svg?style=for-the-badge&logo=Google-Maps&logoColor=white "image")
 
