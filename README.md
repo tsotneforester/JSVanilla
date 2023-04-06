@@ -23,9 +23,7 @@ _**"The root of learning is bitter, but the crown is sweet"**_.... - Ancient Geo
 
 After first steps in Web Development (HTML+CSS), it was Javascript, which really drove my nuts, but now thing are getting better as experience growth. On my Js journey, I've come up to many interesting tasks and I am going to share it to you! :partying_face::partying_face::partying_face:
 
-
 ## Getting Started
-
 
 - Project GIF
 - Project Name
@@ -42,7 +40,7 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 ![advanced](https://img.shields.io/badge/%204%20-advanced-white?labelColor=bf4605 "image")
 ![guru](https://img.shields.io/badge/%205%20-guru-white?labelColor=ed2c49 "image")
 - Project Links
-- summery
+- Summery
 
 <div align="center">
 
@@ -52,10 +50,6 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 ![Main](https://gpx.ge/root/img/js/back.png "image") -->
  </div>
 
-
-
-
-
 ### Built With
 
 <p align="center">
@@ -64,12 +58,7 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
   </a>
 </p>
 
-
-
-
-
 <!-- ///////////////////////////////////////////////////////////////////////// -->
-
 
 ### Prerequisites
 
@@ -80,21 +69,18 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 
 ### Installation & Usage
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = "ENTER YOUR API";
-   ```
+
+- For React Projects
+  1. In REACT folder install NPM package
+    ```sh
+    npm install
+    ```
+  2. Run React App
+    ```sh
+    npm start
+    ```
+
 
 
 
