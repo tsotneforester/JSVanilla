@@ -1,10 +1,11 @@
 
 
+
 <a name="readme-top"></a>
 <div align="center">
  <img src="https://gpx.ge/root/img/js/logos.png" alt="logo"><br/>
  
-<h3>Javascript Instances</h3>
+<h3 align="center">Javascript Instances</h3>
   <div align="center">
     <br />
     <a href="https://gpx.ge/challenge/js/" target="_blank">View Demo</a>
@@ -16,8 +17,9 @@
 </div>
 
 ## About The Project
+Ancient Georgian (ქართული) proverb says: "The root of learning is bitter, but the crown is sweet"....
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+After first steps in Web Development (HTML+CSS), it was Javascript, which really drove my nuts, but now thing are getting better as experience growth. On my Js journey, I've come up to many interesting tasks and I am going to share it to you! :partying_face::partying_face::partying_face:
 
 Here's why:
 
