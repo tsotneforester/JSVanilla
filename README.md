@@ -28,7 +28,12 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 
 - Project GIF
 - Project Name
-- Main build language
+- Main build language  
+![html](https://img.shields.io/badge/-HTML-6abecd "image")
+![css](https://img.shields.io/badge/-CSS-3e54a3 "image")
+![js](https://img.shields.io/badge/-Vanilla%20JS-cf6390 "image")
+![react](https://img.shields.io/badge/-React-f4cf0c "image")
+![api](https://img.shields.io/badge/-API-aad742 "image")
 - Difficulty Level  
 ![newbie](https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd "image")
 ![junior](https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742 "image")
