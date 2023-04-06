@@ -25,8 +25,15 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 
 ## Usage
 
-![Main](https://gpx.ge/root/img/js/front.png "image")
-![Main](https://gpx.ge/root/img/js/back.png "image")
+<div align="center">
+
+<img src="https://gpx.ge/root/img/js/front.png" />
+<img src="https://gpx.ge/root/img/js/back.png" />
+<!-- ![Main](https://gpx.ge/root/img/js/front.png "image")
+![Main](https://gpx.ge/root/img/js/back.png "image") -->
+ </div>
+
+
 ![newbie](https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd "image")
 ![junior](https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742 "image")
 ![intermediate](https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604 "image")
