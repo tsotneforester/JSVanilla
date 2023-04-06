@@ -7,7 +7,6 @@
  
 <h3 align="center">Javascript Instances</h3>
   <div align="center">
-    <br />
     <a href="https://gpx.ge/challenge/js/" target="_blank">View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">Submit Issue</a>
@@ -16,28 +15,18 @@
 
 </div>
 
+![Main](https://gpx.ge/root/img/js/js.gif "image")
+
 ## About The Project
 Ancient Georgian (ქართული) proverb says: "The root of learning is bitter, but the crown is sweet"....
 
 After first steps in Web Development (HTML+CSS), it was Javascript, which really drove my nuts, but now thing are getting better as experience growth. On my Js journey, I've come up to many interesting tasks and I am going to share it to you! :partying_face::partying_face::partying_face:
 
-Here's why:
-
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-![Main](https://gpx.ge/root/img/js/js.gif "image")
-
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
+![Main](https://gpx.ge/root/img/js/front.png "image")
+![Main](https://gpx.ge/root/img/js/back.png "image")
 ![newbie](https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd "image")
 ![junior](https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742 "image")
 ![intermediate](https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604 "image")
