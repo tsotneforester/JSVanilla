@@ -1,5 +1,11 @@
 
 
+![back](https://user-images.githubusercontent.com/79293287/230690648-8c65bd88-363a-47dd-a97a-6f3ef3855a2b.png)
+![front](https://user-images.githubusercontent.com/79293287/230690673-ac25b7f0-b471-4be6-8c54-24f077d40c23.png)
+
+![js](https://user-images.githubusercontent.com/79293287/230690681-18f9f658-7611-4280-aedf-088468960a12.gif)
+
+
 
 <a name="readme-top"></a>
 <div align="center">
@@ -14,7 +20,7 @@
 
 </div>
 
-![Main](https://gpx.ge/root/img/js/js.gif "image")
+![Main]([https://gpx.ge/root/img/js/js.gif](https://user-images.githubusercontent.com/79293287/230690681-18f9f658-7611-4280-aedf-088468960a12.gif) "image")
 
 # About The Project
 <h1 align="center"> About The Project </h1> 
@@ -44,8 +50,8 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 
 <div align="center">
 
-<img src="https://gpx.ge/root/img/js/front.png" />
-<img src="https://gpx.ge/root/img/js/back.png" />
+<img src="https://user-images.githubusercontent.com/79293287/230690673-ac25b7f0-b471-4be6-8c54-24f077d40c23.png" />
+<img src="https://user-images.githubusercontent.com/79293287/230690648-8c65bd88-363a-47dd-a97a-6f3ef3855a2b.png" />
 <!-- ![Main](https://gpx.ge/root/img/js/front.png "image")
 ![Main](https://gpx.ge/root/img/js/back.png "image") -->
  </div>
