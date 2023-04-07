@@ -40,12 +40,9 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 - Summery
 
 <div align="center">
-
-<img src="https://user-images.githubusercontent.com/79293287/230690673-ac25b7f0-b471-4be6-8c54-24f077d40c23.png" />
-<img src="https://user-images.githubusercontent.com/79293287/230690648-8c65bd88-363a-47dd-a97a-6f3ef3855a2b.png" />
-<!-- ![Main](https://gpx.ge/root/img/js/front.png "image")
-![Main](https://gpx.ge/root/img/js/back.png "image") -->
- </div>
+ <img src="https://user-images.githubusercontent.com/79293287/230690673-ac25b7f0-b471-4be6-8c54-24f077d40c23.png" />
+ <img src="https://user-images.githubusercontent.com/79293287/230690648-8c65bd88-363a-47dd-a97a-6f3ef3855a2b.png" />
+</div>
 
 ### Built With
 
