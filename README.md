@@ -54,8 +54,7 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 
 
 ### Prerequisites
-
-- npm (for React Projects)
+npm (for React Projects)
   ```sh
   npm install npm@latest -g
   ```
