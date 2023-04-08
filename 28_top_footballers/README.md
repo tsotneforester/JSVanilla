@@ -1,15 +1,6 @@
 # **28 - Top Footballers**
 
-![Main](https://gpx.ge/challenge/js/img/28_top_footballers.gif "image")
+<div align="center">
+<img src="https://gpx.ge/challenge/js/img/28_top_footballers.gif" alt="img">
+</div>
 
-Another React project to skill:
-
-- ``useState``
-- Conditional Rendering
-- ``props``
-
----
-```sh
-npm i
-npm start
-```

@@ -1,17 +1,6 @@
 # **32 Navbar**
 
-![Main](https://gpx.ge/challenge/js/img/32_navbar.gif "image")
+<div align="center">
+<img src="https://gpx.ge/challenge/js/img/32_navbar.gif" alt="img">
+</div>
 
-Another React project to skill:
-
-- `useState`
-- `useRef`
-- Conditional Rendering
-
-
----
-
-```sh
-npm i
-npm start
-```

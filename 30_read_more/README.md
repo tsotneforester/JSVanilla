@@ -1,15 +1,6 @@
 # **30 - Read More**
 
-![Main](https://gpx.ge/challenge/js/img/30_read_more.gif "image")
+<div align="center">
+<img src="https://gpx.ge/challenge/js/img/30_read_more.gif" alt="img">
+</div>
 
-Another React project to skill:
-
-- ``useState``
-- Conditional Rendering
-- ``props``
-
----
-```sh
-npm i
-npm start
-```

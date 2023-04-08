@@ -1,15 +1,4 @@
 # **17 - World Clock**
-
-![Main](https://gpx.ge/challenge/js/img/17_world_clock.gif "image")
-
-Another React project to skill:
-
-- ``useState``
-- Conditional Rendering
-- ``props``
-
----
-```sh
-npm i
-npm start
-```
+<div align="center">
+<img src="https://gpx.ge/challenge/js/img/17_world_clock.gif" alt="img">
+</div>

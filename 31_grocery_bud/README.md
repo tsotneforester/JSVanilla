@@ -1,19 +1,6 @@
-# **31 Grocery Bud**
+# **31 - Grocery Bud**
 
-![Main](https://gpx.ge/challenge/js/img/31_grocery_bud.gif "image")
+<div align="center">
+<img src="https://gpx.ge/challenge/js/img/31_grocery_bud.gif" alt="img">
+</div>
 
-Another React project to skill:
-
-- ``useState/useReducer``
-- ``useEffect``
-- ``setTimeout``
-- Conditional Rendering
-- ``props``
--
-
-
----
-```sh
-npm i
-npm start
-```
