@@ -70,4 +70,4 @@ async function countrify(name) {
     Incremention();
   }
 }
-countrify("germany");
+countrify("georgia");
