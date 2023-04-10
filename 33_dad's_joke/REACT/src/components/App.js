@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { Card, Joke, Main } from "./Styled";
+import Dad from "./Dad";
 import axios from "axios";
-import "./index.css";
 
 let url = "https://icanhazdadjoke.com/";
 
 function App() {
   const [joke, setJoke] = useState("Loading");
+  const [isSending, setIsSending] = useState(false);
 
   const options = {
     headers: {
@@ -17,12 +19,17 @@ function App() {
     axios.get(url, options).then((data) => {
       setJoke(data.data.joke);
     });
-  }, []);
+  }, [isSending]);
 
   return (
-    <main>
-      <h1>{joke}</h1>
-    </main>
+    <>
+      <Main>
+        <Card>
+          <Joke>{joke}</Joke>
+          <Dad handler={() => setIsSending(!isSending)} />
+        </Card>
+      </Main>
+    </>
   );
 }
 
