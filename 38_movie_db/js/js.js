@@ -10,7 +10,6 @@ const input = document.getElementById("name");
 submit.addEventListener("click", (e) => {
   e.preventDefault();
   main.innerHTML = "";
-
   apiFunc(searchAPI + input.value);
 });
 
@@ -18,8 +17,30 @@ async function apiFunc(url) {
   try {
     let req = await fetch(url);
     let res = await req.json();
-    let movieData = res.results;
-    if (movieData) {
+
+    let filter = {
+      poster_path: null,
+      original_language: "ja",
+      release_date: 1889,
+      vote_average: 0,
+      release_date: 453,
+    };
+
+    let movieData = res.results.filter((e) => {
+      for (let key in filter) {
+        if (!e[key]) return false;
+      }
+      return true;
+    });
+
+    //console.log(movieData);
+    let movieCount = res.results.length;
+
+    if (movieCount == "0") {
+      console.log("no data");
+      return;
+    }
+    if (movieCount > 0) {
       input.value = "";
     }
     let genresReq = await fetch(genresAPI);
@@ -27,11 +48,8 @@ async function apiFunc(url) {
     let genresData = genresRes.genres;
 
     for (let i = 0; i < movieData.length; i++) {
-      const { original_title: title } = movieData[i];
-      // let title = movieData[i].original_title;
-      let poster = movieData[i].poster_path ? `https://image.tmdb.org/t/p/original/${movieData[i].poster_path}` : "img/empty.png";
-      let premier = movieData[i].release_date ? movieData[i].release_date.slice(0, 4) : "No Date";
-      let rating = movieData[i].vote_average ? movieData[i].vote_average.toFixed(1) : 5;
+      const { original_title: title, poster_path: poster, release_date: premiered, vote_average: rating } = movieData[i];
+
       let genres = [];
       movieData[i].genre_ids.forEach((code) => {
         genresData.forEach((element) => {
@@ -48,7 +66,7 @@ async function apiFunc(url) {
 
       let markup = `<article>
       <div class="img-side">
-        <img src="${poster}" alt="${title}" />
+        <img src="https://image.tmdb.org/t/p/original${poster}" alt="${title}" />
       </div>
       <div class="info-side">
         <h1>${title}</h1>
@@ -58,13 +76,15 @@ async function apiFunc(url) {
         </div>
         <div class="filminfo">
           <span>${rating}</span>
-          <span>${premier}</span>
+          <span>${premiered}</span>
         </div>
       </div>
     </article>`;
       document.querySelector("main").innerHTML += markup;
     }
-  } catch {}
+  } catch {
+    console.log("first");
+  }
 }
 
 apiFunc(popularAPI);
