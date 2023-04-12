@@ -76,7 +76,7 @@ async function apiFunc(url) {
         </div>
         <div class="filminfo">
           <span>${rating.toFixed(1)}</span>
-          <span>${premiered}</span>
+          <span>${premiered.slice(0, 4)}</span>
         </div>
       </div>
     </article>`;

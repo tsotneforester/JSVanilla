@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, forwardRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { filter, searchAPI, genresAPI, popularAPI } from "./filter";
 import styled from "styled-components";
 import axios from "axios";
