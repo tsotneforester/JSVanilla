@@ -48,7 +48,7 @@ async function apiFunc(url) {
     let genresData = genresRes.genres;
 
     for (let i = 0; i < movieData.length; i++) {
-      const { original_title: title, poster_path: poster, release_date: premiered, vote_average: rating } = movieData[i];
+      let { original_title: title, poster_path: poster, release_date: premiered, vote_average: rating } = movieData[i];
 
       let genres = [];
       movieData[i].genre_ids.forEach((code) => {
@@ -75,7 +75,7 @@ async function apiFunc(url) {
              ${stars}
         </div>
         <div class="filminfo">
-          <span>${rating}</span>
+          <span>${rating.toFixed(1)}</span>
           <span>${premiered}</span>
         </div>
       </div>

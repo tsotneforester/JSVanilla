@@ -22,7 +22,6 @@ function myfunction() {
   let thenLastDate = thenDateNow - curDate >= 0 ? new Date(curDate.getFullYear() - 1, 3, 9, 12, 30) : new Date(curDate.getFullYear(), 3, 9, 12, 30);
 
   let periodSeconds = curDate - thenLastDate;
-  console.log(periodSeconds);
   let dayLeft = Math.trunc(periodSeconds / oneDay);
   let hourLeft = Math.trunc((periodSeconds - oneDay * dayLeft) / oneHour);
   let minuteLeft = Math.trunc((periodSeconds - (oneDay * dayLeft + oneHour * hourLeft)) / oneMinute);
@@ -30,9 +29,10 @@ function myfunction() {
 
   let periodSecondsYear = thenDateNow - curDate >= 0 ? curDate.getFullYear() - 1992 : curDate.getFullYear() - 1991;
 
-  heading1.innerHTML = periodSecondsYear + " Year " + dayLeft + " Day ";
+  heading1.innerHTML = periodSecondsYear + " Year " + dayLeft + " Day";
   heading2.innerHTML = nullify(hourLeft) + ":" + nullify(minuteLeft) + ":" + nullify(secondLeft);
   setTimeout(myfunction, 1000);
+  console.log(periodSecondsYear + " Year " + dayLeft + " Day " + nullify(hourLeft) + ":" + nullify(minuteLeft) + ":" + nullify(secondLeft));
 }
 
 myfunction();
