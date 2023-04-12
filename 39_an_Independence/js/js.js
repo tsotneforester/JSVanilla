@@ -32,6 +32,7 @@ function myfunction() {
   heading1.innerHTML = periodSecondsYear + " Year " + dayLeft + " Day";
   heading2.innerHTML = nullify(hourLeft) + ":" + nullify(minuteLeft) + ":" + nullify(secondLeft);
   setTimeout(myfunction, 1000);
+  //---------------Console Log--------------------
   console.log(periodSecondsYear + " Year " + dayLeft + " Day " + nullify(hourLeft) + ":" + nullify(minuteLeft) + ":" + nullify(secondLeft));
 }
 

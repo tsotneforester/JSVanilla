@@ -17,7 +17,7 @@ async function apiFunc(url) {
   try {
     let req = await fetch(url);
     let res = await req.json();
-
+    console.log(res.results);
     let filter = {
       poster_path: null,
       original_language: "ja",
