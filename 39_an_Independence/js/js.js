@@ -5,15 +5,14 @@
 //  ╙╢▒╢╖ ║╜,╢▒▒╝    ███▄▄███ ▐██▌--`  ▐██▌ ▐███ ▓███ ▐███▄███▌ ███▄▄▄▄
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀ '▀▀`     '▀▀`  ▀▀▀ ╙▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
-
+/* spell-checker: disable */
 const heading1 = document.querySelector("h1");
 const heading2 = document.querySelector("h2");
 
-const oneMonth = 1000 * 60 * 60 * 24;
-const oneDay = 1000 * 60 * 60 * 24;
-const oneHour = 1000 * 60 * 60;
-const oneMinute = 1000 * 60;
-const oneSecond = 1000;
+const DAY = 1000 * 60 * 60 * 24;
+const HOUR = 1000 * 60 * 60;
+const MINUTE = 1000 * 60;
+const SECOND = 1000;
 
 function myfunction() {
   const curDate = new Date();
@@ -22,10 +21,11 @@ function myfunction() {
   let thenLastDate = thenDateNow - curDate >= 0 ? new Date(curDate.getFullYear() - 1, 3, 9, 12, 30) : new Date(curDate.getFullYear(), 3, 9, 12, 30);
 
   let periodSeconds = curDate - thenLastDate;
-  let dayLeft = Math.trunc(periodSeconds / oneDay);
-  let hourLeft = Math.trunc((periodSeconds - oneDay * dayLeft) / oneHour);
-  let minuteLeft = Math.trunc((periodSeconds - (oneDay * dayLeft + oneHour * hourLeft)) / oneMinute);
-  let secondLeft = Math.trunc((periodSeconds - (oneDay * dayLeft + oneHour * hourLeft + oneMinute * minuteLeft)) / oneSecond);
+  let dayLeft = Math.trunc(periodSeconds / DAY);
+  console.log(dayLeft);
+  let hourLeft = Math.trunc((periodSeconds - DAY * dayLeft) / HOUR);
+  let minuteLeft = Math.trunc((periodSeconds - (DAY * dayLeft + HOUR * hourLeft)) / MINUTE);
+  let secondLeft = Math.trunc((periodSeconds - (DAY * dayLeft + HOUR * hourLeft + MINUTE * minuteLeft)) / SECOND);
 
   let periodSecondsYear = thenDateNow - curDate >= 0 ? curDate.getFullYear() - 1992 : curDate.getFullYear() - 1991;
 

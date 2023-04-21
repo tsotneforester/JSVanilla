@@ -29,7 +29,7 @@ let InputStyled = styled.input`
 
 const Input = forwardRef(function ({}, ref) {
   // displayed conditionally
-  return <InputStyled ref={ref} type="text" placeholder="enter moive" />;
+  return <InputStyled ref={ref} type="text" placeholder="enter movie" />;
 });
 
 export default Input;
