@@ -6,6 +6,14 @@ const genresAPI = `https://api.themoviedb.org/3/genre/movie/list?api_key=${KEY}&
 const submit = document.querySelector("button");
 const main = document.querySelector("main");
 const input = document.getElementById("name");
+let genresData = [];
+async function genreFetch() {
+  let genresReq = await fetch(genresAPI);
+  let genresRes = await genresReq.json();
+  genresData = genresRes.genres;
+}
+genreFetch();
+let filter = ["poster_path", "original_language", "release_date", "vote_average", "release_date"];
 
 submit.addEventListener("click", (e) => {
   e.preventDefault();
@@ -18,17 +26,10 @@ async function apiFunc(url) {
     let req = await fetch(url);
     let res = await req.json();
     console.log(res.results);
-    let filter = {
-      poster_path: null,
-      original_language: "ja",
-      release_date: 1889,
-      vote_average: 0,
-      release_date: 453,
-    };
 
     let movieData = res.results.filter((e) => {
-      for (let key in filter) {
-        if (!e[key]) return false;
+      for (let element of filter) {
+        if (!e[element]) return false;
       }
       return true;
     });
@@ -43,9 +44,6 @@ async function apiFunc(url) {
     if (movieCount > 0) {
       input.value = "";
     }
-    let genresReq = await fetch(genresAPI);
-    let genresRes = await genresReq.json();
-    let genresData = genresRes.genres;
 
     for (let i = 0; i < movieData.length; i++) {
       let { original_title: title, poster_path: poster, release_date: premiered, vote_average: rating } = movieData[i];
@@ -61,7 +59,7 @@ async function apiFunc(url) {
 
       let stars = "";
       for (let ii = 0; ii < Number(rating); ii++) {
-        stars += "<img src='img/star.svg' alt='' />";
+        stars += "<img src='img/star.svg' alt='star' />";
       }
 
       let markup = `<article>
