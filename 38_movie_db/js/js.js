@@ -7,13 +7,13 @@ const submit = document.querySelector("button");
 const main = document.querySelector("main");
 const input = document.getElementById("name");
 let genresData = [];
-async function genreFetch() {
+(async function genreFetch() {
   let genresReq = await fetch(genresAPI);
   let genresRes = await genresReq.json();
   genresData = genresRes.genres;
-}
-genreFetch();
-let filter = ["poster_path", "original_language", "release_date", "vote_average", "release_date"];
+})();
+
+let filter = ["poster_path", "original_language", "release_date", "vote_average"];
 
 submit.addEventListener("click", (e) => {
   e.preventDefault();
@@ -46,21 +46,7 @@ async function apiFunc(url) {
     }
 
     for (let i = 0; i < movieData.length; i++) {
-      let { original_title: title, poster_path: poster, release_date: premiered, vote_average: rating } = movieData[i];
-
-      let genres = [];
-      movieData[i].genre_ids.forEach((code) => {
-        genresData.forEach((element) => {
-          if (element.id === code) {
-            genres.push(element.name);
-          }
-        });
-      });
-
-      let stars = "";
-      for (let ii = 0; ii < Number(rating); ii++) {
-        stars += "<img src='img/star.svg' alt='star' />";
-      }
+      let { original_title: title, poster_path: poster, release_date: premiered, vote_average: rating, genre_ids: genre } = movieData[i];
 
       let markup = `<article>
       <div class="img-side">
@@ -68,9 +54,9 @@ async function apiFunc(url) {
       </div>
       <div class="info-side">
         <h1>${title}</h1>
-        <h6>${genres.join(", ")}</h6>
+        <h6>${genrefy(genre)}</h6>
         <div class="rating">
-             ${stars}
+             ${starify(rating)}
         </div>
         <div class="filminfo">
           <span>${rating.toFixed(1)}</span>
@@ -86,3 +72,23 @@ async function apiFunc(url) {
 }
 
 apiFunc(popularAPI);
+
+function genrefy(arr) {
+  let newarr = [];
+  arr.forEach((element) => {
+    genresData.forEach((gen) => {
+      if (gen.id == element) {
+        newarr.push(gen.name);
+      }
+    });
+  });
+  return newarr.join(" ");
+}
+
+function starify(rating) {
+  let stars = "";
+  for (let ii = 0; ii < Number(rating); ii++) {
+    stars += "<img src='img/star.svg' alt='star' />";
+  }
+  return stars;
+}
