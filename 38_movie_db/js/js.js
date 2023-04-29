@@ -8,12 +8,6 @@ const main = document.querySelector("main");
 const input = document.getElementById("name");
 let genresData = [];
 
-(async function genreFetch() {
-  let genresReq = await fetch(genresAPI);
-  let genresRes = await genresReq.json();
-  genresData = genresRes.genres;
-})();
-
 let filter = ["poster_path", "original_language", "release_date", "vote_average"];
 
 submit.addEventListener("click", (e) => {
@@ -26,30 +20,35 @@ async function apiFunc(url) {
   try {
     let req = await fetch(url);
     let res = await req.json();
-    console.log(res.results);
 
-    let movieData = res.results.filter((e) => {
-      for (let element of filter) {
-        if (!e[element]) return false;
+    if (res) {
+      let genresReq = await fetch(genresAPI);
+      let genresRes = await genresReq.json();
+      genresData = genresRes.genres;
+      console.log(res.results);
+
+      let movieData = res.results.filter((e) => {
+        for (let element of filter) {
+          if (!e[element]) return false;
+        }
+        return true;
+      });
+
+      //console.log(movieData);
+      let movieCount = res.results.length;
+
+      if (movieCount == "0") {
+        console.log("no data");
+        return;
       }
-      return true;
-    });
+      if (movieCount > 0) {
+        input.value = "";
+      }
 
-    //console.log(movieData);
-    let movieCount = res.results.length;
+      for (let i = 0; i < movieData.length; i++) {
+        let { original_title: title, poster_path: poster, release_date: premiered, vote_average: rating, genre_ids: genre } = movieData[i];
 
-    if (movieCount == "0") {
-      console.log("no data");
-      return;
-    }
-    if (movieCount > 0) {
-      input.value = "";
-    }
-
-    for (let i = 0; i < movieData.length; i++) {
-      let { original_title: title, poster_path: poster, release_date: premiered, vote_average: rating, genre_ids: genre } = movieData[i];
-
-      let markup = `
+        let markup = `
     <article>
       <div class="img-side">
         <img src="https://image.tmdb.org/t/p/original${poster}" alt="${title}" />
@@ -66,7 +65,8 @@ async function apiFunc(url) {
         </div>
       </div>
     </article>`;
-      document.querySelector("main").innerHTML += markup;
+        document.querySelector("main").innerHTML += markup;
+      }
     }
   } catch {
     console.log("first");
