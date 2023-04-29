@@ -7,6 +7,7 @@ const submit = document.querySelector("button");
 const main = document.querySelector("main");
 const input = document.getElementById("name");
 let genresData = [];
+
 (async function genreFetch() {
   let genresReq = await fetch(genresAPI);
   let genresRes = await genresReq.json();
@@ -48,7 +49,8 @@ async function apiFunc(url) {
     for (let i = 0; i < movieData.length; i++) {
       let { original_title: title, poster_path: poster, release_date: premiered, vote_average: rating, genre_ids: genre } = movieData[i];
 
-      let markup = `<article>
+      let markup = `
+    <article>
       <div class="img-side">
         <img src="https://image.tmdb.org/t/p/original${poster}" alt="${title}" />
       </div>
@@ -82,7 +84,7 @@ function genrefy(arr) {
       }
     });
   });
-  return newarr.join(" ");
+  return newarr.join(", ");
 }
 
 function starify(rating) {
