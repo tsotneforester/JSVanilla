@@ -5,10 +5,16 @@
 </div>
 
   <div align="center">
-    Built With - <img src="https://img.shields.io/badge/-HTML-6abecd" alt="qr-code" />
-  <img src="https://img.shields.io/badge/-CSS-3e54a3" alt="qr-code" />
+    Built With -
+  <img src="https://img.shields.io/badge/-HTML-6abecd" alt="html" />
+  <img src="https://img.shields.io/badge/-CSS-3e54a3" alt="css" />
+  <img src="https://img.shields.io/badge/-JS-cf6390" alt="js" />
+  <!-- <img src="https://img.shields.io/badge/-React-f4cf0c" alt="react" />
+  <img src="https://img.shields.io/badge/-API-aad742" alt="api" /> -->
+
   <br/>
-    Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
+      Difficulty -
+      <img src="https://img.shields.io/badge/%204%20-advanced-white?labelColor=bf4605" alt="qr-code" />
   <br/>
     <a href="https://tsotneforester.github.io/Javascript/13_slider_1/" target="_blank">🖥️ View Demo</a>
     ·
