@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Navbar = styled.header`
   width: 100%;
@@ -10,6 +10,7 @@ export const Navbar = styled.header`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 10px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 
   @media only screen and (min-width: 768px) {
@@ -17,6 +18,7 @@ export const Navbar = styled.header`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 0;
   }
 `;
 
@@ -49,36 +51,45 @@ export const List = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  row-gap: 8px;
   cursor: pointer;
+  padding: 0 10px;
 
   @media only screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    column-gap: 20px;
   }
 `;
 
-export const ListItem = styled(Link)`
+export const ListItem = styled(NavLink)`
   width: 100%;
   font-size: 20px;
+  border-radius: 12px;
   color: rgb(10, 8, 125);
   font-weight: bold;
   text-align: left;
   padding: 8px 22px;
   transition: all 0.6s ease-in-out;
+  &.active {
+    color: white;
+    background-color: #807eff;
+  }
   @media only screen and (min-width: 768px) {
     padding: 8px;
   }
   &:hover {
-    background-color: rgb(221, 221, 252);
+    background-color: #807eff;
     padding: 8px 26px;
   }
   @media only screen and (min-width: 768px) {
     &:hover {
       background-color: initial;
-      color: #807eff;
       padding: 8px;
+      background-color: #807eff;
+      color: white;
     }
   }
 `;

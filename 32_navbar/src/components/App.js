@@ -9,9 +9,7 @@ import Profile from "./pages/Profile";
 
 function App() {
   return (
-    <BrowserRouter basename={"/challenge/js/pages/32_navbar/"}>
-      {/* <Link to="/">Home</Link>
-      <Link to="/about">About</Link> */}
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>

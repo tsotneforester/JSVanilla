@@ -34,8 +34,6 @@ function Header() {
         <img src="assets/instagram.png" alt="logo" />
         <img src="assets/linkedin.png" alt="logo" />
         <img src="assets/twitter.png" alt="logo" />
-        {/* <Link to="/">Home</Link>
-      <Link to="/about">About</Link> */}
       </Social>
     </Navbar>
   );
