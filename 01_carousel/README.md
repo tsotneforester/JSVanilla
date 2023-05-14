@@ -19,7 +19,7 @@
 
 
 <h2 align="center">Notes</h2>
-Very basic HTML+CSS. as for JS, Less <kbd>DOM</kbd> and , more logic as CPU makes moves, always drawind 'O' though...
+It is beautiful and quite easy, basic knowlidge of <kbd>Flex</kbd> is crucial here
 
 
 
