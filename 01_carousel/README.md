@@ -1,7 +1,7 @@
-<h1 align="center">Tic Tac Toe</h1>
+<h1 align="center">Image Carousel</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/09_tic_tac_toe.gif" alt="qr-code" />
+  <img src="https://gpx.ge/challenge/js/img/01_carousel.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -9,9 +9,9 @@
   <img src="https://img.shields.io/badge/-CSS-3e54a3" alt="qr-code" />
   <img src="https://img.shields.io/badge/-JS-cf6390" alt="qr-code" />
   <br/>
-    Difficulty - <img src="https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604" alt="qr-code" />
+    Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
   <br/>
-    <a href="https://tsotneforester.github.io/Javascript/09_tic_tac_toe/" target="_blank">🖥️ View Demo</a>
+    <a href="https://tsotneforester.github.io/Javascript/01_carousel/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
