@@ -20,7 +20,13 @@
 
 <h2 align="center">Notes</h2>
 Sweet childhood is live with Hangman, piece of cake as knowlidge of <kbd>DOM</kbd> and logic gets solid!
-<i>Future Updates</i> - tip of word 
+<br/>
+<i>Future Updates</i>:
+<br/>
+ <ul>
+  <li>tip of word</li>
+  <li>show failed word</li>
+ </ul>
 
 
 
