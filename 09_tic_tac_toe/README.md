@@ -19,7 +19,7 @@
 
 
 <h2 align="center">Notes</h2>
-Nothing worth noting. easiest HTML tags and most basic css in action.
+Very basic HTML+CSS. as for JS, Less <kbd>DOM</kbd> and , more logic as CPU makes moves
 
 
 
