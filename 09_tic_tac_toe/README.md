@@ -7,8 +7,9 @@
   <div align="center">
     Built With - <img src="https://img.shields.io/badge/-HTML-6abecd" alt="qr-code" />
   <img src="https://img.shields.io/badge/-CSS-3e54a3" alt="qr-code" />
+  <img src="https://img.shields.io/badge/-JS-cf6390" alt="qr-code" />
   <br/>
-    Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
+    Difficulty - <img src="https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604" alt="qr-code" />
   <br/>
     <a href="https://tsotneforester.github.io/Javascript/09_tic_tac_toe/" target="_blank">🖥️ View Demo</a>
     ·
