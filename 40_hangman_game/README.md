@@ -26,6 +26,7 @@ Sweet childhood is live with Hangman, piece of cake as knowlidge of <kbd>DOM</kb
  <ul>
   <li>tip of word</li>
   <li>show failed word</li>
+  <li>refresh needed</li>
  </ul>
 
 
