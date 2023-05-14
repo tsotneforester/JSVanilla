@@ -3,8 +3,7 @@
 ::after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :focus,
@@ -63,8 +62,7 @@ p {
 }
 
 pre {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -72,19 +70,10 @@ pre {
   min-height: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border: none;
 }
 
@@ -93,41 +82,22 @@ body {
   background-image: url(../img/back.jpg);
   background-color: black;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 390px;
   height: 560px;
   border-radius: 10px;
   background-color: honeydew;
-  -webkit-box-shadow: 6px 2px 12px rgb(56, 56, 56);
-          box-shadow: 6px 2px 12px rgb(56, 56, 56);
+  box-shadow: 6px 2px 12px rgb(56, 56, 56);
   padding: 36px;
 }
 
@@ -136,13 +106,11 @@ body {
   height: 138px;
   border-radius: 50%;
   background-color: transparent;
-  -webkit-box-shadow: 2px 2px 12px gray, -2px -2px 12px gray;
-          box-shadow: 2px 2px 12px gray, -2px -2px 12px gray;
+  box-shadow: 2px 2px 12px gray, -2px -2px 12px gray;
   background-image: url("../img/1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
 
@@ -164,7 +132,6 @@ body {
 .review {
   height: 264px;
   overflow: auto;
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
   font-family: "ALK Life", sans-serif;
   font-weight: bolder;
@@ -177,30 +144,15 @@ body {
   height: 5px;
   border-radius: 2px;
   background-color: #cfc009;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-animation: fill 3s linear infinite;
-          animation: fill 3s linear infinite;
-}
-
-@-webkit-keyframes fill {
-  0% {
-    -webkit-transform: scaleX(0%);
-            transform: scaleX(0%);
-  }
-  100% {
-    -webkit-transform: scaleX(100%);
-            transform: scaleX(100%);
-  }
+  transform-origin: left;
+  animation: fill 3s linear infinite;
 }
 
 @keyframes fill {
   0% {
-    -webkit-transform: scaleX(0%);
-            transform: scaleX(0%);
+    transform: scaleX(0%);
   }
   100% {
-    -webkit-transform: scaleX(100%);
-            transform: scaleX(100%);
+    transform: scaleX(100%);
   }
 }

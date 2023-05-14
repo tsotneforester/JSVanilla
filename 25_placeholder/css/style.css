@@ -3,8 +3,7 @@
 ::after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :focus,
@@ -64,8 +63,7 @@ p {
 }
 
 pre {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -73,19 +71,10 @@ pre {
   min-height: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border: none;
 }
 
@@ -95,23 +84,13 @@ pre {
 
 body {
   min-height: 100vh;
-  background-color: hsl(212deg, 45%, 89%);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: hsl(212, 45%, 89%);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -122,19 +101,10 @@ main {
   border-radius: 20px;
   background-color: white;
   padding: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #avatar {
@@ -173,21 +143,10 @@ p {
 }
 
 .zorg {
-  background: -webkit-gradient(linear, left top, right top, color-stop(42%, white), color-stop(50%, #eeeeee), color-stop(58%, white));
   background: linear-gradient(90deg, white 42%, #eeeeee 50%, white 58%);
   background-size: 200% 100%;
   width: 100%;
-  -webkit-animation: kaa 3s infinite;
-          animation: kaa 3s infinite;
-}
-
-@-webkit-keyframes kaa {
-  0% {
-    background-position: -100% 0;
-  }
-  100% {
-    background-position: -210% 0;
-  }
+  animation: kaa 3s infinite;
 }
 
 @keyframes kaa {

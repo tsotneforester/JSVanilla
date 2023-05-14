@@ -3,8 +3,7 @@
 ::after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :focus,
@@ -64,8 +63,7 @@ p {
 }
 
 pre {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -73,37 +71,19 @@ pre {
   min-height: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border: none;
 }
 
 body {
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: #b8c6db;
 }
 
@@ -120,24 +100,14 @@ main {
   height: auto;
   border-radius: 12px;
   background-color: #f9f3d9;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
   max-width: 450px;
   padding: 14px;
   gap: 20px;
-  -webkit-box-shadow: 4px 4px 4px gray;
-          box-shadow: 4px 4px 4px gray;
+  box-shadow: 4px 4px 4px gray;
 }
 
 img {
@@ -155,37 +125,24 @@ button {
   text-align: center;
   border: 2px solid white;
   padding: 10px 20px;
-  -webkit-box-shadow: 4px 4px 4px gray;
-          box-shadow: 4px 4px 4px gray;
+  box-shadow: 4px 4px 4px gray;
   font-family: "Ubuntu Mono", monospace;
   cursor: pointer;
 }
 button:hover {
   background-color: #5e452c;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 button:active {
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
-  -webkit-box-shadow: 2px 2px 4px gray;
-          box-shadow: 2px 2px 4px gray;
+  transform: translateY(2px);
+  box-shadow: 2px 2px 4px gray;
 }
 
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
   gap: 20px;
   padding: 12px;
   border-radius: 12px;

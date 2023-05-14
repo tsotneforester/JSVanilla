@@ -3,8 +3,7 @@
 ::after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :focus,
@@ -64,8 +63,7 @@ p {
 }
 
 pre {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -73,19 +71,10 @@ pre {
   min-height: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border: none;
 }
 
@@ -95,19 +84,10 @@ pre {
 }
 body {
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: #666460;
   padding: 30px;
 }
@@ -118,8 +98,7 @@ main {
   border-radius: 24px;
   background-color: rgb(232, 231, 228);
   margin: 20px auto;
-  -webkit-box-shadow: 0 30px #b7b2ac;
-          box-shadow: 0 30px #b7b2ac;
+  box-shadow: 0 30px #b7b2ac;
   padding: 30px;
   max-width: 1000px;
 }
@@ -133,16 +112,13 @@ button {
   border-radius: 5px;
   font-size: 40px;
   text-align: center;
-  -webkit-box-shadow: 0 4px #52485a;
-          box-shadow: 0 4px #52485a;
+  box-shadow: 0 4px #52485a;
   cursor: pointer;
 }
 
 button:active {
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
-  -webkit-box-shadow: 0 2px #472360;
-          box-shadow: 0 2px #472360;
+  transform: translateY(2px);
+  box-shadow: 0 2px #472360;
 }
 
 #result_line {
@@ -154,27 +130,16 @@ button:active {
   color: white;
   font-weight: 400;
   text-align: left;
-  -webkit-box-shadow: 8px 8px #666460 inset;
-          box-shadow: 8px 8px #666460 inset;
+  box-shadow: 8px 8px #666460 inset;
   padding: 10px 0 0 12px;
   font-family: nusxuri;
 }
 
 #keyboard {
   margin-top: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }

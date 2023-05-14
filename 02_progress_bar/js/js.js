@@ -7,25 +7,37 @@
 "use strict";
 
 //|||||||||||||||||||| HTML SELECTORs & Constants||||||||||||||||||||||||||
-const progressBox = document.querySelector(".progress-box");
-const progressControls = document.querySelector(".progress-controls");
+const progress_box = document.querySelector(".progress-box");
+const progress_controls = document.querySelector(".progress-controls");
 const bar = document.querySelector(".bar");
-const nextButton = document.getElementById("next");
-const prevButton = document.getElementById("prev");
+const next_button = document.getElementById("next");
+const prev_button = document.getElementById("prev");
 const circles = document.querySelectorAll(".circle");
 const stepCount = circles.length - 1;
 const circlesCount = circles.length;
-const containerWidth = parseInt(getComputedStyle(progressBox).width);
+const containerWidth = parseInt(getComputedStyle(progress_box).width);
 const barStep = ((containerWidth * 100) / stepCount / 100).toFixed(2) * 1;
 let counter = 1;
-//||||||||||||||||||||||||||||| FUNCTIONS|||||||||||||||||||||||||||||||
+//||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+//|||||||||||       'Prev' / 'Next' Action       |||||||||||||
+//||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+progress_controls.addEventListener("click", function (e) {
+  removeActiveClass(); // 1 - resets active circles
+  e.target.id == "next" ? counter++ : counter--;
+  resetCounter(); // 2 - Disables Counter under 1 and above circle count
+  activateTill(counter); // 3 - Activetes till given circles and makes bar
+  btnStatusCheck(); // 4 - Activetes or Disables Controlls
+});
+
+//||||||||||||||----------- 1 ------------- |||||||||||
 function removeActiveClass() {
   circles.forEach((element) => {
     element.classList.remove("active");
   });
 }
-
-function checkCounter() {
+//||||||| --------------- 2 ---------------------|||
+function resetCounter() {
   if (counter < 1) {
     counter = 1;
   }
@@ -34,52 +46,25 @@ function checkCounter() {
   }
 }
 
+//|||||||||| ---------- 3 -------------- ||||||||||
 function activateTill(e) {
-  if (e <= circlesCount) {
-    for (let i = 0; i < e - 0; i++) {
-      circles[i].classList.add("active");
-    }
-
-    bar.style.width = barStep * (counter - 1) + "px";
+  for (let i = 0; i < e; i++) {
+    circles[i].classList.add("active");
   }
+  bar.style.width = barStep * (counter - 1) + "px";
 }
-
+//||||||||||------------- 4 -----------||||||||||||
 function btnStatusCheck() {
   if (counter > 1) {
-    prevButton.classList.add("active");
+    prev_button.classList.add("active");
   }
   if (counter == 1) {
-    prevButton.classList.remove("active");
+    prev_button.classList.remove("active");
   }
   if (counter < circlesCount) {
-    nextButton.classList.add("active");
+    next_button.classList.add("active");
   }
   if (counter == circlesCount) {
-    nextButton.classList.remove("active");
+    next_button.classList.remove("active");
   }
 }
-//||||||||||||||||||||||| 'Prev' / 'Next' Action |||||||||||||||||||||||||
-console.log(counter);
-progressControls.addEventListener("click", function (e) {
-  removeActiveClass();
-  e.target.id == "next" ? counter++ : counter--;
-  checkCounter();
-  activateTill(counter);
-  btnStatusCheck();
-});
-
-// nextButton.addEventListener("click", function () {
-//   removeActiveClass();
-//   checkCounter();
-//   counter++;
-//   activateTill(counter);
-//   btnStatusCheck();
-// });
-
-// prevButton.addEventListener("click", function () {
-//   removeActiveClass();
-//   checkCounter();
-//   counter--;
-//   activateTill(counter);
-//   btnStatusCheck();
-// });

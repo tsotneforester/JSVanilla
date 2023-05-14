@@ -12,12 +12,10 @@ img {
   position: absolute;
   left: 64px;
   top: 23px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   width: 13px;
   height: 53px;
-  -webkit-transform-origin: 50% 88%;
-          transform-origin: 50% 88%;
+  transform-origin: 50% 88%;
   z-index: 48;
 }
 .minarrow img {
@@ -30,12 +28,10 @@ img {
   position: absolute;
   left: 66.5px;
   top: 41px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   width: 9px;
   height: 34px;
-  -webkit-transform-origin: 50% 84%;
-          transform-origin: 50% 84%;
+  transform-origin: 50% 84%;
   z-index: 55;
 }
 .hrarrow img {
@@ -48,12 +44,10 @@ img {
   position: absolute;
   left: 65px;
   top: 25px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   width: 9px;
   height: 54px;
-  -webkit-transform-origin: 50% 82%;
-          transform-origin: 50% 82%;
+  transform-origin: 50% 82%;
   z-index: 46;
 }
 .secarrow img {

@@ -11,21 +11,14 @@
 ::after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: centerk;
-      -ms-flex-align: centerk;
-          align-items: centerk;
+  justify-content: center;
+  align-items: centerk;
 }
 
 img {
@@ -38,12 +31,10 @@ img {
   position: absolute;
   left: 194px;
   top: 44px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   width: 10px;
   height: 40px;
-  -webkit-transform-origin: 50% 88%;
-          transform-origin: 50% 88%;
+  transform-origin: 50% 88%;
   z-index: 48;
 }
 
@@ -57,12 +48,10 @@ img {
   position: absolute;
   left: 195.5px;
   top: 59px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   width: 7px;
   height: 24px;
-  -webkit-transform-origin: 50% 84%;
-          transform-origin: 50% 84%;
+  transform-origin: 50% 84%;
   z-index: 47;
 }
 
@@ -76,12 +65,10 @@ img {
   position: absolute;
   left: 196px;
   top: 55px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   width: 5px;
   height: 30px;
-  -webkit-transform-origin: 50% 82%;
-          transform-origin: 50% 82%;
+  transform-origin: 50% 82%;
   z-index: 46;
 }
 
@@ -96,8 +83,7 @@ img {
   width: 280px;
   height: 280px;
   margin: 30px auto;
-  -webkit-perspective: 2100px;
-          perspective: 2100px;
+  perspective: 2100px;
   /* transform: scale(0.3, 0.3); */
 }
 
@@ -154,8 +140,7 @@ img {
   font-size: 19px;
   left: 85px;
   letter-spacing: 6px;
-  -webkit-transform: scale(0.6, 1);
-          transform: scale(0.6, 1);
+  transform: scale(0.6, 1);
 }
 
 .yearweek {
@@ -204,8 +189,7 @@ img {
   font-size: 13px;
   left: 30px;
   letter-spacing: 1px;
-  -webkit-transform: scale(0.8, 1);
-          transform: scale(0.8, 1);
+  transform: scale(0.8, 1);
   font-weight: bolder;
 }
 
@@ -219,8 +203,7 @@ img {
   font-size: 9px;
   left: 42px;
   letter-spacing: 1px;
-  -webkit-transform: scale(0.8, 1);
-          transform: scale(0.8, 1);
+  transform: scale(0.8, 1);
   font-weight: bolder;
   letter-spacing: 0px;
 }
@@ -236,8 +219,7 @@ img {
   font-size: 10px;
   left: 63px;
   letter-spacing: 1px;
-  -webkit-transform: scale(0.8, 1);
-          transform: scale(0.8, 1);
+  transform: scale(0.8, 1);
   font-weight: bolder;
   letter-spacing: 1px;
 }

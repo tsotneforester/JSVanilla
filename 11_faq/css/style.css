@@ -5,8 +5,7 @@
 ::after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :focus,
@@ -65,8 +64,7 @@ p {
 }
 
 pre {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -74,37 +72,19 @@ pre {
   min-height: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border: none;
 }
 
 body {
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #b8c6db;
   font-family: "Poppins", sans-serif;
 }
@@ -114,8 +94,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -131,13 +110,11 @@ h2 {
   height: 50px;
   margin: 30px auto;
   overflow: hidden;
-  -webkit-transition: height 0.5s ease;
   transition: height 0.5s ease;
   padding: 10px;
   border-radius: 8px;
   border: 2px black solid;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .question,
@@ -149,9 +126,7 @@ h2 {
 .question {
   /* border-bottom: gray 1px solid; */
   width: calc(100% - 22px);
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
+  justify-content: stretch;
   padding-bottom: 10px;
 }
 
@@ -173,14 +148,12 @@ button {
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
 }
 
 button:hover {
   outline: none;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 i {
