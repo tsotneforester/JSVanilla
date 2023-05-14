@@ -6,30 +6,39 @@
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀ '▀▀`     '▀▀`  ▀▀▀ ╙▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
 
-const title = document.querySelector("h1");
-const speedInput = document.getElementById("speed");
+const quote_line = document.querySelector("h1");
+const speed_input = document.getElementById("speed-input");
 const quote = "Let there be light!";
 let counter = 0;
-let typeSpeed = (600 / speedInput.value) * 1;
+let typeSpeed = (1000 / speed_input.value) * 1;
 let reType;
-let innerText = "";
+let quoteText = ""; //temporary node for aggragrating letters from quote
+//||||||||||||||||||||||||||||||||||||||||||||||||
+// Main Function that creates node of text by  |||
+// counter increasing and adding letters to it |||
+//||||||||||||||||||||||||||||||||||||||||||||||||
 
-const typeQuote = () => {
+function typeQuote() {
   if (counter >= quote.length) {
     counter = 0;
-    innerText = "";
+    quoteText = "";
   }
-  innerText += quote[counter];
+  quoteText += quote[counter];
   counter++;
-  title.innerText = innerText;
-};
-
-let initialType = setInterval(typeQuote, typeSpeed);
-
-speedInput.addEventListener("input", function () {
+  quote_line.innerText = quoteText;
+}
+//||||||||||||||| Recuring typeQuote() ||||||||||||||||||||||
+let initialType = setInterval(typeQuote, typeSpeed); //||||
+//|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+// On First speed change main initialType() is stopped and ||
+// reType() gets in action, on following speed change      ||
+// we have no more initialType(), but reType(), which is   ||
+// stopped and with updated speed is called again          ||
+//|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+speed_input.addEventListener("input", function () {
   clearInterval(initialType);
   clearInterval(reType);
-  typeSpeed = (1000 / speedInput.value) * 1;
+  typeSpeed = (1000 / speed_input.value) * 1;
 
   function foo() {
     reType = setInterval(typeQuote, typeSpeed);

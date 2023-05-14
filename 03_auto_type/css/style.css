@@ -94,7 +94,7 @@ h1 {
   text-align: center;
 }
 
-footer {
+section {
   display: flex;
   flex-direction: row;
   justify-content: center;
