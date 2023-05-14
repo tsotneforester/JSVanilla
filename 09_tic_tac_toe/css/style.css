@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 *,
 ::before,
 ::after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :focus,
@@ -34,6 +32,7 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 button::-moz-focus-inner {
@@ -64,8 +63,7 @@ p {
 }
 
 pre {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -73,125 +71,80 @@ pre {
   min-height: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border: none;
 }
 
 body {
+  font-family: "Outfit", sans-serif;
+  background-color: black;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #b8c6db;
-  font-family: "Courier New", Courier, monospace;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-span {
-  color: black;
-}
-
-.box {
-  width: 250px;
-  height: 150px;
-  border-radius: 0;
-  background-color: transprent;
-  -ms-flex-preferred-size: 150px;
-      flex-basis: 150px;
-  font-size: 130px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  border-color: black;
-  border-width: 3px;
-  /* text-align: center; */
-}
-
-i {
-  color: black;
-}
-
-#container {
+main {
   width: 456px;
   height: 456px;
+  border-radius: 0;
+  background-color: transparent;
   margin: 40px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+main div {
+  font-family: "Courier New", Courier, monospace;
+  width: 250px;
+  height: 150px;
+  color: white;
+  flex-basis: 150px;
+  font-size: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+main div:nth-of-type(1) {
+  border-right: 2px white solid;
+  border-bottom: 2px white solid;
+}
+main div:nth-of-type(2) {
+  border-right: 2px white solid;
+  border-bottom: 2px white solid;
+}
+main div:nth-of-type(3) {
+  border-bottom: 2px white solid;
+}
+main div:nth-of-type(4) {
+  border-right: 2px white solid;
+  border-bottom: 2px white solid;
+}
+main div:nth-of-type(5) {
+  border-right: 2px white solid;
+  border-bottom: 2px white solid;
+}
+main div:nth-of-type(6) {
+  border-bottom: 2px white solid;
+}
+main div:nth-of-type(7) {
+  border-right: 2px white solid;
+}
+main div:nth-of-type(8) {
+  border-right: 2px white solid;
 }
 
-#score {
+footer {
+  font-family: "Courier New", Courier, monospace;
   font-size: 30px;
   text-align: center;
-  color: black;
-}
-
-.box:nth-of-type(1) {
-  border-right: solid;
-  border-bottom: solid;
-}
-
-.box:nth-of-type(2) {
-  border-right: solid;
-  border-bottom: solid;
-}
-
-.box:nth-of-type(3) {
-  border-bottom: solid;
-}
-
-.box:nth-of-type(4) {
-  border-right: solid;
-  border-bottom: solid;
-}
-
-.box:nth-of-type(5) {
-  border-right: solid;
-  border-bottom: solid;
-}
-
-.box:nth-of-type(6) {
-  border-bottom: solid;
-}
-
-.box:nth-of-type(7) {
-  border-right: solid;
-}
-
-.box:nth-of-type(8) {
-  border-right: solid;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
