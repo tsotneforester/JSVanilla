@@ -9,5 +9,6 @@
 /.prettierignore
 **/root/*.scss
 **/root/*.css
+root/
 design/
 /.htmlhintrc
