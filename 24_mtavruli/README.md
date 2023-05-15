@@ -1,7 +1,7 @@
-<h1 align="center">Tag Maker</h1>
+<h1 align="center">Asomtavruli</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/41_tag_maker.gif" alt="qr-code" />
+  <img src="https://gpx.ge/challenge/js/img/24_mtavruli.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -11,14 +11,14 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
   <br/>
-    <a href="https://tsotneforester.github.io/Javascript/41_tag_maker/" target="_blank">🖥️ View Demo</a>
+    <a href="https://tsotneforester.github.io/Javascript/24_mtavruli/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
   </div>
 
 <h2 align="center">Notes</h2>
-Good playground for easy string to array & <kbd>DOM</kbd> manipulations!
+Asomtavruli is one of the 3 Georgian Writing systems. good usecase of  callback and regex as <kbd>replace</kbd> method arguments.
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")

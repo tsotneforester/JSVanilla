@@ -40,20 +40,39 @@ const chars = {
   Ⴟ: "ჯ",
   Ⴠ: "ჰ",
 };
-let buttons = document.querySelectorAll(".letter");
+let keyboard_letters = document.querySelectorAll(".letter");
 let reset = document.querySelector(".reset");
-let input = document.getElementById("result_line");
+let back = document.querySelector(".back");
+let result_line = document.getElementById("result-line");
 
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function () {
-    input.innerHTML += buttons[i].innerText.replace(
-      // /[აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ]/g,
-      /[ႠႡႢႣႤႥႦႧႨႩႪႫႬႭႮႯႰႱႲႳႴႵႶႷႸႹႺႻႼႽႾႿჀ]/g,
-      (m) => chars[m]
-    );
+//||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+//||   keyboard letter click takes letter and replaces  ||
+//|| it with Georgian Unicode letters, sends it in HTML ||
+//||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+for (let i = 0; i < keyboard_letters.length; i++) {
+  keyboard_letters[i].addEventListener("click", function () {
+    result_line.innerHTML += keyboard_letters[i].innerText.replace(/[ႠႡႢႣႤႥႦႧႨႩႪႫႬႭႮႯႰႱႲႳႴႵႶႷႸႹႺႻႼႽႾႿჀ]/g, (letter) => chars[letter]);
   });
 }
-
+//|||||||||||||||||||||||||||||||||||||||||||||||||||
+//||||       Back & Reset Button actions          |||
+//|||||||||||||||||||||||||||||||||||||||||||||||||||
 reset.addEventListener("click", function () {
-  input.innerHTML = "";
+  result_line.innerHTML = "";
 });
+
+back.addEventListener("click", function () {
+  result_line.innerHTML = result_line.innerHTML.slice(0, -1);
+});
+
+//|||||||||||||||||||||||||||||||||||||||||||||||||||
+// With phisical keyboard present, Backspace works ||
+//|||||||||||||||||||||||||||||||||||||||||||||||||||
+document.addEventListener("keydown", myFunction);
+function myFunction(event) {
+  if (event.key == "Backspace") {
+    result_line.innerHTML = result_line.innerHTML.slice(0, -1);
+    console.log("object");
+  }
+}
+//||||||||||||||||||||||||||||||||||||||||||||||||||||
