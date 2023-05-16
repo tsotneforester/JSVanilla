@@ -11,7 +11,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
   <br/>
-    <a href="https://tsotneforester.github.io/Javascript/42_tab_view/" target="_blank">🖥️ View Demo</a>
+    <a href="https://gpx.ge/challenge/js/pages/42_tab_view/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
@@ -37,4 +37,7 @@ Pure <kbd>useState</kbd> with mapping, you will find both <kbd>CSS</kbd> and <kb
 ![junior](https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742 "image")
 ![intermediate](https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604 "image")
 ![advanced](https://img.shields.io/badge/%204%20-advanced-white?labelColor=bf4605 "image")
-![guru](https://img.shields.io/badge/%205%20-guru-white?labelColor=ed2c49 "image") -->
+![guru](https://img.shields.io/badge/%205%20-guru-white?labelColor=ed2c49 "image")
+https://gpx.ge/challenge/js/pages/12_accordion/
+https://tsotneforester.github.io/Javascript/42_tab_view/
+-->
