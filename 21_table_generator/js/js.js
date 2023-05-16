@@ -5,31 +5,35 @@
 //  ╙╢▒╢╖ ║╜,╢▒▒╝    ███▄▄███ ▐██▌--`  ▐██▌ ▐███ ▓███ ▐███▄███▌ ███▄▄▄▄
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀ '▀▀`     '▀▀`  ▀▀▀ ╙▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
-const result = document.querySelector(".result");
+const table = document.querySelector(".table");
+const inputs = document.querySelectorAll("input");
 const row = document.getElementById("row");
 const column = document.getElementById("column");
 
-createTable(row.value, column.value);
-
-row.addEventListener("input", function () {
-  createTable(row.value, column.value);
-});
-
-column.addEventListener("input", function () {
-  createTable(row.value, column.value);
-});
-
+//|||||||||||||||||||||||||||||||||||||||||||||||||||||
+// Main function, that eccapts row and column number ||
+// and with nested loop, generates <table> tag, that ||
+//             is sent to HTML document              ||
+//|||||||||||||||||||||||||||||||||||||||||||||||||||||
 function createTable(rows, cols) {
-  result.innerHTML = "";
-  let output = "<table>";
+  table.innerHTML = "";
+  let result = "<table>";
   for (let i = 0; i < rows; i++) {
-    output += "<tr>";
+    result += "<tr>";
     for (let i = 0; i < cols; i++) {
-      output += "<td></td>";
+      result += "<td></td>";
     }
-    output += "</tr>";
+    result += "</tr>";
   }
-  output += "</table>";
-  console.log(output);
-  result.insertAdjacentHTML("afterbegin", output);
+  result += "</table>";
+  table.insertAdjacentHTML("afterbegin", result);
 }
+//|||||||||| Create Table after page loads ||||||||||||
+createTable(row.value, column.value);
+//||| on each input change main function is called||||
+inputs.forEach((input) => {
+  input.addEventListener("input", function () {
+    createTable(row.value, column.value);
+  });
+});
+//||||||||||||||||||||||||||||||||||||||||||||||||||||
