@@ -73,7 +73,7 @@ For React Projects
 
 |Project #|CSS+HTML+JS Comentary |README|React|data|
 |:--:| :-----: | :-----: |:-----: |:-----: |
-|01|✅|✅|❌|✅|
+|01|✅|✅|✅|✅|
 |02|✅|✅|❌|✅|
 |03|✅|✅|❌|✅|
 |04|❌|❌|❌|❌|
