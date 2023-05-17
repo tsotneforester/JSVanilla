@@ -6,9 +6,9 @@
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀ '▀▀`     '▀▀`  ▀▀▀ ╙▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
 
-const persons = [
+const data = [
   {
-    image: 1,
+    image: "https://gpx.ge/root/img/writers/1.jpg",
     fullName: "ნოდარ დუმბაძე",
     review: [
       {
@@ -27,7 +27,7 @@ const persons = [
   },
 
   {
-    image: 2,
+    image: "https://gpx.ge/root/img/writers/2.jpg",
     fullName: "დავით კლდიაშვილი",
     review: [
       {
@@ -37,7 +37,7 @@ const persons = [
     ],
   },
   {
-    image: 3,
+    image: "https://gpx.ge/root/img/writers/3.jpg",
     fullName: "მიხეილ ჯავახიშვილი",
     review: [
       {
@@ -47,7 +47,7 @@ const persons = [
     ],
   },
   {
-    image: 4,
+    image: "https://gpx.ge/root/img/writers/4.jpg",
     fullName: "იაკობ გოგებაშვილი",
     review: [
       {
@@ -57,7 +57,7 @@ const persons = [
     ],
   },
   {
-    image: 5,
+    image: "https://gpx.ge/root/img/writers/5.jpg",
     fullName: "ლუკა რაზიკაშვილი",
     review: [
       {
@@ -67,7 +67,7 @@ const persons = [
     ],
   },
   {
-    image: 6,
+    image: "https://gpx.ge/root/img/writers/6.jpg",
     fullName: "აკაკი წერეთელი",
     review: [
       {
@@ -77,18 +77,18 @@ const persons = [
     ],
   },
   {
-    image: 7,
+    image: "https://gpx.ge/root/img/writers/7.jpg",
     fullName: "ილია ჭავჭავაძე",
     review: [
       {
         book: "კაცია ადამიანი?",
-        text: "ხშირად შუაღამემდინ ცოლ-ქმარნი გაცხარებულნი და გაჭარხლებულნი ამისთანა ღრმა აზრებს ამტკიცებდნენ: „დღეს რა ვჭამოთ“, — იტყოდნენ დილით. „ხვალ რა ვჭამოთ“, — იტყოდნენ საღამოზედ. ეს იყო იმათი სულის საზრდო, ეს იყო იმათი გონების ვარჯიში, ეს იყო იმათი აზრის აღებ-მიცემა.",
+        text: "ხშირად შუაღამემდინ ცოლ-ქმარნი გაცხარებულნი და გაჭარხლებულნი ამისთანა ღრმა აზრებს ამტკიცებდნენ: „დღეს რა ვჭამოთ“, - იტყოდნენ დილით. „ხვალ რა ვჭამოთ“, - იტყოდნენ საღამოზედ. ეს იყო იმათი სულის საზრდო, ეს იყო იმათი გონების ვარჯიში, ეს იყო იმათი აზრის აღებ-მიცემა.",
       },
     ],
   },
 
   {
-    image: 8,
+    image: "https://gpx.ge/root/img/writers/8.jpg",
     fullName: "გურამ დოჩანაშვილი",
     review: [
       {
@@ -99,8 +99,8 @@ const persons = [
   },
 
   {
-    image: 9,
-    fullName: "ერიკ ფრენკ",
+    image: "https://gpx.ge/root/img/writers/9.jpg",
+    fullName: "ერიკ რასელი",
     review: [
       {
         book: "და არავინ დარჩა მეტი",
@@ -114,22 +114,30 @@ let image = document.querySelector(".image");
 let novel = document.querySelector(".novel");
 let author = document.querySelector(".author");
 let review = document.querySelector(".review");
-
-const RandomNumber = function (n) {
-  return Math.floor(Math.random() * n);
-};
-
-let startN = 0;
-function clickPerson() {
-  startN++;
-  if (startN > persons.length - 1) {
-    startN = 0;
-  }
-  let random = RandomNumber(persons[startN].review.length);
-  author.textContent = persons[startN].fullName;
-  review.textContent = persons[startN].review[random].text;
-  novel.innerHTML = persons[startN].review[random].book;
-  image.style.backgroundImage = "url('img/" + persons[startN].image + ".jpg')";
+let counter = 0;
+//||||||||||||||||||||||||||||||||||||||||||||||||||
+//||||||||||||||| Main Function ||||||||||||||||||||
+//||||||||||||||||||||||||||||||||||||||||||||||||||
+function cardSwitcher() {
+  counter++;
+  resetCounter();
+  author.textContent = data[counter].fullName;
+  //as writer can have several reviews, random is required
+  let randomForReview = RandomNumber(data[counter].review.length);
+  review.textContent = data[counter].review[randomForReview].text;
+  novel.textContent = data[counter].review[randomForReview].book;
+  image.style.backgroundImage = "url('" + data[counter].image + "')";
 }
 
-setInterval(clickPerson, 3000);
+setInterval(cardSwitcher, 3000);
+//||||||||||||||||||||||||||||||||||||||||||||
+function RandomNumber(n) {
+  return Math.floor(Math.random() * n);
+}
+//||||||||||||||||||||||||||||||||||||||||||||
+function resetCounter() {
+  if (counter > data.length - 1) {
+    counter = 0;
+  }
+}
+//||||||||||||||||||||||||||||||||||||||||||||
