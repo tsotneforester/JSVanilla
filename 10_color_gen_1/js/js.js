@@ -7,14 +7,16 @@
 "use strict";
 "use strict";
 let button = document.querySelector("button");
+let color_code = document.querySelector("h1");
 
-let random = (n) => Math.floor(Math.random() * n + 1);
-let rgb_color = () => `RGB(${random(255)},${random(255)},${random(255)})`;
-let css_color = () => {
-  let h1 = document.querySelector("h1");
-  let body = document.querySelector("body");
-  body.style.backgroundColor = rgb_color();
-  h1.innerHTML = rgb_color();
-};
+//||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-button.addEventListener("click", css_color);
+button.addEventListener("click", function () {
+  document.body.style.backgroundColor = `RGB(${ranmdomizer(255)},${ranmdomizer(255)},${ranmdomizer(255)})`;
+  color_code.textContent = `RGB(${ranmdomizer(255)},${ranmdomizer(255)},${ranmdomizer(255)})`;
+});
+//||||||||||||||||||||||||||||||||||||||||||||
+function ranmdomizer(n) {
+  return Math.floor(Math.random() * n + 1);
+}
+//|||||||||||||||||||||||||||||||||||||||||||||
