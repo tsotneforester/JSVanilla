@@ -139,22 +139,22 @@ output {
   align-self: center;
 }
 
-label[for=r],
-output[for=r] {
+label[for=red],
+output[for=red] {
   background-color: #f00;
 }
 
-label[for=g],
-output[for=g] {
+label[for=green],
+output[for=green] {
   background-color: #0f0;
 }
 
-label[for=b],
-output[for=b] {
+label[for=blue],
+output[for=blue] {
   background-color: #00f;
 }
 
-#hex {
+.hex-out {
   min-width: 4.5em;
   font-size: 3em;
   background: rgba(255, 255, 255, 0.3);
@@ -182,8 +182,50 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 /* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  margin-top: -12px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
 /* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  margin-top: -12px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
 input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10.4px;
+  cursor: pointer;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 10.4px;
+  cursor: pointer;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]::-ms-track {
   width: 100%;
   height: 10.4px;
   cursor: pointer;

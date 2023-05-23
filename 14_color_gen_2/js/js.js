@@ -5,33 +5,33 @@
 //  ╙╢▒╢╖ ║╜,╢▒▒╝    ███▄▄███ ▐██▌--`  ▐██▌ ▐███ ▓███ ▐███▄███▌ ███▄▄▄▄
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀ '▀▀`     '▀▀`  ▀▀▀ ╙▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
-const green = document.getElementById("g");
-const red = document.getElementById("r");
-const blue = document.getElementById("b");
+const green = document.getElementById("green");
+const red = document.getElementById("red");
+const blue = document.getElementById("blue");
 
-const greenOut = document.getElementById("g_out");
-const redOut = document.getElementById("r_out");
-const blueOut = document.getElementById("b_out");
-const hex = document.getElementById("hex");
+const green_out = document.querySelector(".green-out");
+const red_out = document.querySelector(".red-out");
+const blue_out = document.querySelector(".blue-out");
+const hex_out = document.querySelector(".hex-out");
 
 red.addEventListener("input", function () {
-  redOut.innerHTML = red.value;
+  red_out.innerHTML = red.value;
   setColor();
 });
 
 green.addEventListener("input", function () {
-  greenOut.innerHTML = green.value;
+  green_out.innerHTML = green.value;
   setColor();
 });
 
 blue.addEventListener("input", function () {
-  blueOut.innerHTML = blue.value;
+  blue_out.innerHTML = blue.value;
   setColor();
 });
 
 function setColor() {
   document.body.style.backgroundColor = `rgb(${red.value}, ${green.value}, ${blue.value})`;
-  hex.innerText = `#${toHex(red.value)}${toHex(green.value)}${toHex(blue.value)}`;
+  hex_out.innerText = `#${toHex(red.value)}${toHex(green.value)}${toHex(blue.value)}`;
 }
 
 function toHex(num) {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GPXcript</title>
+    <title>Color Hex Generator</title>
     <meta name="description" content="Devote and Code anything, anywhere, anytime" />
     <link rel="shortcut icon" type="image/x-icon" href="https://gpx.ge/root/img/infinite.png" />
 
@@ -29,24 +29,24 @@
   </head>
   <body>
     <fieldset>
-      <label for="r">RED</label>
-      <input type="range" min="0" max="255" id="r" step="1" value="0" />
-      <output for="r" id="r_out">0</output>
+      <label for="red">RED</label>
+      <input type="range" min="0" max="255" id="red" step="1" value="0" />
+      <output for="red" class="red-out">0</output>
     </fieldset>
 
     <fieldset>
-      <label for="g">GREEN</label>
-      <input type="range" min="0" max="255" id="g" step="1" value="0" />
-      <output for="g" id="g_out">0</output>
+      <label for="green">GREEN</label>
+      <input type="range" min="0" max="255" id="green" step="1" value="0" />
+      <output for="green" class="green-out">0</output>
     </fieldset>
 
     <fieldset>
-      <label for="b">BLUE</label>
-      <input type="range" min="0" max="255" id="b" step="1" value="0" />
-      <output for="b" id="b_out">0</output>
+      <label for="blue">BLUE</label>
+      <input type="range" min="0" max="255" id="blue" step="1" value="0" />
+      <output for="blue" class="blue-out">0</output>
     </fieldset>
 
-    <output id="hex">#000000</output>
+    <output class="hex-out">#000000</output>
     <script src="js/js.js"></script>
   </body>
 </html>
