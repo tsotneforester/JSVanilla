@@ -16,7 +16,14 @@
   </div>
 
 <h2 align="center">Notes</h2>
-<kbd>useState</kbd> and <kbd>useRef</kbd> are the case here, but for more advanced coding, <kbd>useRef</kbd> loop is introduced. vanila JS version is simple, as basic knowlidge of <kbd>DOM</kbd> is required
+Pure <kbd>useState</kbd> with mapping, you will find both <kbd>CSS</kbd> and <kbd>Styled</kbd> variations.
+
+<br/>
+<i>Future Updates</i>:
+<br/>
+ <ul>
+  <li>API instead of data.js</li>
+ </ul>
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")
