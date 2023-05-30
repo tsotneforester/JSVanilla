@@ -1,4 +1,3 @@
-//      ,    ,
 //   ,@▒▒╜  ╣▒║╖     ▄▓█████  ▐██████▄ ▐██▌  ██▓       ▄█████▌  ███████
 // ╓╣▒▒╜ @╝╣╖`╢▒▒╗   ███      ▐██▌ ███  █▓█▄███▀      ▐██▌      ███▌
 // ╢▒▒╖  ╢╗@╝  ╢▒▒╝  ███  ███ ▐███████  ▄▓█▓▓█▄       ▐██▌ ▐██▌ ██████
@@ -10,7 +9,7 @@ let button = document.querySelector("button");
 let inputCount = inputs.length;
 
 inputs[0].focus(); // Makes focus on first input
-
+//|||||||||||||||||||||  Main Loop |||||||||||||||||||||||
 inputs.forEach((input, i) => {
   input.addEventListener("keydown", function (e) {
     e.preventDefault(); //prevents input value insertion
