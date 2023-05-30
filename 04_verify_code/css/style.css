@@ -162,7 +162,7 @@ button {
   opacity: 0.6;
 }
 
-button:hover {
+.active {
   opacity: 1;
   background-color: #283c69;
 }

@@ -1,47 +1,55 @@
 //      ,    ,
-//   ,@▒▒╜  ╣▒║╖     ▄▓█████  ▐██████▄ ▐██▌  ██▓       ▄█████▌  ███████`
-// ╓╣▒▒╜ @╝╣╖`╢▒▒╗   ███"---  ▐██▌-███` █▓█▄███▀      ▐██▌---   ███▌,,
+//   ,@▒▒╜  ╣▒║╖     ▄▓█████  ▐██████▄ ▐██▌  ██▓       ▄█████▌  ███████
+// ╓╣▒▒╜ @╝╣╖`╢▒▒╗   ███      ▐██▌ ███  █▓█▄███▀      ▐██▌      ███▌
 // ╢▒▒╖  ╢╗@╝  ╢▒▒╝  ███  ███ ▐███████  ▄▓█▓▓█▄       ▐██▌ ▐██▌ ██████
-//  ╙╢▒╢╖ ║╜,╢▒▒╝    ███▄▄███ ▐██▌--`  ▐██▌ ▐███ ▓███ ▐███▄███▌ ███▄▄▄▄
-//    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀ '▀▀`     '▀▀`  ▀▀▀ ╙▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
+//  ╙╢▒╢╖ ║╜,╢▒▒╝    ███▄▄███ ▐██▌     ▐██▌ ▐███  ███ ▐███▄███▌ ███▄▄▄▄
+//    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀  ▀▀      ▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
 let inputs = document.querySelectorAll("input");
-let inputCount = inputs.length; //fix
-const interval = 10;
+let button = document.querySelector("button");
+let inputCount = inputs.length;
 
-inputs[0].focus();
+inputs[0].focus(); // Makes focus on first input
 
-inputs.forEach((ele, i) => {
-  ele.addEventListener("keydown", function (e) {
+inputs.forEach((input, i) => {
+  input.addEventListener("keydown", function (e) {
+    e.preventDefault(); //prevents input value insertion
     if (e.key * 1 >= 0 && e.key * 1 <= 9) {
-      ele.value = "";
-
+      input.value = e.key;
+      validator(); // 1. toggles submit button "active" status
+      //control focus min and max target
       if (i == inputCount - 1) {
-        //control focus min and max target
-        setTimeout(() => {
-          inputs[i].focus();
-        }, interval);
+        input.focus();
       } else {
-        setTimeout(() => {
-          inputs[i + 1].focus();
-        }, interval);
+        inputs[i + 1].focus();
       }
     } else if (e.key === "Backspace") {
-      ele.value = "";
+      input.value = "";
+      validator();
       if (i == 0) {
         //control Backspace min and max target
-        setTimeout(() => {
-          inputs[i].focus();
-        }, interval);
+        input.focus();
       } else {
-        setTimeout(() => {
-          inputs[i - 1].focus();
-        }, interval);
+        inputs[i - 1].focus();
       }
     } else if (e.key === "e") {
-      e.preventDefault();
+      e.preventDefault(); //as 'e' is enabled as number input
     }
   });
 });
 
-function resetFocus(e) {}
+//|||||||||||||||||||||||||  1  |||||||||||||||||||||||||||||
+function validator() {
+  let arr = [];
+
+  inputs.forEach((input) => {
+    arr.push(input.value);
+  });
+
+  if (!arr.includes("")) {
+    button.classList.add("active");
+  } else {
+    button.classList.remove("active");
+  }
+}
+//|||||||||||||||||||||||||||||||||||||||||||||||||||||||
