@@ -1,7 +1,7 @@
 <h1 align="center">Tag Maker</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/41_tag_maker.gif" alt="qr-code" />
+  <img src="https://gpx.ge/challenge/js/img/05_tag_maker.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -11,7 +11,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
   <br/>
-    <a href="https://tsotneforester.github.io/Javascript/41_tag_maker/" target="_blank">🖥️ View Demo</a>
+    <a href="https://tsotneforester.github.io/Javascript/05_tag_maker/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
