@@ -1,4 +1,4 @@
-<h1 align="center">HEX Generator</h1>
+<h1 align="center">14. HEX Generator</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/14_hex_color_gen.gif" alt="qr-code" />

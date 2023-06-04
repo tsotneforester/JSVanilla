@@ -1,4 +1,4 @@
-<h1 align="center">Table Generator</h1>
+<h1 align="center">21. Table Generator</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/21_table_generator.gif" alt="qr-code" />

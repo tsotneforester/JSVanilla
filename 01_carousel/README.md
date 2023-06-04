@@ -1,4 +1,4 @@
-<h1 align="center">Image Carousel</h1>
+<h1 align="center">01. Image Carousel</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/01_carousel.gif" alt="qr-code" />

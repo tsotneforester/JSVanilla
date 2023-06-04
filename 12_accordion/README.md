@@ -1,4 +1,4 @@
-<h1 align="center">Accordion</h1>
+<h1 align="center">12. Accordion</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/12_accordion.gif" alt="qr-code" />

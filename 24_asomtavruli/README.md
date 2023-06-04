@@ -1,4 +1,4 @@
-<h1 align="center">Asomtavruli</h1>
+<h1 align="center">24. Asomtavruli</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/24_asomtavruli.gif" alt="qr-code" />

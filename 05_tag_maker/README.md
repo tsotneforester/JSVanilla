@@ -1,4 +1,4 @@
-<h1 align="center">Tag Maker</h1>
+<h1 align="center">05. Tag Maker</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/05_tag_maker.gif" alt="qr-code" />

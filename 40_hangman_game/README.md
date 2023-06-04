@@ -1,4 +1,4 @@
-<h1 align="center">Hangman Game</h1>
+<h1 align="center">40. Hangman Game</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/40_hangman_game.gif" alt="qr-code" />

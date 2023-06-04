@@ -1,4 +1,4 @@
-<h1 align="center">Card Switch</h1>
+<h1 align="center">06. Card Switch</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/06_card-switch.gif" alt="qr-code" />

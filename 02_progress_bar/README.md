@@ -1,4 +1,4 @@
-<h1 align="center">Progress Bar</h1>
+<h1 align="center">02. Progress Bar</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/02_progress_bar.gif" alt="qr-code" />

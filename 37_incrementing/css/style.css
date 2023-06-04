@@ -110,32 +110,32 @@ h1 {
   text-align: left;
 }
 
-.geography {
+.general {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.geography div {
+.general div {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.geography .capital {
+.general .capital {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.geography .region {
+.general .region {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 }
-.geography h3 {
+.general h3 {
   font-size: 16px;
   color: rgb(34, 7, 108);
   font-weight: bold;
@@ -174,11 +174,8 @@ h1 {
 .statistics img {
   width: 30px;
 }
-.statistics .square {
-  font-size: 16px;
-}
 
-.hdr {
+h2 {
   font-family: "Courier New", Courier, monospace;
   font-style: italic;
   font-size: 16px;
@@ -187,9 +184,11 @@ h1 {
   text-align: center;
 }
 
-.result {
+span,
+em {
   font-size: 18px;
   color: rgb(34, 7, 108);
   font-weight: 700;
   text-align: center;
+  font-style: normal;
 }

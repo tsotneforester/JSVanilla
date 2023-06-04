@@ -1,4 +1,4 @@
-<h1 align="center">Tab View</h1>
+<h1 align="center">11. Tab View</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/11_tab_view.gif" alt="qr-code" />

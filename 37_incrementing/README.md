@@ -1,24 +1,25 @@
-<h1 align="center">36. Hidden Search</h1>
+<h1 align="center">37. Incrementing</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/36_hidden_search.gif" alt="qr-code" />
+  <img src="https://gpx.ge/challenge/js/img/37_incrementing.gif" alt="qr-code" />
 </div>
 
   <div align="center">
     Built With - <img src="https://img.shields.io/badge/-HTML-6abecd" alt="qr-code" />
   <img src="https://img.shields.io/badge/-CSS-3e54a3" alt="qr-code" />
   <img src="https://img.shields.io/badge/-JS-cf6390" alt="qr-code" />
+  <img src="https://img.shields.io/badge/-API-aad742" alt="qr-code" />
   <br/>
-    Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
+    Difficulty - <img src="https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742" alt="qr-code" />
   <br/>
-    <a href="https://tsotneforester.github.io/Javascript/36_hidden_search/" target="_blank">🖥️ View Demo</a>
+    <a href="https://tsotneforester.github.io/Javascript/37_incrementing/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
   </div>
 
 <h2 align="center">Notes</h2>
-Some animations and event listening
+quite uneasy thing from the beginners propsective! <kbd>DOM</kbd> mainupulations, <kbd>Loops</kbd>, <kbd>conditionals</kbd>, <kbd>API</kbd> and even little Geography and Math
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")
@@ -30,7 +31,4 @@ Some animations and event listening
 ![junior](https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742 "image")
 ![intermediate](https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604 "image")
 ![advanced](https://img.shields.io/badge/%204%20-advanced-white?labelColor=bf4605 "image")
-![guru](https://img.shields.io/badge/%205%20-guru-white?labelColor=ed2c49 "image")
-https://gpx.ge/challenge/js/pages/12_accordion/
-https://tsotneforester.github.io/Javascript/42_tab_view/
--->
+![guru](https://img.shields.io/badge/%205%20-guru-white?labelColor=ed2c49 "image") -->

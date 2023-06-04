@@ -1,4 +1,4 @@
-<h1 align="center">Color Generator</h1>
+<h1 align="center">10. Color Generator</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/10_color_gen_1.gif" alt="qr-code" />

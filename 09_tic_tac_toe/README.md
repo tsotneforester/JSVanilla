@@ -1,4 +1,4 @@
-<h1 align="center">Tic Tac Toe</h1>
+<h1 align="center">09. Tic Tac Toe</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/09_tic_tac_toe.gif" alt="qr-code" />
