@@ -1,8 +1,8 @@
 import "./App.css";
 import { GlobalStyle } from "./root/GlobalStyle";
 import React, { useState, useEffect } from "react";
-import rawData from "./data";
-import { Header, Wrapper, Cart, CartIcon, Footer, TotalAmount, Main, Items, Article, Poster, Details, DetailsName, DetailsPrice, DetailsRemove, Amount } from "./Styled";
+import { rawData } from "./data";
+import * as S from "./Styled";
 
 let USDollar = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -47,7 +47,7 @@ function App() {
   function handler(e, id) {
     let inputValue = e.target.value;
 
-    if (inputValue === 0) {
+    if (Number(inputValue) === 0) {
       remover(id);
     } else {
       let newData = [...data];
@@ -67,46 +67,46 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Header>
-        <Wrapper>
+      <S.Header>
+        <S.Wrapper>
           <h1>useState</h1>
-          <Cart>
-            <CartIcon />
+          <S.Cart>
+            <S.CartIcon />
             <span>{cart}</span>
-          </Cart>
-        </Wrapper>
-      </Header>
-      <Main>
+          </S.Cart>
+        </S.Wrapper>
+      </S.Header>
+      <S.Main>
         <h1>Your Bag</h1>
-        <Items>
+        <S.Items>
           {data.map((item) => {
             return (
               <>
-                <Article key={item.id}>
-                  <Poster>
+                <S.Article key={item.id}>
+                  <S.Poster>
                     <img src={item.img} alt="cart" />
-                  </Poster>
-                  <Details>
-                    <DetailsName>{item.title}</DetailsName>
-                    <DetailsPrice>{USDollar.format(item.price)}</DetailsPrice>
-                    <DetailsRemove onClick={() => remover(item.id)}>remove</DetailsRemove>
-                  </Details>
-                  <Amount>
+                  </S.Poster>
+                  <S.Details>
+                    <S.DetailsName>{item.title}</S.DetailsName>
+                    <S.DetailsPrice>{USDollar.format(item.price)}</S.DetailsPrice>
+                    <S.DetailsRemove onClick={() => remover(item.id)}>remove</S.DetailsRemove>
+                  </S.Details>
+                  <S.Amount>
                     <input type="number" value={item.amount} min="0" onChange={(e) => handler(e, item.id)} />
-                  </Amount>
-                </Article>
+                  </S.Amount>
+                </S.Article>
               </>
             );
           })}
-        </Items>
-      </Main>
+        </S.Items>
+      </S.Main>
       {clear ? (
         "bag is empty"
       ) : (
-        <Footer>
-          <TotalAmount>{USDollar.format(total)}</TotalAmount>
+        <S.Footer>
+          <S.TotalAmount>{USDollar.format(total)}</S.TotalAmount>
           <button onClick={makeClear}>Clear Cart</button>
-        </Footer>
+        </S.Footer>
       )}
     </>
   );

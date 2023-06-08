@@ -1,4 +1,4 @@
-export default [
+export const rawData = [
   {
     id: 1,
     title: "Nokia 110",

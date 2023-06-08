@@ -1,10 +1,10 @@
 import "./App.css";
 import { GlobalStyle } from "./root/GlobalStyle";
 import React, { useEffect } from "react";
-import rawData from "./data";
+import { rawData } from "./data";
 import { useReducer } from "react";
 import reducer from "./Reducer";
-import { Header, Wrapper, Cart, CartIcon, Footer, TotalAmount, Main, Items, Article, Poster, Details, DetailsName, DetailsPrice, DetailsRemove, Amount } from "./Styled";
+import * as S from "./Styled";
 
 let USDollar = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -31,29 +31,29 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Header>
-        <Wrapper>
+      <S.Header>
+        <S.Wrapper>
           <h1>useReducer</h1>
-          <Cart>
-            <CartIcon />
+          <S.Cart>
+            <S.CartIcon />
             <span>{state.cart}</span>
-          </Cart>
-        </Wrapper>
-      </Header>
-      <Main>
+          </S.Cart>
+        </S.Wrapper>
+      </S.Header>
+      <S.Main>
         <h1>Your Bag</h1>
-        <Items>
+        <S.Items>
           {state.data.map((item) => {
             return (
               <>
-                <Article key={item.id}>
-                  <Poster>
+                <S.Article key={item.id}>
+                  <S.Poster>
                     <img src={item.img} alt="cart" />
-                  </Poster>
-                  <Details>
-                    <DetailsName>{item.title}</DetailsName>
-                    <DetailsPrice>{USDollar.format(item.price)}</DetailsPrice>
-                    <DetailsRemove
+                  </S.Poster>
+                  <S.Details>
+                    <S.DetailsName>{item.title}</S.DetailsName>
+                    <S.DetailsPrice>{USDollar.format(item.price)}</S.DetailsPrice>
+                    <S.DetailsRemove
                       onClick={() =>
                         dispatch({
                           type: "remove",
@@ -61,9 +61,9 @@ function App() {
                         })
                       }>
                       remove
-                    </DetailsRemove>
-                  </Details>
-                  <Amount>
+                    </S.DetailsRemove>
+                  </S.Details>
+                  <S.Amount>
                     <input
                       type="number"
                       value={item.amount}
@@ -76,19 +76,19 @@ function App() {
                         })
                       }
                     />
-                  </Amount>
-                </Article>
+                  </S.Amount>
+                </S.Article>
               </>
             );
           })}
-        </Items>
-      </Main>
+        </S.Items>
+      </S.Main>
 
       {state.clear ? (
         "bag is empty"
       ) : (
-        <Footer>
-          <TotalAmount>{USDollar.format(state.total)}</TotalAmount>
+        <S.Footer>
+          <S.TotalAmount>{USDollar.format(state.total)}</S.TotalAmount>
           <button
             onClick={() =>
               dispatch({
@@ -97,7 +97,7 @@ function App() {
             }>
             Clear Cart
           </button>
-        </Footer>
+        </S.Footer>
       )}
     </>
   );

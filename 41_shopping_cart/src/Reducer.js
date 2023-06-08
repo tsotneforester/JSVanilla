@@ -1,7 +1,6 @@
 export default function reducer(state, action) {
   //state = initialState
   if (action.type === "calculate") {
-    console.log("rerender");
     return {
       ...state,
       data: state.data,
@@ -41,7 +40,7 @@ export default function reducer(state, action) {
   if (action.type === "change") {
     let inputValue = action.value;
 
-    if (inputValue === 0) {
+    if (Number(inputValue) === 0) {
       let filteredData = state.data.filter((item) => {
         return item.id !== action.id;
       });
