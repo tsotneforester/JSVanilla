@@ -20,11 +20,6 @@
   </div>
 
 
-<h2 align="center">Notes</h2>
-This project involves 2 solutions, complex <kbd>useState</kbd>, and with <kbd>useReducer</kbd> for controlled inputs + <kbd>dispatcher</kbd> function inside <kbd>useEffect</kbd>
-
-
-
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")
