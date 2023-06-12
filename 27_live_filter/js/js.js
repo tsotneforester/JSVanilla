@@ -556,7 +556,7 @@ nodeForHTML += "</tr>";
 // ---------------- Generate  <TR> with search inputs ---------------------
 nodeForHTML += "<tr>";
 for (let i = 0; i < numberOfColumns; i++) {
-  nodeForHTML += `<td><input type="text" /></td>`;
+  nodeForHTML += `<th><input type="text" /></th>`;
 }
 nodeForHTML += "</tr>";
 // ----------- Generate rest ot <TR>s with data and sent it ----------

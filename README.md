@@ -71,6 +71,16 @@ For React Projects
   npm start
   ```
 
+For Vite Projects
+  1. In VITE folder install NPM package
+  ```sh
+  npm install
+  ```
+  2. Run Vite App
+  ```sh
+  npm run dev
+  ```
+
 |Project #|CSS+HTML+JS Comentary |README|React|data|
 |:--:| :-----: | :-----: |:-----: |:-----: |
 |01|✅|✅|✅|✅|
