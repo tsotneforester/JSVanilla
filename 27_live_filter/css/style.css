@@ -139,20 +139,30 @@ tr:hover {
   background-color: #f2f4f8;
 }
 
-/*lets start coding*/
 body {
-  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 50px;
 }
 
 .hidden {
   display: none;
 }
 
+:root {
+  --bg-color: #fff;
+  --text-color: black;
+  --tr-hover-color: #5e7ebe;
+  --th-bg-color: #f3c50d;
+}
+
 table {
   border-collapse: collapse;
   margin: 10px auto;
   font-size: 20px;
-  width: auto;
 }
 
 tr {
@@ -160,31 +170,45 @@ tr {
   border-right: rgba(173, 172, 172, 0.4) solid 2px;
   border-bottom: rgba(173, 172, 172, 0.4) solid 2px;
   font-family: monospace;
+  padding: 4px;
+  background-color: var(--bg-color);
 }
 
 th {
-  background-color: #f3c50d !important;
-  border: #f3c50d solid 2px;
+  background-color: var(--th-bg-color) !important;
+  border: white solid 2px;
   font-weight: bold;
   font-size: 26px;
   padding: 12px;
   text-align: center;
-}
-
-tr {
-  padding: 4px;
-  background-color: white;
+  color: var(--text-color);
 }
 
 td {
   padding: 6px;
   border-right: rgba(173, 172, 172, 0.4) solid 2px;
+  color: var(--text-color);
 }
 
 tr:hover {
-  background-color: #f2f4f8;
+  background-color: var(--tr-hover-color);
+  cursor: pointer;
 }
 
-input {
-  width: 10px;
+button {
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  background: #1680db;
+  padding: 4px 6px;
+  font-size: 26px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  transition: background-color 1s;
+  border: none;
+}
+
+button:hover {
+  background-color: #043a6a;
 }
