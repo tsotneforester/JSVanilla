@@ -1,7 +1,7 @@
 <h1 align="center">An Independence</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/39_an_Independence.gif" alt="qr-code" />
+  <img src="https://gpx.ge/challenge/js/img/39_an_independence.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -11,7 +11,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742 " alt="qr-code" />
   <br/>
-    <a href="https://tsotneforester.github.io/Javascript/39_an_Independence/" target="_blank">🖥️ View Demo</a>
+    <a href="https://tsotneforester.github.io/Javascript/39_an_independence/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
