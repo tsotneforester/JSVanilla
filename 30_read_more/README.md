@@ -1,32 +1,22 @@
-<h1 align="center"></h1>
+<h1 align="center">Read More</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/------.gif" alt="qr-code" />
+  <img src="https://gpx.ge/challenge/js/img/30_read_more.gif" alt="qr-code" />
 </div>
 
   <div align="center">
-    Built With - <img src="https://img.shields.io/badge/-HTML-6abecd" alt="qr-code" />
-  <img src="https://img.shields.io/badge/-CSS-3e54a3" alt="qr-code" />
-  <img src="https://img.shields.io/badge/-JS-cf6390" alt="qr-code" />
+    Built With - <img src="https://img.shields.io/badge/-React-f4cf0c" />
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
   <br/>
-    <a href="https://tsotneforester.github.io/Javascript/------/" target="_blank">🖥️ View Demo</a>
+    <a href="https://tsotneforester.github.io/Javascript/30_read_more/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
   </div>
 
 
-<h2 align="center">Notes</h2>
 
-<i>Future Updates</i>:
-<br/>
- <ul>
-  <li>tip of word</li>
-  <li>show failed word</li>
-  <li>refresh needed</li>
- </ul>
 
 
 

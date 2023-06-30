@@ -1,7 +1,7 @@
-<h1 align="center"></h1>
+<h1 align="center">Nonogram</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/------.gif" alt="qr-code" />
+  <img src="https://gpx.ge/challenge/js/img/18_nonogram.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -9,9 +9,9 @@
   <img src="https://img.shields.io/badge/-CSS-3e54a3" alt="qr-code" />
   <img src="https://img.shields.io/badge/-JS-cf6390" alt="qr-code" />
   <br/>
-    Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
+    Difficulty - <img src="https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604" alt="qr-code" />
   <br/>
-    <a href="https://tsotneforester.github.io/Javascript/------/" target="_blank">🖥️ View Demo</a>
+    <a href="https://tsotneforester.github.io/Javascript/18_nonogram/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
@@ -19,14 +19,6 @@
 
 
 <h2 align="center">Notes</h2>
-
-<i>Future Updates</i>:
-<br/>
- <ul>
-  <li>tip of word</li>
-  <li>show failed word</li>
-  <li>refresh needed</li>
- </ul>
 
 
 
