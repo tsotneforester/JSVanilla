@@ -1,7 +1,7 @@
 <h1 align="center">Advanced Slider</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/13_slider_1.gif" alt="qr-code" />
+  <img src="https://gpx.ge/challenge/js/img/13_advanced_slider.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -16,7 +16,7 @@
       Difficulty -
       <img src="https://img.shields.io/badge/%204%20-advanced-white?labelColor=bf4605" alt="qr-code" />
   <br/>
-    <a href="https://tsotneforester.github.io/Javascript/13_slider_1/" target="_blank">🖥️ View Demo</a>
+    <a href="https://tsotneforester.github.io/Javascript/13_advanced_slider/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
     <br>

@@ -1,7 +1,7 @@
-<h1 align="center">HEX Generator</h1>
+<h1 align="center">HEX Color</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/14_hex_color_gen.gif" alt="qr-code" />
+  <img src="https://gpx.ge/challenge/js/img/14_hex_color.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -11,7 +11,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
   <br/>
-    <a href="https://tsotneforester.github.io/Javascript/14_hex_color_gen/" target="_blank">🖥️ View Demo</a>
+    <a href="https://tsotneforester.github.io/Javascript/14_hex_color/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 

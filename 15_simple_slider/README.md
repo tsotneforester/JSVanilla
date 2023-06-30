@@ -1,7 +1,7 @@
 <h1 align="center">Simple Slider</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/15_slider_2.gif" alt="qr-code" />
+  <img src="https://gpx.ge/challenge/js/img/15_simple_slider.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -16,7 +16,7 @@
       Difficulty -
       <img src="https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742" alt="qr-code" />
   <br/>
-    <a href="https://tsotneforester.github.io/Javascript/15_slider_2/" target="_blank">🖥️ View Demo</a>
+    <a href="https://tsotneforester.github.io/Javascript/15_simple_slider/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
     <br>
