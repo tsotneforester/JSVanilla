@@ -18,7 +18,6 @@
   </div>
 
 
-<h2 align="center">Notes</h2>
 
 
 

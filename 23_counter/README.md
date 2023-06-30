@@ -19,17 +19,6 @@
   </div>
 
 
-<h2 align="center">Notes</h2>
-
-<i>Future Updates</i>:
-<br/>
- <ul>
-  <li>tip of word</li>
-  <li>show failed word</li>
-  <li>refresh needed</li>
- </ul>
-
-
 
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
