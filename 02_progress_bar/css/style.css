@@ -32,6 +32,7 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 button::-moz-focus-inner {

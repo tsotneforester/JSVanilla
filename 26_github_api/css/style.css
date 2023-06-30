@@ -24,8 +24,6 @@ input,
 button,
 textarea {
   font-family: inherit;
-  outline: none;
-  border: none;
 }
 
 input::-ms-clear {

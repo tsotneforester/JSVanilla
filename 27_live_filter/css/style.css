@@ -16,25 +16,8 @@ a:visited,
 a:focus,
 a:hover,
 a:active {
-  color: inherit;
   text-decoration: none;
   outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 
 input,
@@ -49,6 +32,7 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 button::-moz-focus-inner {
@@ -59,15 +43,6 @@ button::-moz-focus-inner {
 img {
   max-width: 100%;
   display: block;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 ul li {
@@ -101,42 +76,6 @@ pre {
   justify-content: space-between;
   align-items: center;
   border: none;
-}
-
-table {
-  border-collapse: collapse;
-  margin: 10px auto;
-  font-size: 20px;
-}
-
-tr {
-  border-left: rgba(173, 172, 172, 0.4) solid 2px;
-  border-right: rgba(173, 172, 172, 0.4) solid 2px;
-  border-bottom: rgba(173, 172, 172, 0.4) solid 2px;
-  font-family: monospace;
-}
-
-th {
-  background-color: #f3c50d !important;
-  border: #f3c50d solid 2px;
-  font-weight: bold;
-  font-size: 26px;
-  padding: 12px;
-  text-align: center;
-}
-
-tr {
-  padding: 4px;
-  background-color: white;
-}
-
-td {
-  padding: 6px;
-  border-right: rgba(173, 172, 172, 0.4) solid 2px;
-}
-
-tr:hover {
-  background-color: #f2f4f8;
 }
 
 body {
@@ -199,7 +138,7 @@ button {
   width: auto;
   height: auto;
   border-radius: 8px;
-  background: #1680db;
+  background-color: #1680db;
   padding: 4px 6px;
   font-size: 26px;
   color: white;
