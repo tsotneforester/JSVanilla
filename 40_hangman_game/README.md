@@ -1,4 +1,4 @@
-<h1 align="center">40. Hangman Game</h1>
+<h1 align="center">Hangman Game</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/40_hangman_game.gif" alt="qr-code" />
@@ -19,8 +19,7 @@
 
 
 <h2 align="center">Notes</h2>
-Sweet childhood is live with Hangman, piece of cake as knowlidge of <kbd>DOM</kbd> and logic gets solid!
-<br/>
+
 <i>Future Updates</i>:
 <br/>
  <ul>

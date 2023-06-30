@@ -1,4 +1,4 @@
-<h1 align="center">41. Shopping Cart</h1>
+<h1 align="center">Shopping Cart</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/41_shopping_cart.gif" alt="qr-code" />
@@ -17,8 +17,6 @@
   </div>
 
 
-<h2 align="center">Notes</h2>
-This project involves 2 solutions, complex <kbd>useState</kbd>, and with <kbd>useReducer</kbd> for controlled inputs + <kbd>dispatcher</kbd> function inside <kbd>useEffect</kbd>
 
 
 

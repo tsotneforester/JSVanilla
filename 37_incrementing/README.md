@@ -1,4 +1,4 @@
-<h1 align="center">37. Incrementing</h1>
+<h1 align="center">Incrementing</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/37_incrementing.gif" alt="qr-code" />
@@ -18,8 +18,7 @@
 
   </div>
 
-<h2 align="center">Notes</h2>
-quite uneasy thing from the beginners propsective! <kbd>DOM</kbd> mainupulations, <kbd>Loops</kbd>, <kbd>conditionals</kbd>, <kbd>API</kbd> and even little Geography and Math
+
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")

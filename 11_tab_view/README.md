@@ -1,4 +1,4 @@
-<h1 align="center">11. Tab View</h1>
+<h1 align="center">Tab View</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/11_tab_view.gif" alt="qr-code" />
@@ -16,9 +16,7 @@
   </div>
 
 <h2 align="center">Notes</h2>
-Pure <kbd>useState</kbd> with mapping, you will find both <kbd>CSS</kbd> and <kbd>Styled</kbd> variations.
 
-<br/>
 <i>Future Updates</i>:
 <br/>
  <ul>

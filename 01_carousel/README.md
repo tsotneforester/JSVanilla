@@ -1,4 +1,4 @@
-<h1 align="center">01. Image Carousel</h1>
+<h1 align="center">Image Carousel</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/01_carousel.gif" alt="qr-code" />
@@ -20,8 +20,6 @@
   </div>
 
 
-<h2 align="center">Notes</h2>
-It is beautiful and quite easy, basic knowlidge of <kbd>Flex</kbd> is crucial here, <kbd>Styled</kbd> React version included.
 
 
 

@@ -1,4 +1,4 @@
-<h1 align="center">10. Color Generator</h1>
+<h1 align="center">Color Generator</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/10_color_gen_1.gif" alt="qr-code" />
@@ -17,8 +17,7 @@
 
   </div>
 
-<h2 align="center">Notes</h2>
-Generating RGB color code is not that hard, actually it's very easy!
+
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")

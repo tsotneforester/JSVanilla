@@ -1,4 +1,4 @@
-<h1 align="center">21. Table Generator</h1>
+<h1 align="center">Table Generator</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/21_table_generator.gif" alt="qr-code" />
@@ -17,8 +17,6 @@
 
   </div>
 
-<h2 align="center">Notes</h2>
-Easiest usecase of nested Loops
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")

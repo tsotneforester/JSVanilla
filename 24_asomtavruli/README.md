@@ -1,4 +1,4 @@
-<h1 align="center">24. Asomtavruli</h1>
+<h1 align="center">Asomtavruli</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/24_asomtavruli.gif" alt="qr-code" />
@@ -17,8 +17,6 @@
 
   </div>
 
-<h2 align="center">Notes</h2>
-Asomtavruli is one of the 3 Georgian Writing systems. good usecase of  callback and regex as <kbd>replace</kbd> method arguments.
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")

@@ -1,4 +1,4 @@
-<h1 align="center">02. Progress Bar</h1>
+<h1 align="center">Progress Bar</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/02_progress_bar.gif" alt="qr-code" />
@@ -18,8 +18,6 @@
   </div>
 
 
-<h2 align="center">Notes</h2>
-Progress is something worth sweating, but you will hardly get, as task is quite easy: just basics of <kbd>DOM</kbd>
 
 
 

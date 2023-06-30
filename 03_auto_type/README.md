@@ -1,4 +1,4 @@
-<h1 align="center">03. Auto Type</h1>
+<h1 align="center">Auto Type</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/03_auto_type.gif" alt="qr-code" />
@@ -16,12 +16,6 @@
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
   </div>
-
-
-<h2 align="center">Notes</h2>
-Simple yeah? Not quite, these <kbd>clearInterval</kbd> and <kbd>setInterval</kbd> always drive me nuts!
-
-
 
 
 

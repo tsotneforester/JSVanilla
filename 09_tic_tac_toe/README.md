@@ -1,4 +1,4 @@
-<h1 align="center">09. Tic Tac Toe</h1>
+<h1 align="center">Tic Tac Toe</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/09_tic_tac_toe.gif" alt="qr-code" />
@@ -18,8 +18,6 @@
   </div>
 
 
-<h2 align="center">Notes</h2>
-Very basic HTML+CSS. as for JS, Less <kbd>DOM</kbd> and , more logic as CPU makes moves, always drawind 'O' though...
 
 
 

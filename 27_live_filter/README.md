@@ -1,4 +1,4 @@
-<h1 align="center">41. Live Filter</h1>
+<h1 align="center">Live Filter</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/27_live_filter.gif" alt="qr-code" />

@@ -1,4 +1,4 @@
-<h1 align="center">04. Verify Code</h1>
+<h1 align="center">Verify Code</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/04_verify_code.gif" alt="qr-code" />
@@ -17,9 +17,6 @@
 
   </div>
 
-
-<h2 align="center">Notes</h2>
-Bit complicated solution but still working...
 
 
 

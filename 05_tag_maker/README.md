@@ -1,4 +1,4 @@
-<h1 align="center">05. Tag Maker</h1>
+<h1 align="center">Tag Maker</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/05_tag_maker.gif" alt="qr-code" />
@@ -17,8 +17,7 @@
 
   </div>
 
-<h2 align="center">Notes</h2>
-Good playground for easy string to array & <kbd>DOM</kbd> manipulations!
+
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")

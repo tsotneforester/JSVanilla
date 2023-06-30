@@ -1,4 +1,4 @@
-<h1 align="center">06. Card Switch</h1>
+<h1 align="center">Card Switch</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/06_card-switch.gif" alt="qr-code" />
@@ -18,8 +18,7 @@
 
   </div>
 
-<h2 align="center">Notes</h2>
-Less <kbd>DOM</kbd>, more reading + React version with good usecase of callback cleaner in <kbd>useEffect()</kbd>. what about forcing browser to trigger reflow while changing CSS? maybe <kbd>.offsetHeight()
+
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")

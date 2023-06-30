@@ -1,4 +1,4 @@
-<h1 align="center">14. HEX Generator</h1>
+<h1 align="center">HEX Generator</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/14_hex_color_gen.gif" alt="qr-code" />
@@ -17,8 +17,6 @@
 
   </div>
 
-<h2 align="center">Notes</h2>
-Easy and interesting for newbies, but wait... custom range slider? you must be kidding!
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")
