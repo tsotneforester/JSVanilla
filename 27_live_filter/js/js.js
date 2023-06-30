@@ -5,6 +5,8 @@
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀  ▀▀      ▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
 //https://github.com/exceljs/exceljs
+//https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js
+
 //||||||||||||||||| Table data (parsed json) |||||||||||||||||||||||||
 let data = [
   {
