@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
-export const Card = styled.div`
+let S = {};
+
+S.Card = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   padding: 12px;
   border-radius: 12px;
   border: 8px #b8c6db solid;
 `;
 
-export const Joke = styled.h1`
+S.Joke = styled.h1`
   font-size: 26px;
   color: rgb(21, 20, 19);
   font-weight: bold;
@@ -18,7 +21,7 @@ export const Joke = styled.h1`
   font-family: "Ubuntu Mono", monospace;
 `;
 
-export const Main = styled.main`
+S.Main = styled.main`
   width: 90%;
   height: auto;
   border-radius: 12px;
@@ -33,10 +36,11 @@ export const Main = styled.main`
   box-shadow: 4px 4px 4px gray;
 `;
 
-export const ImgStyled = styled.img`
-  width: 170px;
+S.Img = styled.img`
+  width: 110px;
 `;
-export const ButtonStyled = styled.button`
+
+S.Button = styled.button`
   border: 2px solid white;
   border-radius: 10px;
   padding: 10px 20px;
@@ -62,9 +66,4 @@ export const ButtonStyled = styled.button`
   }
 `;
 
-export const DadStyled = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 20px;
-`;
+export default S;
