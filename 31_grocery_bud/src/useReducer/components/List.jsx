@@ -13,14 +13,14 @@ function List({ data, editTask, removeTask }) {
               onClick={() => {
                 editTask(e.id);
               }}
-              src="./src/assets/edit.png"
+              src="./img/edit.png"
               alt="edit"
             />
             <img
               onClick={() => {
                 removeTask(e.id);
               }}
-              src="./src/assets/trash.png"
+              src="./img/trash.png"
               alt="edit"
             />
           </div>

@@ -11,6 +11,7 @@
 **/root/*.css
 **/dist
 **/node_modules
+**/build
 design/
 *.htmlhintrc
 *.vscode
