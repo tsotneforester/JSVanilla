@@ -15,6 +15,9 @@
 
   </div>
 
+<h2 align="center">Notes</h2>
+
++ empty input submit fix
 
 
 
