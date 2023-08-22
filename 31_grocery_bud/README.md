@@ -7,9 +7,9 @@
   <div align="center">
     Built With - <img src="https://img.shields.io/badge/-React-f4cf0c" />
   <br/>
-    Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
+    Difficulty - <img src="https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742" alt="qr-code" />
   <br/>
-    <a href="https://gpx.ge/challenge/js/pages/31_grocery_bud/" target="_blank">🖥️ View Demo</a>
+    <a href="https://gpx.ge/challenge/js/pages/31_grocery_bud.gif/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
