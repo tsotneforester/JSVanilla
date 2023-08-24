@@ -1,7 +1,7 @@
 <h1 align="center">Movie Rating</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/43_movie-rating.gif" alt="qr-code" />
+  <img src="https://gpx.ge/challenge/js/img/43_star_track.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -10,7 +10,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742" alt="qr-code" />
   <br/>
-    <a href="https://gpx.ge/challenge/js/pages/43_movie-rating/" target="_blank">🖥️ View Demo</a>
+    <a href="https://gpx.ge/challenge/js/pages/43_star_track/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
