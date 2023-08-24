@@ -1,4 +1,4 @@
-<h1 align="center">Movie Rating</h1>
+<h1 align="center">Star Track</h1>
 
 <div align="center">
   <img src="https://gpx.ge/challenge/js/img/43_star_track.gif" alt="qr-code" />
