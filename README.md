@@ -126,6 +126,7 @@ For Vite Projects
 |41|✅|✅|✅|
 |42|✅|✅|✅|
 |43|✅|✅|✅|
+|44|✅|✅|✅|
 
 <!-- |Project #|CSS+HTML+JS Comentary |README|React| -->
 
