@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function SplitForm({ activeFriend, data, dataSetter, friendSetter }) {
   const [bill, setBill] = useState({
@@ -41,8 +41,16 @@ function SplitForm({ activeFriend, data, dataSetter, friendSetter }) {
     setBill({ ...bill, mePaying: Boolean(Number(e.target.value)) });
   }
 
+  useEffect(() => {
+    setBill({
+      amount: "",
+      myExpense: "",
+      mePaying: true,
+    });
+  }, [activeFriend]);
+
   return (
-    <div className="split">
+    <div className="split" key={activeFriend.id}>
       <h1>Split A bill with {activeFriend.name} </h1>
       <form action="" onSubmit={handleBillSubmit}>
         <div className="line">
@@ -91,7 +99,8 @@ function SplitForm({ activeFriend, data, dataSetter, friendSetter }) {
             <option value="0">{activeFriend.name}</option>
           </select>
         </div>
-        <input type="submit" value="Add" />
+        {/* <button type="submit" value="Add" /> */}
+        <button>Add</button>
       </form>
     </div>
   );
