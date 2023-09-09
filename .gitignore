@@ -1,6 +1,8 @@
 *.scss
 *.txt
 *.ini
+*.psd
+*.ai
 *.map
 *.ts
 *.zip
