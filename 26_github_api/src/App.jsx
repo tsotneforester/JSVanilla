@@ -11,37 +11,36 @@ import Main from "./components/Main";
 function App() {
   const [input, setInput] = useState(""); //controlled input
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [showResult, setShowResult] = useState(false);
-  const [errorMsg, setErrormsg] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
 
   const [user, setUser] = useState("");
 
   function handler(e) {
     e.preventDefault();
     let user = e.target[0].value;
-    axiosData(user);
+    fetchApi(user);
     setShowResult(true);
   }
 
-  async function axiosData(user) {
+  async function fetchApi(user) {
     setLoading(true);
     try {
-      let request = await axios.get(`https://api.github.com/users/${user}`);
-      console.log(request);
-      setUser(request.data);
-      setLoading(false);
-      setInput("");
+      let request = await fetch(`https://apwi.github.com/users/${user}`);
+      console.log(request.status);
+      if (request.status === 404) {
+        throw new Error("No profile with this username");
+      } else {
+        let data = await request.json();
+        setUser(data);
+      }
     } catch (error) {
-      if (error.code === "ERR_BAD_REQUEST") {
-        setLoading(false);
-        setErrormsg("No profile with this username");
-      }
-      if (error.code === "ERR_NETWORK") {
-        setLoading(false);
-        setErrormsg("Network error");
-      }
+      console.dir(error);
+      setErrorMsg(error.message);
       setUser("");
+    } finally {
+      setLoading(false);
     }
   }
 

@@ -13,33 +13,34 @@ function App() {
 
   const [loading, setLoading] = useState(true);
   const [showResult, setShowResult] = useState(false);
-  const [errorMsg, setErrormsg] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
 
   const [user, setUser] = useState("");
 
   function handler(e) {
     e.preventDefault();
     let user = e.target[0].value;
-    fetchApi(user);
+    axiosData(user);
     setShowResult(true);
   }
 
-  async function fetchApi(user) {
+  async function axiosData(user) {
+    setLoading(true);
     try {
-      let request = await fetch(`https://api.github.com/users/${user}`);
+      let request = await axios.get(`https://api.github.com/users/${user}`);
       console.log(request);
-      if (request.status === 404) {
-        setStart(false);
-        setInput("");
-        throw new Error("no such user");
-      } else {
-        let data = await request.json();
-        setUser(data);
-        setStart(false);
-        setInput("");
+      setUser(request.data);
+      setInput("");
+    } catch (error) {
+      if (error.code === "ERR_BAD_REQUEST") {
+        setErrorMsg("No profile with this username");
       }
-    } catch (e) {
-      console.log(e);
+      if (error.code === "ERR_NETWORK") {
+        setErrorMsg("Network error");
+      }
+      setUser("");
+    } finally {
+      setLoading(false);
     }
   }
 
