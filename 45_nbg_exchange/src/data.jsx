@@ -7,6 +7,7 @@ export const georgia = {
   countryCode3: "GEO",
   countryCode2: "GE",
   countryName: "Georgia",
+  currencySymbol: "₾",
   flag: "https://flagsapi.com/GE/flat/64.png",
 };
 
@@ -18,6 +19,7 @@ export const countryData = [
     countryCode2: "US",
     countryCode3: "USA",
     currencyName: "US Dollar",
+    currencySymbol: "$",
     currencyCode: "USD",
   },
   {
@@ -25,6 +27,7 @@ export const countryData = [
     countryCode2: "TR",
     countryCode3: "TUR",
     currencyName: "Turkish Lira",
+    currencySymbol: "₺",
     currencyCode: "TRY",
   },
   {
@@ -32,6 +35,7 @@ export const countryData = [
     countryCode2: "RU",
     countryCode3: "RUS",
     currencyName: "Russian Federation Ruble",
+    currencySymbol: "₽",
     currencyCode: "RUB",
   },
   {
@@ -39,6 +43,7 @@ export const countryData = [
     countryCode2: "GB",
     countryCode3: "GBR",
     currencyName: "UK Pound Sterling",
+    currencySymbol: "£",
     currencyCode: "GBP",
   },
   {
@@ -46,6 +51,7 @@ export const countryData = [
     countryCode2: "AZ",
     countryCode3: "AZE",
     currencyName: "Azerbaijani Manat",
+    currencySymbol: "₼",
     currencyCode: "AZN",
   },
   {
@@ -53,6 +59,7 @@ export const countryData = [
     countryCode2: "AE",
     countryCode3: "ARE",
     currencyName: "United Arab Emirates Dirham",
+    currencySymbol: "د.إ",
     currencyCode: "AED",
   },
   {
@@ -60,6 +67,7 @@ export const countryData = [
     countryCode2: "AM",
     countryCode3: "ARM",
     currencyName: "Armenian Dram",
+    currencySymbol: "֏",
     currencyCode: "AMD",
   },
   {
@@ -67,6 +75,7 @@ export const countryData = [
     countryCode2: "AU",
     countryCode3: "AUS",
     currencyName: "Australian Dollar",
+    currencySymbol: "$",
     currencyCode: "AUD",
   },
   {
@@ -74,6 +83,7 @@ export const countryData = [
     countryCode2: "BG",
     countryCode3: "BGR",
     currencyName: "Bulgarian Lev",
+    currencySymbol: "Лв.",
     currencyCode: "BGN",
   },
   {
@@ -81,6 +91,7 @@ export const countryData = [
     countryCode2: "BR",
     countryCode3: "BRA",
     currencyName: "Brazilian Real",
+    currencySymbol: "R$",
     currencyCode: "BRL",
   },
   {
@@ -88,6 +99,7 @@ export const countryData = [
     countryCode2: "BY",
     countryCode3: "BLR",
     currencyName: "Belarusian Ruble",
+    currencySymbol: "Br",
     currencyCode: "BYN",
   },
   {
@@ -95,6 +107,7 @@ export const countryData = [
     countryCode2: "CA",
     countryCode3: "CAN",
     currencyName: "Canadian Dollar",
+    currencySymbol: "$",
     currencyCode: "CAD",
   },
   {
@@ -102,6 +115,7 @@ export const countryData = [
     countryCode2: "CH",
     countryCode3: "CHE",
     currencyName: "Swiss Franc",
+    currencySymbol: "Fr.",
     currencyCode: "CHF",
   },
   {
@@ -109,6 +123,7 @@ export const countryData = [
     countryCode2: "CN",
     countryCode3: "CHN",
     currencyName: "Chinese Yuan",
+    currencySymbol: "¥",
     currencyCode: "CNY",
   },
   {
@@ -116,6 +131,7 @@ export const countryData = [
     countryCode2: "CZ",
     countryCode3: "CZE",
     currencyName: "Czech Republic Koruna",
+    currencySymbol: "Kč",
     currencyCode: "CZK",
   },
   {
@@ -123,6 +139,7 @@ export const countryData = [
     countryCode2: "DK",
     countryCode3: "DNK",
     currencyName: "Danish Krone",
+    currencySymbol: "Kr.",
     currencyCode: "DKK",
   },
   {
@@ -130,6 +147,7 @@ export const countryData = [
     countryCode2: "EG",
     countryCode3: "EGY",
     currencyName: "Egyptian Pound",
+    currencySymbol: "£",
     currencyCode: "EGP",
   },
   {
@@ -137,6 +155,7 @@ export const countryData = [
     countryCode2: "HK",
     countryCode3: "HKG",
     currencyName: "Hong Kong Dollar",
+    currencySymbol: "$",
     currencyCode: "HKD",
   },
   {
@@ -144,6 +163,7 @@ export const countryData = [
     countryCode2: "HU",
     countryCode3: "HUN",
     currencyName: "Hungarian Forint",
+    currencySymbol: "Ft",
     currencyCode: "HUF",
   },
   {
@@ -151,6 +171,7 @@ export const countryData = [
     countryCode2: "IL",
     countryCode3: "ISR",
     currencyName: "Israeli New Sheqel",
+    currencySymbol: "₪",
     currencyCode: "ILS",
   },
   {
@@ -158,6 +179,7 @@ export const countryData = [
     countryCode2: "IN",
     countryCode3: "IND",
     currencyName: "Indian Rupee",
+    currencySymbol: "Rs.",
     currencyCode: "INR",
   },
   {
@@ -165,6 +187,7 @@ export const countryData = [
     countryCode2: "IR",
     countryCode3: "IRN",
     currencyName: "Iranian Rial",
+    currencySymbol: "﷼",
     currencyCode: "IRR",
   },
   {
@@ -172,6 +195,7 @@ export const countryData = [
     countryCode2: "IS",
     countryCode3: "ISL",
     currencyName: "Icelandic Króna",
+    currencySymbol: "Kr",
     currencyCode: "ISK",
   },
   {
@@ -179,6 +203,7 @@ export const countryData = [
     countryCode2: "JP",
     countryCode3: "JPN",
     currencyName: "Japanese Yen",
+    currencySymbol: "¥",
     currencyCode: "JPY",
   },
   {
@@ -186,6 +211,7 @@ export const countryData = [
     countryCode2: "KG",
     countryCode3: "KGZ",
     currencyName: "Kyrgystani Som",
+    currencySymbol: "Лв",
     currencyCode: "KGS",
   },
   {
@@ -193,6 +219,7 @@ export const countryData = [
     countryCode2: "KR",
     countryCode3: "KOR",
     currencyName: "South Korean Won",
+    currencySymbol: "₩",
     currencyCode: "KRW",
   },
   {
@@ -200,6 +227,7 @@ export const countryData = [
     countryCode2: "KW",
     countryCode3: "KWT",
     currencyName: "Kuwaiti Dinar",
+    currencySymbol: "Kd",
     currencyCode: "KWD",
   },
   {
@@ -207,6 +235,7 @@ export const countryData = [
     countryCode2: "KZ",
     countryCode3: "KAZ",
     currencyName: "Kazakhstani Tenge",
+    currencySymbol: "₸",
     currencyCode: "KZT",
   },
   {
@@ -214,6 +243,7 @@ export const countryData = [
     countryCode2: "MD",
     countryCode3: "MDA",
     currencyName: "Moldovan Leu",
+    currencySymbol: "L",
     currencyCode: "MDL",
   },
   {
@@ -221,6 +251,7 @@ export const countryData = [
     countryCode2: "NO",
     countryCode3: "NOR",
     currencyName: "Norwegian Krone",
+    currencySymbol: "kr",
     currencyCode: "NOK",
   },
   {
@@ -228,6 +259,7 @@ export const countryData = [
     countryCode2: "NZ",
     countryCode3: "NZL",
     currencyName: "New Zealand Dollar",
+    currencySymbol: "$",
     currencyCode: "NZD",
   },
   {
@@ -235,6 +267,7 @@ export const countryData = [
     countryCode2: "PL",
     countryCode3: "POL",
     currencyName: "Polish Zloty",
+    currencySymbol: "zł",
     currencyCode: "PLN",
   },
   {
@@ -242,6 +275,7 @@ export const countryData = [
     countryCode2: "QA",
     countryCode3: "QAT",
     currencyName: "Qatari Rial",
+    currencySymbol: "QR",
     currencyCode: "QAR",
   },
   {
@@ -249,6 +283,7 @@ export const countryData = [
     countryCode2: "RO",
     countryCode3: "ROU",
     currencyName: "Romanian Leu",
+    currencySymbol: "lei",
     currencyCode: "RON",
   },
   {
@@ -256,6 +291,7 @@ export const countryData = [
     countryCode2: "RS",
     countryCode3: "SRB",
     currencyName: "Serbian Dinar",
+    currencySymbol: "Дин.",
     currencyCode: "RSD",
   },
   {
@@ -263,6 +299,7 @@ export const countryData = [
     countryCode2: "SE",
     countryCode3: "SWE",
     currencyName: "Swedish Krona",
+    currencySymbol: "kr",
     currencyCode: "SEK",
   },
   {
@@ -270,6 +307,7 @@ export const countryData = [
     countryCode2: "SG",
     countryCode3: "SGP",
     currencyName: "Singapore Dollar",
+    currencySymbol: "$",
     currencyCode: "SGD",
   },
   {
@@ -277,6 +315,7 @@ export const countryData = [
     countryCode2: "TJ",
     countryCode3: "TJK",
     currencyName: "Tajikistani Somoni",
+    currencySymbol: "ЅM",
     currencyCode: "TJS",
   },
   {
@@ -284,6 +323,7 @@ export const countryData = [
     countryCode2: "TM",
     countryCode3: "TKM",
     currencyName: "Turkmenistani Manat",
+    currencySymbol: "T",
     currencyCode: "TMT",
   },
   {
@@ -291,6 +331,7 @@ export const countryData = [
     countryCode2: "UA",
     countryCode3: "UKR",
     currencyName: "Ukrainian Hryvnia",
+    currencySymbol: "₴",
     currencyCode: "UAH",
   },
   {
@@ -298,6 +339,7 @@ export const countryData = [
     countryCode2: "UZ",
     countryCode3: "UZB",
     currencyName: "Uzbekistan Som",
+    currencySymbol: "лв",
     currencyCode: "UZS",
   },
   {
@@ -305,6 +347,7 @@ export const countryData = [
     countryCode2: "ZA",
     countryCode3: "ZAF",
     currencyName: "South African Rand",
+    currencySymbol: "R",
     currencyCode: "ZAR",
   },
 ];

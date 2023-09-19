@@ -1,20 +1,20 @@
 import { useEffect, useState, useContext } from "react";
-import styled from "styled-components";
-import { root, defaultInput } from "./theme";
+import { useNavigate } from "react-router-dom";
+
 import { AppContext } from "./Context";
 import Eu from "./assets/eu.png";
 import axios from "axios";
 import { ThemeToggler, Header, Select, InputAmount, Swap, Available, Calendar, VersusRates, Container, ConvertedAmount } from "./components";
 import { georgia, excludeCurr, countryData, url } from "./data";
-import { motion } from "framer-motion";
 
 function App() {
+  const navigate = useNavigate();
   const { date, setDate } = useContext(AppContext);
   const [data, setData] = useState([]);
 
   //curencies
-  const [amount, setAmount] = useState("100");
-  const [amountStr, setAmountStr] = useState(100);
+  const [amount, setAmount] = useState({ string: "100", number: 100 });
+
   const [fromCur, setFromCur] = useState("USD");
   const [toCur, setToCur] = useState("GEL");
   //result
@@ -52,6 +52,7 @@ function App() {
             tempData[i].countryCode3 = countryData[ii].countryCode3;
             tempData[i].countryCode2 = countryData[ii].countryCode2;
             tempData[i].countryName = countryData[ii].country;
+            tempData[i].currencySymbol = countryData[ii].currencySymbol;
             tempData[i].flag = `https://flagsapi.com/${countryData[ii].countryCode2}/flat/64.png`;
           }
         }
@@ -63,6 +64,7 @@ function App() {
         if (tempData[i].code == "EUR") {
           tempData[i].nameENG = "EU Euro";
           tempData[i].flag = Eu;
+          tempData[i].currencySymbol = "€";
         }
       }
 
@@ -84,8 +86,7 @@ function App() {
           return e.code == toCur;
         })[0].quantity;
 
-      //setConverted(((amount * fromRate) / toRate).toFixed(4));
-      setConverted((amountStr * fromRate) / toRate);
+      setConverted((amount.number * fromRate) / toRate);
 
       setSingleRates([(fromRate / toRate).toFixed(4), (toRate / fromRate).toFixed(4)]);
     } catch (e) {
@@ -100,6 +101,10 @@ function App() {
 
   useEffect(() => {
     jsonData(date);
+    navigate({
+      pathname: "/",
+      search: `?Date=${date}&Amount=${amount.number}&From=${fromCur}&To=${toCur}`,
+    });
   }, [amount, fromCur, toCur, date]);
 
   return (
@@ -110,7 +115,7 @@ function App() {
         <Available />
         <Calendar date={date} setDate={setDate} />
         <Select data={data} setFromCur={setFromCur} curr={fromCur}>
-          <InputAmount amount={amount} setAmount={setAmount} setAmountStr={setAmountStr} disabled={false} />
+          <InputAmount amount={amount.string} setter={setAmount} />
         </Select>
         <Swap handler={handleSwap} />
         <Select data={data} setFromCur={setToCur} curr={toCur}>

@@ -3,17 +3,16 @@ import styled from "styled-components";
 import { root } from "../theme";
 import { NumericFormat } from "react-number-format";
 
-function InputAmount({ amount, setAmount, setAmountStr }) {
+function InputAmount({ amount, setter }) {
   return (
     <Input
       value={amount}
-      thousandSeparator={" "} // Use a comma as a thousand separator
-      decimalScale={2} // Display up to 2 decimal places
-      allowNegative={false} // Do not allow negative numbers
+      thousandSeparator={" "}
+      decimalScale={2}
+      allowNegative={false}
+      // prefix={"$"}
       onValueChange={(values) => {
-        console.log(values);
-        setAmount(values.formattedValue);
-        setAmountStr(values.floatValue);
+        setter({ string: values.formattedValue, number: values.floatValue });
       }}
     />
   );
@@ -22,7 +21,6 @@ function InputAmount({ amount, setAmount, setAmountStr }) {
 export default InputAmount;
 
 const Input = styled(NumericFormat)`
-  //width: 100%;
   font-weight: 600;
   text-align: center;
   padding: 2px 10px;
