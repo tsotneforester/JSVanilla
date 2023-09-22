@@ -1,7 +1,7 @@
 <h1 align="center">Top Footballers</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/28_top_footballers.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/28_top_footballers.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -9,7 +9,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742" alt="qr-code" />
   <br/>
-    <a href="https://gpx.ge/challenge/js/pages/28_top_footballers/" target="_blank">🖥️ View Demo</a>
+    <a href="https://gpx.ge/js/pages/28_top_footballers/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 

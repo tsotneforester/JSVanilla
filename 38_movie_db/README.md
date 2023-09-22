@@ -1,7 +1,7 @@
 <h1 align="center">Movie DB</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/38_movie_db.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/38_movie_db.gif" alt="qr-code" />
 </div>
 
   <div align="center">

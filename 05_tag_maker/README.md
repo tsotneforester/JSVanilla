@@ -1,7 +1,7 @@
 <h1 align="center">Tag Maker</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/05_tag_maker.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/05_tag_maker.gif" alt="qr-code" />
 </div>
 
   <div align="center">

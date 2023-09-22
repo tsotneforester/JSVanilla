@@ -1,7 +1,7 @@
 <h1 align="center">Accordion</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/12_accordion.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/12_accordion.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -31,6 +31,6 @@
 ![intermediate](https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604 "image")
 ![advanced](https://img.shields.io/badge/%204%20-advanced-white?labelColor=bf4605 "image")
 ![guru](https://img.shields.io/badge/%205%20-guru-white?labelColor=ed2c49 "image")
-https://gpx.ge/challenge/js/pages/12_accordion/
+https://gpx.ge/js/pages/12_accordion/
 https://tsotneforester.github.io/Javascript/42_tab_view/
 -->

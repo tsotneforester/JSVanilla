@@ -1,7 +1,7 @@
 <h1 align="center">Tab View</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/11_tab_view.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/11_tab_view.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -9,7 +9,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
   <br/>
-    <a href="https://gpx.ge/challenge/js/pages/11_tab_view/" target="_blank">🖥️ View Demo</a>
+    <a href="https://gpx.ge/js/pages/11_tab_view/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
@@ -34,6 +34,6 @@
 ![intermediate](https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604 "image")
 ![advanced](https://img.shields.io/badge/%204%20-advanced-white?labelColor=bf4605 "image")
 ![guru](https://img.shields.io/badge/%205%20-guru-white?labelColor=ed2c49 "image")
-https://gpx.ge/challenge/js/pages/12_accordion/
+https://gpx.ge/js/pages/12_accordion/
 https://tsotneforester.github.io/Javascript/42_tab_view/
 -->

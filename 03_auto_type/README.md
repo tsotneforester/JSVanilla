@@ -1,7 +1,7 @@
 <h1 align="center">Auto Type</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/03_auto_type.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/03_auto_type.gif" alt="qr-code" />
 </div>
 
   <div align="center">

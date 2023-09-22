@@ -1,7 +1,7 @@
 <h1 align="center">Incrementing</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/37_incrementing.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/37_incrementing.gif" alt="qr-code" />
 </div>
 
   <div align="center">

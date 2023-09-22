@@ -1,7 +1,7 @@
 <h1 align="center">Advanced Slider</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/13_advanced_slider.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/13_advanced_slider.gif" alt="qr-code" />
 </div>
 
   <div align="center">

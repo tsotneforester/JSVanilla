@@ -1,7 +1,7 @@
 <h1 align="center">Progress Bar</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/challenge/js/img/02_progress_bar.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/02_progress_bar.gif" alt="qr-code" />
 </div>
 
   <div align="center">

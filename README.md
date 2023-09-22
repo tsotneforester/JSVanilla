@@ -3,7 +3,7 @@
  <img src="https://user-images.githubusercontent.com/79293287/230690583-935f9ece-4fc1-4f95-95e5-78fa5bf89b3e.png" alt="logo"><br/>
 <h3 align="center">Javascript Instances</h3>
   <div align="center">
-    <a href="https://gpx.ge/challenge/js/" target="_blank">🖥️ View Demo</a>
+    <a href="https://gpx.ge/js/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
   </div>
