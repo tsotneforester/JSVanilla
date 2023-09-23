@@ -1,7 +1,7 @@
 <h1 align="center">Simple Slider</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/15_simple_slider.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/15_simple_slider.gif" alt="qr-code" />
 </div>
 
   <div align="center">

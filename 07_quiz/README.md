@@ -1,7 +1,7 @@
 <h1 align="center">Quiz</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/07_quiz.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/07_quiz.gif" alt="qr-code" />
 </div>
 
   <div align="center">

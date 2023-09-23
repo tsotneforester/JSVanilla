@@ -1,7 +1,7 @@
 <h1 align="center">Card Switch</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/06_card_switch.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/06_card_switch.gif" alt="qr-code" />
 </div>
 
   <div align="center">

@@ -1,7 +1,7 @@
 <h1 align="center">Table Generator</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/21_table_generator.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/21_table_generator.gif" alt="qr-code" />
 </div>
 
   <div align="center">

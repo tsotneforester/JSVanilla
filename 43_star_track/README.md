@@ -1,7 +1,7 @@
 <h1 align="center">Star Track</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/43_star_track.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/43_star_track.gif" alt="qr-code" />
 </div>
 
   <div align="center">

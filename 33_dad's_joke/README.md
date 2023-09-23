@@ -1,7 +1,7 @@
 <h1 align="center">Dad's Joke</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/33_dad's_joke.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/33_dad's_joke.gif" alt="qr-code" />
 </div>
 
   <div align="center">

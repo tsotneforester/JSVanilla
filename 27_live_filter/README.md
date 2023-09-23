@@ -1,7 +1,7 @@
 <h1 align="center">Live Filter</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/27_live_filter.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/27_live_filter.gif" alt="qr-code" />
 </div>
 
   <div align="center">

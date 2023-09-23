@@ -1,7 +1,7 @@
 <h1 align="center">Split Bill</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/42_split_bill.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/42_split_bill.gif" alt="qr-code" />
 </div>
 
   <div align="center">

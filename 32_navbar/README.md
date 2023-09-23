@@ -1,7 +1,7 @@
 <h1 align="center">Navbar</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/32_navbar.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/32_navbar.gif" alt="qr-code" />
 </div>
 
   <div align="center">

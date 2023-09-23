@@ -1,7 +1,7 @@
 <h1 align="center">Read More</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/30_read_more.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/30_read_more.gif" alt="qr-code" />
 </div>
 
   <div align="center">

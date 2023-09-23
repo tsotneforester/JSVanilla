@@ -1,7 +1,7 @@
 <h1 align="center">Asomtavruli</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/24_asomtavruli.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/24_asomtavruli.gif" alt="qr-code" />
 </div>
 
   <div align="center">

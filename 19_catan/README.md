@@ -1,7 +1,7 @@
 <h1 align="center">Catan</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/19_catan.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/19_catan.gif" alt="qr-code" />
 </div>
 
   <div align="center">

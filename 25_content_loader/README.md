@@ -1,7 +1,7 @@
 <h1 align="center">Content Loader</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/25_content_loader.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/25_content_loader.gif" alt="qr-code" />
 </div>
 
   <div align="center">

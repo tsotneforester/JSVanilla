@@ -1,7 +1,7 @@
 <h1 align="center">RGB Color</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/10_rgb_color.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/10_rgb_color.gif" alt="qr-code" />
 </div>
 
   <div align="center">
