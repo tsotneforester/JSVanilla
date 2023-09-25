@@ -4,7 +4,7 @@
 //  ╙╢▒╢╖ ║╜,╢▒▒╝    ███▄▄███ ▐██▌     ▐██▌ ▐███  ███ ▐███▄███▌ ███▄▄▄▄
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀  ▀▀      ▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
-const slider_cards = document.querySelectorAll(".slider-card");
+const slider_cards = document.querySelectorAll("main div");
 const boxCount = slider_cards.length;
 let counter = 1;
 
