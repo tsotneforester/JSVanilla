@@ -1,7 +1,7 @@
 <h1 align="center">Carousel</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/js/src/01_carousel.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/01_carousrel.gif" alt="qr-code" />
 </div>
 
   <div align="center">
