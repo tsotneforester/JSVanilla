@@ -79,6 +79,7 @@ pre {
 }
 
 body {
+  font-family: "Nunito", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,7 +151,7 @@ main div:hover {
     background-size: auto 100%;
   }
 }
-main h3 {
+main h1 {
   opacity: 0;
   position: absolute;
   bottom: 10px;
@@ -164,7 +165,7 @@ main h3 {
 main .active {
   flex-grow: 4;
 }
-main .active h3 {
+main .active h1 {
   opacity: 1;
   position: absolute;
   bottom: 10px;

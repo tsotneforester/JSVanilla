@@ -8,6 +8,10 @@ const slider_cards = document.querySelectorAll("main div");
 const boxCount = slider_cards.length;
 let counter = 1;
 
+slider_cards.forEach((card, i) => {
+  card.style.backgroundImage = `url(https://gpx.ge/root/img/carousel/${i + 1}.jpg)`;
+});
+
 //||||||||||||||||||||||||||||||||||||||||||
 //  on slider card click, it is activated ||
 //||||||||||||||||||||||||||||||||||||||||||
