@@ -40,8 +40,8 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 - Summery
 
 <div align="center">
- <img src="https://user-images.githubusercontent.com/79293287/230690673-ac25b7f0-b471-4be6-8c54-24f077d40c23.png" />
- <img src="https://user-images.githubusercontent.com/79293287/230690648-8c65bd88-363a-47dd-a97a-6f3ef3855a2b.png" />
+ <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/79293287/270189088-af0d9f08-c748-4f14-914e-abf8f8829a5c.png" />
+ <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/79293287/270189138-8bf9d8ff-689e-455e-adac-f7a4eda3bd68.png" />
 </div>
 
 ### Built With
