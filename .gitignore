@@ -12,6 +12,7 @@
 **/root/*.scss
 **/root/*.css
 **/dist
+**/__REACT
 **/node_modules
 **/build
 design/

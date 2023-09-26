@@ -83,7 +83,7 @@ For Vite Projects
 
 |Project #|CSS+HTML+JS Comentary |README|React|
 |:--:| :-----: | :-----: |:-----: |
-|01|✅|✅|✅|
+|01|✅|✅|❌|
 |02|✅|✅|❌|
 |03|✅|✅|❌|
 |04|✅|✅|❌|
