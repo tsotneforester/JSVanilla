@@ -87,14 +87,6 @@ body {
   width: 100%;
   min-height: 100vh;
 }
-@media only screen and (min-width: 480px) {
-  body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
 
 main {
   display: flex;
@@ -102,11 +94,12 @@ main {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  gap: clamp(6px, 3vw, 32px);
+  width: 100%;
   max-width: 420px;
   max-height: 700px;
-  width: 100%;
   padding: 8px;
+  gap: clamp(6px, 3vw, 32px);
+  overflow: hidden;
 }
 @media only screen and (min-width: 480px) {
   main {

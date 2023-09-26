@@ -8,6 +8,9 @@ const slider_cards = document.querySelectorAll("main div");
 const boxCount = slider_cards.length;
 let counter = 1;
 
+//||||||||||||||||||||||||||||||||||||||||||
+//  set backgrounds on individual div     ||
+//||||||||||||||||||||||||||||||||||||||||||
 slider_cards.forEach((card, i) => {
   card.style.backgroundImage = `url(https://gpx.ge/root/img/carousel/${i + 1}.jpg)`;
 });
@@ -27,7 +30,8 @@ slider_cards.forEach((card) => {
 //  For Auto activation cards, enable it  ||
 //||||||||||||||||||||||||||||||||||||||||||
 
-/* setInterval(function () {
+/*
+setInterval(function () {
   reset();
   let increase = counter++;
 
@@ -36,7 +40,8 @@ slider_cards.forEach((card) => {
   if (increase == boxCount - 1) {
     counter = 0;
   }
-}, 1500); */
+}, 1500); 
+*/
 
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||
 function reset() {
