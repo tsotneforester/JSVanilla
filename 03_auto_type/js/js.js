@@ -6,7 +6,7 @@
 "use strict";
 
 const quote_line = document.querySelector("h1");
-const speed_input = document.getElementById("speed-input");
+const speed_input = document.querySelector("input");
 const quote = "Let there be light!";
 let counter = 0;
 let typeSpeed = (1000 / speed_input.value) * 1;

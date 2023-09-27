@@ -79,23 +79,24 @@ pre {
 }
 
 body {
-  font-family: Roboto, sans-serif;
-  background-color: darksalmon;
+  font-family: Nunito, sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 60px;
+  padding: 5px;
 }
 
 h1 {
-  font-size: 36px;
-  color: black;
-  font-weight: bold;
+  font-size: 62px;
+  color: rgb(120, 4, 159);
+  font-weight: 600;
   text-align: center;
 }
 
-section {
+button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -106,15 +107,16 @@ section {
   background-color: rgba(128, 128, 128, 0.283);
   -moz-column-gap: 20px;
        column-gap: 20px;
+  border: black 3px solid;
 }
 
 input {
   width: 56px;
   height: 30px;
   border-radius: 0;
-  background-color: darksalmon;
+  background-color: white;
   font-size: 24px;
-  color: white;
+  color: black;
   font-weight: 400;
   text-align: center;
   border: 0;
