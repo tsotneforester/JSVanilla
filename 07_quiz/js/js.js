@@ -52,30 +52,18 @@ let input = document.querySelectorAll("input");
 let questionCounter = 0;
 let correctCounter = 0;
 
-function render(quest) {
-  question.innerText = quizData[quest].question;
-  answerA.innerText = quizData[quest].a;
-  answerB.innerText = quizData[quest].b;
-  answerC.innerText = quizData[quest].c;
-  answerD.innerText = quizData[quest].d;
-  sumbitButton.innerText = "Submit";
-}
-
-function resetRadio() {
-  for (let i = 0; i < input.length; i++) {
-    input[i].checked = false;
-  }
-}
-
-render(questionCounter);
+//||||||||||||||||||||||||||||||||||||||||||||||||||
+//||||||||||||||| Main Listener  |||||||||||
+//||||||||||||||||||||||||||||||||||||||||||||||||||
 
 sumbitButton.addEventListener("click", function () {
   for (let i = 0; i < input.length; i++) {
     if (input[i].checked) {
       if (input[i].id == quizData[questionCounter].correct) {
         correctCounter++;
-      }
-      console.log("Correct Answers - ", correctCounter);
+      } // checks correct answer
+
+      // Sets Question counter and triggers Result on last question
       questionCounter++;
       if (questionCounter == numOfQuestions) {
         results();
@@ -88,6 +76,22 @@ sumbitButton.addEventListener("click", function () {
   }
 });
 
+//||||||||||||||||||||||||| 1 ||||||||||||||||||||||||
+function render(i) {
+  question.innerText = quizData[i].question;
+  answerA.innerText = quizData[i].a;
+  answerB.innerText = quizData[i].b;
+  answerC.innerText = quizData[i].c;
+  answerD.innerText = quizData[i].d;
+}
+//||||||||||||||||||||||||| 2 ||||||||||||||||||||||||
+function resetRadio() {
+  for (let i = 0; i < input.length; i++) {
+    input[i].checked = false;
+  }
+}
+
+//||||||||||||||||||||||||| 3 ||||||||||||||||||||||||
 function results() {
   card.innerHTML = `<h1>You answered ${correctCounter}/${numOfQuestions} questions correctly </h1><button class="submit" onclick="location.reload()">Reload</button>`;
 }

@@ -12,7 +12,7 @@ const dish = [
     category: "lunch",
     price: 15.99,
     img: "https://gpx.ge/root/img/menu/item-1.jpg",
-    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed`,
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const dish = [
     category: "breakfast",
     price: 13.99,
     img: "https://gpx.ge/root/img/menu/item-2.jpg",
-    desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing.`,
+    desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing`,
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const dish = [
     category: "breakfast",
     price: 6.99,
     img: "https://gpx.ge/root/img/menu/item-3.jpg",
-    desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
+    desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral`,
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const dish = [
     category: "breakfast",
     price: 20.99,
     img: "https://gpx.ge/root/img/menu/item-4.jpg",
-    desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
+    desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut`,
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const dish = [
     category: "breakfast",
     price: 22.99,
     img: "https://gpx.ge/root/img/menu/item-5.jpg",
-    desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
+    desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up`,
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ const dish = [
     category: "shakes",
     price: 8.99,
     img: "https://gpx.ge/root/img/menu/item-7.jpg",
-    desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
+    desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird`,
   },
   {
     id: 8,
@@ -68,7 +68,7 @@ const dish = [
     category: "shakes",
     price: 12.99,
     img: "https://gpx.ge/root/img/menu/item-8.jpg",
-    desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
+    desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut`,
   },
   {
     id: 9,
@@ -76,7 +76,7 @@ const dish = [
     category: "shakes",
     price: 16.99,
     img: "https://gpx.ge/root/img/menu/item-9.jpg",
-    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing`,
   },
   {
     id: 10,
@@ -84,7 +84,7 @@ const dish = [
     category: "shakes",
     price: 5.99,
     img: "https://gpx.ge/root/img/menu/item-10.jpg",
-    desc: `gentleman milk tribal suck infrastructure love ideal failure live side slam helicopter similarly leather draft screen.`,
+    desc: `gentleman milk tribal suck infrastructure love ideal failure live side slam helicopter similarly leather draft screen`,
   },
   {
     id: 11,
@@ -92,7 +92,7 @@ const dish = [
     category: "lunch",
     price: 5.99,
     img: "https://gpx.ge/root/img/menu/item-11.jpg",
-    desc: `calendar apparently consult direction estimate steal collector work manufacturer rain civil benefit broad.`,
+    desc: `calendar apparently consult direction estimate steal collector work manufacturer rain civil benefit broad`,
   },
   {
     id: 12,
@@ -100,7 +100,7 @@ const dish = [
     category: "lunch",
     price: 5.99,
     img: "https://gpx.ge/root/img/menu/item-12.jpg",
-    desc: `traffic lawn publish pound grandmother can terms clear style array collector pop clinical daily vocal mess.`,
+    desc: `traffic lawn publish pound grandmother can terms clear style array collector pop clinical daily vocal mess`,
   },
   {
     id: 13,
@@ -108,7 +108,7 @@ const dish = [
     category: "lunch",
     price: 13.99,
     img: "https://gpx.ge/root/img/menu/item-13.jpg",
-    desc: `property fact till tip hidden cake plane Bible cat display rational prior rain receive unknown conflict.`,
+    desc: `property fact till tip hidden cake plane Bible cat display rational prior rain receive unknown conflict`,
   },
   {
     id: 14,
@@ -116,7 +116,7 @@ const dish = [
     category: "breakfast",
     price: 25.99,
     img: "https://gpx.ge/root/img/menu/item-14.jpg",
-    desc: `attraction touch steady acknowledge favor tongue composition cluster involvement gesture skilled insect freeze.`,
+    desc: `attraction touch steady acknowledge favor tongue composition cluster involvement gesture skilled insect freeze`,
   },
 ];
 

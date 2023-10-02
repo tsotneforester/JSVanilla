@@ -86,7 +86,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #2b88f0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 h1 {
@@ -112,6 +112,15 @@ textarea {
 
 textarea:focus {
   outline: none;
+}
+
+#tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 500px;
 }
 
 .tag {

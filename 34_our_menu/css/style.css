@@ -158,6 +158,7 @@ article {
   background-color: white;
   max-width: 375px;
   padding-bottom: 20px;
+  border: 6px solid black;
 }
 article .image img {
   width: 100%;

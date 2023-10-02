@@ -4,6 +4,7 @@ import { css } from "styled-components";
 export const light = {
   body: "#f1f1f1",
   text: "#002855",
+  text: "white",
   shadow: "#9e9e9e",
   theme_icon: "#f1f1f1",
   disabled: "#555252",
@@ -26,7 +27,7 @@ export const root = {
 export const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Nunito', sans-serif;
-    background: ${(prop) => prop.theme.body};
+    background: ${(prop) => prop.theme.body}; */
     color: ${(prop) => prop.theme.text};
     transition: background ${root.animation_time}, color ${root.animation_time};
   }
@@ -37,7 +38,7 @@ export const defaultInput = css`
   width: 100%;
   height: 62px;
   padding: 14px 12px;
-  background-color: ${(prop) => prop.theme.body};
+  background-color: transparent;
   border: 2px solid ${root.border};
   border-radius: ${root.border_radius};
   transition: background ${root.animation_time};

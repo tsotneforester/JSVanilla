@@ -41,7 +41,7 @@ const Container = styled.div`
     width: 25px;
     height: 25px;
     pointer-events: none;
-    background-color: ${(prop) => prop.theme.body};
+    background-color: transparent;
     transition: background ${root.animation_time};
     & button {
       border: none;

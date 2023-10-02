@@ -18,6 +18,6 @@ const Input = styled(NumericFormat)`
   font-size: 18px;
   color: ${(prop) => prop.theme.disabled};
   min-width: 0;
-  background-color: ${(prop) => prop.theme.body};
+  background-color: transparent;
   transition: background-color ${root.animation_time}, color ${root.animation_time};
 `;

@@ -84,7 +84,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Nunito", sans-serif;
 }
 
 main {
@@ -92,13 +92,19 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 500px;
+  width: 90%;
   height: 500px;
   border-radius: 12px;
   background-color: #283c69;
   -moz-column-gap: 10px;
        column-gap: 10px;
-  padding: 55px;
+  max-width: 500px;
+  padding: 20px;
+}
+@media only screen and (min-width: 480px) {
+  main {
+    padding: 55px;
+  }
 }
 
 .digits {
@@ -115,20 +121,26 @@ main {
 }
 
 input {
-  width: 70px;
+  width: 20%;
   height: 80px;
   border-radius: 5px;
   background-color: #000d32;
+  max-width: 70px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border: 1px #000d32 solid;
-  font-size: 70px;
+  font-size: 56px;
   color: #e4e9fa;
   font-weight: bold;
   text-align: center;
   caret-color: transparent;
+}
+@media only screen and (min-width: 480px) {
+  input {
+    font-size: 70px;
+  }
 }
 
 input ::-webkit-outer-spin-button,
@@ -180,8 +192,14 @@ h1 {
   height: auto;
   border-radius: 0;
   background-color: transparent;
-  font-size: 36px;
+  font-size: 26px;
   color: white;
   font-weight: 700;
   text-align: left;
+  text-align: center;
+}
+@media only screen and (min-width: 480px) {
+  h1 {
+    font-size: 46px;
+  }
 }

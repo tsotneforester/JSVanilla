@@ -108,7 +108,7 @@ const Currency = styled.div`
     width: 40px;
     flex-grow: 1;
     border: none;
-    background-color: ${(prop) => prop.theme.body};
+    background-color: transparent;
     transition: background ${root.animation_time};
     &::placeholder {
       color: #918c8c;
@@ -127,7 +127,7 @@ const Modal = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   overflow-y: auto;
-  background-color: ${(prop) => prop.theme.body};
+  background-color: transparent;
   transition: background ${root.animation_time};
   margin-top: 20px;
   padding: 20px;
@@ -138,7 +138,7 @@ const Modal = styled.div`
     width: 7px;
   }
   &::-webkit-scrollbar-track {
-    background: ${(prop) => prop.theme.body};
+    background-color: transparent;
     border-radius: 25px;
   }
   &::-webkit-scrollbar-thumb {

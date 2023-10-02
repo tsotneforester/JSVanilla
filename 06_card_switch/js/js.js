@@ -104,7 +104,7 @@ let manualSetInterval;
 //||||||||||||||||||||||||||||||||||||||||||||||||||
 //||||||||||||||| Main Function (manual) |||||||||||
 //||||||||||||||||||||||||||||||||||||||||||||||||||
-function manualCardSwitcer(node) {
+function manualCardSwitcher(direction) {
   //Force browser to trigger reflow while changing CSS
   line.style.animation = "none";
   line.offsetHeight; /* trigger reflow */
@@ -113,7 +113,7 @@ function manualCardSwitcer(node) {
   clearInterval(initialSetInterval); //drops onload autoCardSwitcher()
   clearInterval(manualSetInterval); //drops click autoCardSwitcher()
   //PARAMETER ACTION
-  if (node == "next") {
+  if (direction == "next") {
     counter++;
   } else {
     counter--;
@@ -121,19 +121,18 @@ function manualCardSwitcer(node) {
   resetCounter(); //controls min and max counter
   htmlize(); //writes HTML according to counter
   //Restarts autoCardSwitcher and keyframe animation on click
-  function foo() {
-    manualSetInterval = setInterval(autoCardSwitcher, 3000);
-  }
-  foo();
+
+  manualSetInterval = setInterval(autoCardSwitcher, 3000);
+
   line.style.animation = "fill 3s linear infinite";
 }
 
 previous.addEventListener("click", function () {
-  manualCardSwitcer("previous");
+  manualCardSwitcher("previous");
 });
 
 next.addEventListener("click", function () {
-  manualCardSwitcer("next");
+  manualCardSwitcher("next");
 });
 
 //||||||||||||||||||||||||||||||||||||||||||||||||||
