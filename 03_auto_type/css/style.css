@@ -79,7 +79,7 @@ pre {
 }
 
 body {
-  font-family: Nunito, sans-serif;
+  font-family: "Nunito", sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -84,7 +84,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Nunito", sans-serif;
 }
 
 .progress-box {
