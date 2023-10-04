@@ -78,11 +78,8 @@ pre {
   border: none;
 }
 
-* {
-  font-family: "Outfit", sans-serif;
-}
-
 body {
+  font-family: "Nunito", sans-serif;
   min-height: 100vh;
   background-color: hsl(212, 45%, 89%);
   display: flex;
