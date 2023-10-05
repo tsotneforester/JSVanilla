@@ -31,19 +31,19 @@
   <body>
     <div class="card">
       <input type="text" id="password" />
-      <button class="copy"><img src="./img/copy-alt-solid-24.png" alt="" /> Copy</button>
+
       <input type="range" min="6" max="16" id="slider" value="10" oninput="updateValue()" />
-      <section>
-        <h1>Character length <span id="char-length">10</span></h1>
+      <div class="options">
+        <h1>Character length <span class="char-length">10</span></h1>
         <div class="checkboxes">
-          <input type="checkbox" id="uppercase" value="uppercase" />
+          <input type="checkbox" id="upper-case" value="uppercase" />
           <label for="uppercase">A-Z</label>
-          <input type="checkbox" id="numbercase" value="numbercase" />
+          <input type="checkbox" id="number-case" value="numbercase" />
           <label for="numbercase">0-9</label>
-          <input type="checkbox" id="symolcase" value="symolcase" />
+          <input type="checkbox" id="symbol-case" value="symolcase" />
           <label for="symolcase">!@#</label>
         </div>
-      </section>
+      </div>
       <button id="generate">Generate</button>
     </div>
     <script src="js/js.js"></script>

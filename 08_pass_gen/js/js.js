@@ -5,13 +5,63 @@
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀  ▀▀      ▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
 
-const randomFunc = {
+const char_length = document.querySelector(".char-length");
+const checkboxes = document.querySelectorAll("input[type=checkbox]");
+const generateButton = document.getElementById("generate");
+const slider = document.getElementById("slider");
+const passwordInput = document.getElementById("password");
+let sliderValue = slider.value * 1;
+let pattern = [];
+
+const patternObject = {
   lowercase: getRandomLower,
   uppercase: getRandomUpper,
   numbercase: getRandomNumber,
   symolcase: getRandomSymbol,
 };
 
+//|||||||||||||||||||||||||||||||||||||||||||||||||
+//      Main Function To Generate Password     ||||
+//|||||||||||||||||||||||||||||||||||||||||||||||||
+
+generateButton.addEventListener("click", function () {
+  makePattern(); //['lowercase', 'uppercase', 'numbercase', 'symolcase']
+
+  let PasswordPattern = Array.from({ length: sliderValue }, () => {
+    return "";
+  }) //create empty array of (n) length
+    .fill(pattern, 0)
+    .flat()
+    .slice(0, sliderValue)
+    .sort(function () {
+      return 0.5 - Math.random(); //shuffle array
+    });
+
+  let passwordString = Array.from(PasswordPattern, (e) => {
+    return patternObject[e]();
+  }).join(""); // Generates password string from pattern
+
+  passwordInput.value = passwordString;
+  window.navigator.clipboard.writeText(passwordString); //copy to clipboard
+});
+
+//|||||||||||||||||||||| 1 |||||||||||||||
+function makePattern() {
+  pattern = ["lowercase"];
+  for (let i = 0; i < checkboxes.length; i++) {
+    if (checkboxes[i].checked) {
+      pattern.push(checkboxes[i].value);
+    }
+  }
+}
+
+//|||||||||||||||||||||| 2 ||||||||||||||||
+function updateValue() {
+  sliderValue = slider.value * 1;
+  char_length.innerText = sliderValue;
+}
+
+//||||||||||||||||||||||| 3 |||||||||||||||
 function getRandomLower() {
   return String.fromCharCode(random(26) + 97);
 }
@@ -28,56 +78,3 @@ function getRandomSymbol() {
 function random(n) {
   return Math.floor(Math.random() * n);
 }
-function updateValue() {
-  sliderValue = slider.value * 1;
-  char_length.innerText = sliderValue;
-}
-function makePattern() {
-  pattern = ["lowercase"];
-  for (let i = 0; i < checkboxes.length; i++) {
-    if (checkboxes[i].checked) {
-      pattern.push(checkboxes[i].value);
-    }
-  }
-}
-
-const char_length = document.getElementById("char-length");
-const checkboxes = document.querySelectorAll("input[type=checkbox]");
-const generateButton = document.getElementById("generate");
-const slider = document.getElementById("slider");
-const passwordInput = document.getElementById("password");
-const copy = document.querySelector(".copy");
-let sliderValue = slider.value * 1;
-let pattern = [];
-
-generateButton.addEventListener("click", function () {
-  makePattern(); //['lowercase', 'uppercase', 'numbercase', 'symolcase']
-
-  let PasswordPattern = Array.from({ length: sliderValue }, () => {
-    return "";
-  }) //create empty array of (n) length
-    .fill(pattern, 0)
-    .flat()
-    .slice(0, sliderValue)
-    .sort(function () {
-      return 0.5 - Math.random(); //shuffle array
-    });
-
-  let PasswordPatternExec = Array.from(PasswordPattern, (e) => {
-    return randomFunc[e]();
-  }).join("");
-
-  passwordInput.value = PasswordPatternExec;
-  window.navigator.clipboard.writeText(PasswordPatternExec);
-  copy.classList.remove("zorg");
-  copy.classList.add("copy");
-  copy.innerHTML = `<img src="./img/copy-alt-solid-24.png" alt="" /> Copy`;
-});
-
-copy.addEventListener("click", function () {
-  if (passwordInput.value) {
-    copy.classList.remove("copy");
-    copy.classList.add("zorg");
-    copy.innerHTML = `<img src="./img/copy-alt-regular-24.png" alt="" /> Copied`;
-  }
-});
