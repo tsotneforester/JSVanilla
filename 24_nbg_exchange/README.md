@@ -1,7 +1,7 @@
 <h1 align="center">NBG Exchange</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/js/src/45_nbg_exchange.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/js/src/24_nbg_exchange.gif" alt="qr-code" />
 </div>
 
   <div align="center">
