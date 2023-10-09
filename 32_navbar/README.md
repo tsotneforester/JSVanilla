@@ -1,7 +1,7 @@
 <h1 align="center">Navbar</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/raw/32_navbar.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/1038_navbar.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -9,7 +9,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742" alt="qr-code" />
   <br/>
-    <a href="https://gpx.ge/js/pages/32_navbar/" target="_blank">🖥️ View Demo</a>
+    <a href="https://gpx.ge/js/pages/1038_navbar/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 

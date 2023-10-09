@@ -1,7 +1,7 @@
 <h1 align="center">Mytube</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/raw/35_mytube.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/1012_mytube.gif" alt="qr-code" />
 </div>
 
   <div align="center">
