@@ -1,7 +1,7 @@
 <h1 align="center">Nonogram</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/raw/18_nonogram.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/1057_nonogram.gif" alt="qr-code" />
 </div>
 
   <div align="center">
