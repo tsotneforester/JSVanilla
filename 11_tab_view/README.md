@@ -9,19 +9,12 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
   <br/>
-    <a href="https://gpx.ge/js/pages/11_tab_view/" target="_blank">🖥️ View Demo</a>
+    <a href="https://gpx.ge/js/pages/1064_tab_view/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
-
   </div>
 
-<h2 align="center">Notes</h2>
 
-<i>Future Updates</i>:
-<br/>
- <ul>
-  <li>API instead of data.js</li>
- </ul>
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")
