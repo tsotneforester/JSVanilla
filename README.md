@@ -3,9 +3,7 @@
  <img src="https://user-images.githubusercontent.com/79293287/230690583-935f9ece-4fc1-4f95-95e5-78fa5bf89b3e.png" alt="logo"><br/>
 <h3 align="center">Javascript Instances</h3>
   <div align="center">
-    <a href="https://gpx.ge/js/" target="_blank">🖥️ View Demo</a>
-    ·
-    <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
+<a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
   </div>
 <br/>
 
@@ -39,10 +37,7 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 - Project Links
 - Summery
 
-<div align="center">
- <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/79293287/270189088-af0d9f08-c748-4f14-914e-abf8f8829a5c.png" />
- <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/79293287/270189138-8bf9d8ff-689e-455e-adac-f7a4eda3bd68.png" />
-</div>
+
 
 ### Built With
 
