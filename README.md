@@ -9,7 +9,6 @@
 
 </div>
 
-![js](https://user-images.githubusercontent.com/79293287/230690681-18f9f658-7611-4280-aedf-088468960a12.gif)
 
 # About The Project
 <h1 align="center"> About The Project </h1> 
