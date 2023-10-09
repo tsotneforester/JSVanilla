@@ -1,7 +1,7 @@
 <h1 align="center">Tours</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/raw/29_tours.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/1065_tours.gif" alt="qr-code" />
 </div>
 
   <div align="center">

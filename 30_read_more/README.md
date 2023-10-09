@@ -1,7 +1,7 @@
 <h1 align="center">Read More</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/raw/30_read_more.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/1018_read_more.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -9,7 +9,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
   <br/>
-    <a href="https://gpx.ge/js/pages/30_read_more/" target="_blank">🖥️ View Demo</a>
+    <a href="https://gpx.ge/js/pages/1018_read_more/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
