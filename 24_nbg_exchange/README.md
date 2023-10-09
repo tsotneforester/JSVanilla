@@ -1,7 +1,7 @@
 <h1 align="center">NBG Exchange</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/raw/24_nbg_exchange.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/1005_nbg_exchange.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -9,7 +9,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604" alt="qr-code" />
   <br/>
-    <a href="https://gpx.ge/js/pages/45_nbg_exchange/" target="_blank">🖥️ View Demo</a>
+    <a href="https://gpx.ge/js/pages/1005_nbg_exchange/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
