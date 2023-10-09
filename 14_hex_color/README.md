@@ -1,7 +1,7 @@
 <h1 align="center">HEX Color</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/raw/14_hex_color.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/1041_hex_color.gif" alt="qr-code" />
 </div>
 
   <div align="center">
