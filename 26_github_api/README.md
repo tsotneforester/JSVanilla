@@ -1,7 +1,7 @@
 <h1 align="center">Github API</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/js/src/26_github_api.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/26_github_api.gif" alt="qr-code" />
 </div>
 
   <div align="center">

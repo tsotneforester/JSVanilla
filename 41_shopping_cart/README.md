@@ -1,7 +1,7 @@
 <h1 align="center">Shopping Cart</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/js/src/41_shopping_cart.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/41_shopping_cart.gif" alt="qr-code" />
 </div>
 
   <div align="center">

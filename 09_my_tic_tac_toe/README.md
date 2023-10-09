@@ -1,7 +1,7 @@
-<h1 align="center">Tic Tac Toe</h1>
+<h1 align="center">My Tic Tac Toe</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/js/src/09_tic_tac_toe.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/1032_my_tic_tac_toe.gif" alt="qr-code" />
 </div>
 
   <div align="center">
@@ -11,7 +11,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604" alt="qr-code" />
   <br/>
-    <a href="https://tsotneforester.github.io/Javascript/09_tic_tac_toe/" target="_blank">🖥️ View Demo</a>
+    <a href="https://tsotneforester.github.io/Javascript/09_my_tic_tac_toe/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 

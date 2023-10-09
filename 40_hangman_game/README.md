@@ -1,7 +1,7 @@
 <h1 align="center">Hangman Game</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/js/src/40_hangman_game.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/40_hangman_game.gif" alt="qr-code" />
 </div>
 
   <div align="center">

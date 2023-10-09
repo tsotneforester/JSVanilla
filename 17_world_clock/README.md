@@ -1,7 +1,7 @@
 <h1 align="center">World Clock</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/js/src/17_world_clock.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/17_world_clock.gif" alt="qr-code" />
 </div>
 
   <div align="center">

@@ -1,7 +1,7 @@
 <h1 align="center">Hidden Search</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/js/src/36_hidden_search.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/36_hidden_search.gif" alt="qr-code" />
 </div>
 
   <div align="center">

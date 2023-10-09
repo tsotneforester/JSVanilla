@@ -1,7 +1,7 @@
 <h1 align="center">Counter</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/js/src/23_counter.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/23_counter.gif" alt="qr-code" />
 </div>
 
   <div align="center">
