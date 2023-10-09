@@ -10,7 +10,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
   <br/>
-    <a href="https://gpx.ge/js/pages/26_github_api" target="_blank">🖥️ View Demo</a>
+    <a href="https://gpx.ge/js/pages/1013_github_api" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
