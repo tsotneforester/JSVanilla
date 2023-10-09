@@ -15,14 +15,6 @@
 
   </div>
 
-<h2 align="center">Notes</h2>
-
-+ empty input submit fix
-
-
-
-
-
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")
