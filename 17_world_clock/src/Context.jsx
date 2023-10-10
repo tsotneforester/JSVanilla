@@ -8,7 +8,7 @@ function Context({ children }) {
   const [rawData, setRawData] = useState("");
 
   async function CallAPI() {
-    const res1 = await axios(`http://api.timezonedb.com/v2.1/list-time-zone?key=OYUED61XIOW8&format=json`);
+    const res1 = await axios(`https://api.timezonedb.com/v2.1/list-time-zone?key=OYUED61XIOW8&format=json`);
     let zones = res1.data.zones;
 
     let trimmed = zones.filter((e) => {
