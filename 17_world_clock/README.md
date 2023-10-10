@@ -5,8 +5,8 @@
 </div>
 
   <div align="center">
-    Built With - <img src="https://img.shields.io/badge/-React-f4cf0c" alt="qr-code" />
-  <img src="https://img.shields.io/badge/-API-aad742" alt="qr-code" />
+    Built With - <img src="https://img.shields.io/badge/-React-f4cf0c" /><img src="https://img.shields.io/badge/-API-aad742" />
+  <br/>
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742" alt="qr-code" />
   <br/>
