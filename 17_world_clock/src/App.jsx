@@ -65,7 +65,7 @@ S.Wrapper = styled.div`
   flex-wrap: wrap;
   gap: 20px;
   min-height: 100vh;
-  align-content: flex-start;
+  align-content: center;
 `;
 
 S.Clock = styled.main`
