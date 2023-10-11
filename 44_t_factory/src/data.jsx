@@ -499,6 +499,36 @@ export default [
     shipping: true,
     category: "holly",
   },
+  {
+    id: 151,
+    name: "Georgian Ornament",
+    price: 25,
+    image: "51.png",
+    colors: ["#003929"],
+    artist: "tsotneforester",
+    shipping: true,
+    category: "Ethno",
+  },
+  {
+    id: 152,
+    name: "Antropomorphic figure, North Caucasus",
+    price: 34,
+    image: "52.png",
+    colors: ["#1D1E1D"],
+    artist: "tsotneforester",
+    shipping: true,
+    category: "Ethno",
+  },
+  {
+    id: 153,
+    name: "Oda In Imereti, Georgia",
+    price: 19,
+    image: "53.png",
+    colors: ["#FFF"],
+    artist: "tsotneforester",
+    shipping: true,
+    category: "Ethno",
+  },
 ];
 
 //literature
