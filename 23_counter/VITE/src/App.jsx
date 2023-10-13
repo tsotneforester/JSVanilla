@@ -1,10 +1,9 @@
-import "./style.css";
-import resetImg from "./reset.png";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import resetImg from "./assets/reset.png";
 
 let random = Math.floor(Math.random() * 101);
 
-function Demo() {
+function App() {
   let [value, setValue] = useState(random);
 
   return (
@@ -12,12 +11,13 @@ function Demo() {
       <h1>{value}</h1>
       <div className="controls">
         <button
+          className="decrease"
           onClick={() => {
             setValue(value - 1);
           }}>
           -
         </button>
-        <button>
+        <button className="reset">
           <img
             src={resetImg}
             alt="reset"
@@ -27,6 +27,7 @@ function Demo() {
           />
         </button>
         <button
+          className="increase"
           onClick={() => {
             setValue(value + 1);
           }}>
@@ -37,4 +38,4 @@ function Demo() {
   );
 }
 
-export default Demo;
+export default App;
