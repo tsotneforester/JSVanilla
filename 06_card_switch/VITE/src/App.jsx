@@ -1,4 +1,3 @@
-import { GlobalStyle } from "./root/GlobalStyle";
 import styled from "styled-components";
 import React, { useState, useEffect } from "react";
 import { data } from "./data";
@@ -42,29 +41,26 @@ function App() {
   let { fullName, image, review } = data[counter];
 
   return (
-    <>
-      <GlobalStyle />
-      <Main>
-        <Line key={counter} />
-        <ImgContainer>
-          <Icon>
-            <FaQuoteLeft />
-          </Icon>
-          <Boke></Boke>
-          <Avatar>
-            <img src={image} alt={fullName} />
-          </Avatar>
-        </ImgContainer>
-        <Author>{fullName}</Author>
+    <Main>
+      <Line key={counter} />
+      <ImgContainer>
+        <Icon>
+          <FaQuoteLeft />
+        </Icon>
+        <Boke></Boke>
+        <Avatar>
+          <img src={image} alt={fullName} />
+        </Avatar>
+      </ImgContainer>
+      <Author>{fullName}</Author>
 
-        <Novel>{review.book}</Novel>
-        <Review>{review.text}</Review>
-        <Controls>
-          <BiChevronsLeft size={30} onClick={goBack} />
-          <BiChevronsRight size={30} onClick={goNext} />
-        </Controls>
-      </Main>
-    </>
+      <Novel>{review.book}</Novel>
+      <Review>{review.text}</Review>
+      <Controls>
+        <BiChevronsLeft size={30} onClick={goBack} />
+        <BiChevronsRight size={30} onClick={goNext} />
+      </Controls>
+    </Main>
   );
 }
 
@@ -94,8 +90,9 @@ const Main = styled.main`
   justify-content: space-between;
   align-items: center;
   row-gap: 10px;
-  width: 390px;
-  height: 620px;
+  max-width: 390px;
+  width: 92%;
+  //height: 620px;
   border-radius: 10px;
   background-color: honeydew;
   box-shadow: 6px 2px 12px rgb(56, 56, 56);

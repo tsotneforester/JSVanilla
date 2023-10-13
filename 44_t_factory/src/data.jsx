@@ -511,7 +511,7 @@ export default [
   },
   {
     id: 152,
-    name: "Antropomorphic figure, North Caucasus",
+    name: "Anthropomorphic figure, North Caucasus",
     price: 34,
     image: "52.png",
     colors: ["#1D1E1D"],
