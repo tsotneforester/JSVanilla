@@ -8,8 +8,9 @@
 const plusMinus = document.querySelectorAll("button");
 const articles = document.querySelectorAll("article");
 
-console.log(articles[0].scrollHeight);
-console.log(articles[1].scrollHeight);
+//|||||||||||||||||||||||||||||||||||||||||||||
+//|||||||||         Main Function           |||
+//|||||||||||||||||||||||||||||||||||||||||||||
 
 for (let i = 0; i < plusMinus.length; i++) {
   plusMinus[i].addEventListener("click", function () {
@@ -18,13 +19,12 @@ for (let i = 0; i < plusMinus.length; i++) {
     if (articles[i].getAttribute("style")) {
       articles[i].removeAttribute("style");
     } else {
-      resetActive();
+      //resetActive(); // 1) enable if only one article can be active
       articles[i].style.height = `${articles[i].scrollHeight}px`;
-      console.log(articles[i].getAttribute("style"));
     }
   });
 }
-
+//||||||||||||||||     1     |||||||||||||||
 function resetActive() {
   for (let i = 0; i < articles.length; i++) {
     if (articles[i].getAttribute("style")) {

@@ -1,4 +1,3 @@
-import { GlobalStyle } from "./root/GlobalStyle";
 import { data } from "./data";
 import { useState, useRef } from "react";
 import styled from "styled-components";
@@ -20,31 +19,27 @@ function App() {
 
   return (
     <>
-      <GlobalStyle />
-
-      {data.map((e, idx) => {
+      {data.map((e, i) => {
         return (
-          <>
-            <Article ref={(el) => (inputRef.current[idx] = el)} key={e.id} style={{ height: active === e.id ? `${height}px` : "60px" }}>
-              <Button>
-                <Plus
-                  style={{ display: active === e.id ? `none` : "block" }}
-                  onClick={() => {
-                    handler(e.id);
-                  }}
-                />
+          <Article ref={(el) => (inputRef.current[i] = el)} key={e.id} style={{ height: active === e.id ? `${height}px` : "60px" }}>
+            <Button>
+              <Plus
+                style={{ display: active === e.id ? `none` : "block" }}
+                onClick={() => {
+                  handler(e.id);
+                }}
+              />
 
-                <Minus
-                  style={{ display: active === e.id ? `block` : "none" }}
-                  onClick={() => {
-                    handler(e.id);
-                  }}
-                />
-              </Button>
-              <Question>{e.question}</Question>
-              <Answer>{e.answer}</Answer>
-            </Article>
-          </>
+              <Minus
+                style={{ display: active === e.id ? `block` : "none" }}
+                onClick={() => {
+                  handler(e.id);
+                }}
+              />
+            </Button>
+            <Question>{e.question}</Question>
+            <Answer>{e.answer}</Answer>
+          </Article>
         );
       })}
     </>

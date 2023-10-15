@@ -1,6 +1,3 @@
-import { createGlobalStyle } from "styled-components";
-
-export const GlobalStyle = createGlobalStyle`
 *,
 ::before,
 ::after {
@@ -70,22 +67,16 @@ pre {
 }
 
 body {
-  margin: 0;
-  font-family: "Itim", cursive, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
   min-height: 100vh;
   background-color: #b8c6db;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Nunito", sans-serif;
 }
-
-#root {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}`;
