@@ -5,7 +5,7 @@
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀  ▀▀      ▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
 
-const dish = [
+const data = [
   {
     id: 1,
     title: "buttermilk pancakes",
@@ -120,41 +120,37 @@ const dish = [
   },
 ];
 
-const menudiv = document.querySelector("nav");
-const dishesdiv = document.querySelector(".dishes");
+const dishes = document.querySelector(".dishes");
+const button = document.querySelectorAll(".btn");
 
-const button = document.getElementsByTagName("button");
+//||||||||||||||||||||||||||||||||||||||||||||||
+//|||||||||||   Main Function   ||||||||||||||||
+//||||||||||||||||||||||||||||||||||||||||||||||
 
-function result(n) {
-  dishesdiv.innerHTML = "";
-  for (let i = 0; i < dish.length; i++) {
-    if (dish[i].category == n) {
-      let ggg = `
-      <article>
-        <section class="image"><img src="${dish[i].img}" alt="${dish[i].title}" /></section>
-        <section class="heading">
-          <h2>${dish[i].title}</h2>
-          <span class="price">$ ${dish[i].price}</span>
-        </section>
-        <section class="desc">${dish[i].desc}</section>
-      </article>
-  `;
-      dishesdiv.innerHTML += ggg;
-    } else if (!n) {
-      let ggg = `
-      <article>
-        <section class="image"><img src="${dish[i].img}" alt="${dish[i].title}" /></section>
-        <section class="heading">
-          <h2>${dish[i].title}</h2>
-          <span class="price">$ ${dish[i].price}</span>
-        </section>
-        <section class="desc">${dish[i].desc}</section>
-      </article>
-  `;
-      dishesdiv.innerHTML += ggg;
+function resultFor(category) {
+  dishes.innerHTML = "";
+  let filtered = data.filter((e) => {
+    if (category == "all") {
+      return e;
+    } else {
+      return e.category == category;
     }
-  }
+  });
 
+  for (let i = 0; i < filtered.length; i++) {
+    let node = `
+      <article>
+      <img src="${filtered[i].img}" alt="${filtered[i].title}" />
+        <section class="heading">
+          <h2>${filtered[i].title}</h2>
+          <span class="price">$ ${filtered[i].price}</span>
+        </section>
+        <section class="desc">${filtered[i].desc}</section>
+      </article>
+  `;
+    dishes.innerHTML += node;
+  }
+  // active category style switcher
   for (let i = 0; i < button.length; i++) {
     button[i].addEventListener("click", function () {
       for (let i = 0; i < button.length; i++) {
@@ -166,20 +162,20 @@ function result(n) {
   }
 }
 
-result();
+resultFor("all");
 
 button[0].addEventListener("click", function () {
-  result("");
+  resultFor("all");
 });
 
 button[1].addEventListener("click", function () {
-  result("breakfast");
+  resultFor("breakfast");
 });
 
 button[2].addEventListener("click", function () {
-  result("lunch");
+  resultFor("lunch");
 });
 
 button[3].addEventListener("click", function () {
-  result("shakes");
+  resultFor("shakes");
 });
