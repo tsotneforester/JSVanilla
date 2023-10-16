@@ -3,6 +3,8 @@ import Menu from "./components/Menu";
 import Button from "./components/Button";
 import rawData from "./data";
 
+import { HashRouter as Router, Route, Routes, NavLink } from "react-router-dom";
+
 const allCategories = ["all", ...new Set(rawData.map((item) => item.category))];
 
 function App() {
@@ -25,14 +27,17 @@ function App() {
 
   return (
     <>
-      <h1>Our Menu</h1>
-
-      <nav>
-        <Button category={allCategories} handler={handler} status={category} />
-      </nav>
-      <div className="dishes">
-        <Menu data={data} />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Button category={allCategories} handler={handler} status={category} />}>
+            <Route index element={<Menu data={data} />}></Route>
+            <Route path="lunch" element={<Menu data={data} />}></Route>
+            <Route path="breakfast" element={<Menu data={data} />}></Route>
+            <Route path="shakes" element={<Menu data={data} />}></Route>
+            <Route path="all" element={<Menu data={data} />}></Route>
+          </Route>
+        </Routes>
+      </Router>
     </>
   );
 }
