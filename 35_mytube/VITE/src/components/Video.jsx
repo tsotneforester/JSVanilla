@@ -1,5 +1,17 @@
 import styled from "styled-components";
 
+const Video = ({ refVideo }) => {
+  return (
+    <>
+      <VideoStyled ref={refVideo} poster="img/poster.jpg">
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+      </VideoStyled>
+    </>
+  );
+};
+
+export default Video;
+
 const VideoStyled = styled.video`
   max-width: 640px;
   width: 100%;
@@ -8,15 +20,3 @@ const VideoStyled = styled.video`
   background-color: transparent;
   border: 2px black solid;
 `;
-
-const Video = ({ refVideo }) => {
-  return (
-    <>
-      <VideoStyled ref={refVideo} className="video" poster="img/poster.jpg">
-        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-      </VideoStyled>
-    </>
-  );
-};
-
-export default Video;
