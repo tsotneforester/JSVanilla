@@ -4,23 +4,27 @@
 //  ╙╢▒╢╖ ║╜,╢▒▒╝    ███▄▄███ ▐██▌     ▐██▌ ▐███  ███ ▐███▄███▌ ███▄▄▄▄
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀  ▀▀      ▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
+//||||||||||||| SELECTS & constants||||||||||||||
+const submit = document.querySelector("button");
+const main = document.querySelector("main");
+const input = document.getElementsByTagName("input")[0];
+let genresData = [];
+let filter = ["poster_path", "original_language", "release_date", "vote_average"];
+//||||||||||||||||| API SETUP ||||||||||||||||||
 const KEY = "ca13458cc8f7d31e877d4c3e5247aac9";
 const searchAPI = `https://api.themoviedb.org/3/search/movie?api_key=${KEY}&query=`;
 const popularAPI = `https://api.themoviedb.org/3/movie/popular?api_key=${KEY}&language=en-US&page=1`;
 const genresAPI = `https://api.themoviedb.org/3/genre/movie/list?api_key=${KEY}&language=en-US`;
-const submit = document.querySelector("button");
-const main = document.querySelector("main");
-const input = document.getElementById("name");
-let genresData = [];
-
-let filter = ["poster_path", "original_language", "release_date", "vote_average"];
+//||||||||||||||| On Initial Render|||||||||||||||
+apiFunc(popularAPI);
+//||||||||||| GET button action||||||||||||
 
 submit.addEventListener("click", (e) => {
   e.preventDefault();
   main.innerHTML = "";
   apiFunc(searchAPI + input.value);
 });
-
+//||||| API FETCH Function|||||||||||||||
 async function apiFunc(url) {
   try {
     let req = await fetch(url);
@@ -30,8 +34,8 @@ async function apiFunc(url) {
       let genresReq = await fetch(genresAPI);
       let genresRes = await genresReq.json();
       genresData = genresRes.genres;
-      console.log(res.results);
 
+      // filter out only full data movies
       let movieData = res.results.filter((e) => {
         for (let element of filter) {
           if (!e[element]) return false;
@@ -39,11 +43,11 @@ async function apiFunc(url) {
         return true;
       });
 
-      //console.log(movieData);
       let movieCount = res.results.length;
 
       if (movieCount == "0") {
         console.log("no data");
+        main.innerHTML = "<span class='error'>No Data</span>";
         return;
       }
       if (movieCount > 0) {
@@ -64,7 +68,7 @@ async function apiFunc(url) {
         <div class="rating">
              ${starify(rating)}
         </div>
-        <div class="filminfo">
+        <div class="film-info">
           <span>${rating.toFixed(1)}</span>
           <span>${premiered.slice(0, 4)}</span>
         </div>
@@ -73,13 +77,12 @@ async function apiFunc(url) {
         document.querySelector("main").innerHTML += markup;
       }
     }
-  } catch {
-    console.log("first");
+  } catch (e) {
+    console.log("ERROR!!!", e);
   }
 }
 
-apiFunc(popularAPI);
-
+//|||||| Transform Genre codes to words|||||||
 function genrefy(arr) {
   let newarr = [];
   arr.forEach((element) => {
@@ -91,7 +94,7 @@ function genrefy(arr) {
   });
   return newarr.join(", ");
 }
-
+//|||||| Movie rating to Star icon|||||||
 function starify(rating) {
   let stars = "";
   for (let ii = 0; ii < Number(rating); ii++) {
