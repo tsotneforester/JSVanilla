@@ -3,7 +3,6 @@ export const filter = {
   original_language: "ja",
   release_date: 1889,
   vote_average: 0,
-  release_date: 453,
 };
 
 export const key = "ca13458cc8f7d31e877d4c3e5247aac9";

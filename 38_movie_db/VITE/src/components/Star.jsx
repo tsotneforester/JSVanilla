@@ -2,7 +2,7 @@ function Star({ rating }) {
   return (
     <>
       {[...new Array(rating)].map((e, i) => {
-        return <img key={i} src="./star.svg" alt="" />;
+        return <img key={i} src="./img/star.svg" alt="" />;
       })}
     </>
   );

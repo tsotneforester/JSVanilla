@@ -1,7 +1,43 @@
 import styled from "styled-components";
 import Star from "./Star";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
-const CardStyled = styled.article`
+function Card({ data }) {
+  return data.map((item) => {
+    let { id, title, poster_path: poster, vote_average: rating, release_date: premiered, genre_ids: genre } = item;
+    return (
+      <S.wrapper key={id}>
+        <div className="img-side">
+          <LazyLoadImage
+            width="100%"
+            height=" 100%"
+            src={"https://image.tmdb.org/t/p/original" + poster} //
+            alt={title}
+            placeholderSrc="./img/empty.jpg"
+          />
+        </div>
+        <div className="info-side">
+          <h1>{title}</h1>
+          <h6>{genre.join(" ")}</h6>
+          <div className="rating">
+            <Star rating={Number(rating.toFixed(0))} />
+          </div>
+          <div className="filminfo">
+            <span>{Number(rating.toFixed(1))}</span>
+            <span>{premiered.slice(0, 4)}</span>
+          </div>
+        </div>
+      </S.wrapper>
+    );
+  });
+}
+
+export default Card;
+
+const S = {};
+
+S.wrapper = styled.article`
   width: 450px;
   height: 242px;
   border-radius: 12px;
@@ -16,13 +52,11 @@ const CardStyled = styled.article`
   & .img-side {
     width: 40%;
     height: 100%;
-  }
-  & .img-side img {
-    width: 100%;
-    height: 100%;
+    overflow: hidden;
     border-bottom-left-radius: 12px;
     border-top-left-radius: 12px;
   }
+
   & .info-side {
     width: 60%;
     height: 100%;
@@ -70,27 +104,3 @@ const CardStyled = styled.article`
     width: 100%;
   }
 `;
-
-
-function Card({ title, poster, rating, premiered, array, genre }) {
-  return (
-    <CardStyled>
-      <div className="img-side">
-        <img src={"https://image.tmdb.org/t/p/original" + poster} alt="The Super Mario Bros. Movie" />
-      </div>
-      <div className="info-side">
-        <h1>{title}</h1>
-        <h6>{genre}</h6>
-        <div className="rating">
-          <Star rating={array} />
-        </div>
-        <div className="filminfo">
-          <span>{rating}</span>
-          <span>{premiered}</span>
-        </div>
-      </div>
-    </CardStyled>
-  );
-}
-
-export default Card;
