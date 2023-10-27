@@ -8,7 +8,7 @@ function Modal() {
     modalOpened && (
       <S.Modal>
         <div className="overlay" onClick={() => setModalOpened(false)}></div>
-        <img src={`https://gpx.ge/root/img/zazzle/raw/${activeProduct}`} alt="" />
+        <img src={`https://gpx.ge/root/img/tfactory/raw/${activeProduct}`} alt="" />
       </S.Modal>
     )
   );

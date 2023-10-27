@@ -23,8 +23,8 @@ const ProductCard = ({ data }) => {
             setActiveProduct(image);
           }}>
           <LazyLoadImage
-            src={`https://gpx.ge/root/img/zazzle/raw/${image}`}
-            placeholderSrc={`https://gpx.ge/root/img/zazzle/placeholder/${image}`} //
+            src={`https://gpx.ge/root/img/tfactory/raw/${image}`}
+            placeholderSrc={`https://gpx.ge/root/img/tfactory/placeholder/1.png${image}`} //
             effect="blur"
             alt="name"
           />
