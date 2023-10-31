@@ -659,6 +659,26 @@ export default [
     shipping: false,
     category: "military",
   },
+  {
+    id: 167,
+    name: "Sherekilebi",
+    price: 21,
+    image: "67.png",
+    colors: ["#00A1D1"],
+    artist: "tsotneforester",
+    shipping: false,
+    category: "movie",
+  },
+  {
+    id: 168,
+    name: "Krimanchuli",
+    price: 31,
+    image: "68.png",
+    colors: ["#1D1E1D"],
+    artist: "tsotneforester",
+    shipping: false,
+    category: "ethno",
+  },
 ];
 
 //literature
