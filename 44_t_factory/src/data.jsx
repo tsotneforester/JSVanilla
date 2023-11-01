@@ -679,6 +679,16 @@ export default [
     shipping: false,
     category: "ethno",
   },
+  {
+    id: 169,
+    name: "Kartlis Deda",
+    price: 35,
+    image: "69.png",
+    colors: ["#D60027"],
+    artist: "tsotneforester",
+    shipping: false,
+    category: "ethno",
+  },
 ];
 
 //literature
