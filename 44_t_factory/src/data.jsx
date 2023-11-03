@@ -689,6 +689,16 @@ export default [
     shipping: false,
     category: "ethno",
   },
+  {
+    id: 170,
+    name: "Georgian Folk Dancer",
+    price: 16,
+    image: "70.png",
+    colors: ["#1D1E1D"],
+    artist: "tsotneforester",
+    shipping: true,
+    category: "ethno",
+  },
 ];
 
 //literature
