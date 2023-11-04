@@ -699,6 +699,16 @@ export default [
     shipping: true,
     category: "ethno",
   },
+  {
+    id: 171,
+    name: "Church",
+    price: 23,
+    image: "71.png",
+    colors: ["#00A1D1"],
+    artist: "tsotneforester",
+    shipping: true,
+    category: "holy",
+  },
 ];
 
 //literature
