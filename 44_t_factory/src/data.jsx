@@ -709,6 +709,16 @@ export default [
     shipping: true,
     category: "holy",
   },
+  {
+    id: 172,
+    name: "Whitesnake",
+    price: 29,
+    image: "72.png",
+    colors: ["#5B489D"],
+    artist: "tsotneforester",
+    shipping: false,
+    category: "music",
+  },
 ];
 
 //literature
