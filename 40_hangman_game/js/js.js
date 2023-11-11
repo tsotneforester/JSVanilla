@@ -996,7 +996,7 @@ let arr = [];
   gameStatus = true;
   word = [...data[Math.floor(Math.random() * data.length)]];
   let html = "";
-  for (let i = 0; i < word.length; i++) {
+  for (let i = 0, n = word.length; i < n; i++) {
     html += "<div></div>";
   }
   desk.insertAdjacentHTML("afterbegin", html);
@@ -1016,7 +1016,7 @@ keyboard_letters.forEach((letter) => {
         e.target.classList.add("positive");
         //included clicked keyboard letter appends in HTML
         desk_letters.forEach((letter) => {
-          for (let i = 0; i < word.length; i++) {
+          for (let i = 0, n = word.length; i < n; i++) {
             if (word[i] == deskLetter) {
               desk_letters[i].innerHTML = deskLetter;
             }

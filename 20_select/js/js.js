@@ -199,7 +199,7 @@ function toggle() {
 function makeList(array) {
   option.innerHTML = "";
   input.innerHTML = "";
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0, n = array.length; i < n; i++) {
     let text = `<li onClick="zorg(this)">${array[i]}</li>`;
     option.insertAdjacentHTML("beforeend", text);
   }

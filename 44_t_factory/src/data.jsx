@@ -719,6 +719,26 @@ export default [
     shipping: false,
     category: "music",
   },
+  {
+    id: 173,
+    name: "Nikortsminda Chapel",
+    price: 34,
+    image: "73.png",
+    colors: ["#FFF"],
+    artist: "tsotneforester",
+    shipping: false,
+    category: "ethno",
+  },
+  {
+    id: 174,
+    name: "Fat Joe, Slim Joe",
+    price: 36,
+    image: "74.png",
+    colors: ["#FFF"],
+    artist: "tsotneforester",
+    shipping: true,
+    category: "chest",
+  },
 ];
 
 //literature

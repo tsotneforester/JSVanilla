@@ -563,7 +563,7 @@ for (let i = 0; i < numberOfColumns; i++) {
 }
 nodeForHTML += "</tr>";
 // ----------- Generate rest ot <TR>s with data and sent it ----------
-for (let i = 0; i < data.length; i++) {
+for (let i = 0, n = data.length; i < n; i++) {
   nodeForHTML += "<tr>";
   let array = Object.values(data[i]); //creates array with table data
   for (let ii = 0; ii < numberOfColumns; ii++) {
@@ -616,7 +616,7 @@ const exportExcelFile = () => {
   function headerify() {
     let columns = [];
     let headers = Object.keys(data[0]);
-    for (let i = 0; i < headers.length; i++) {
+    for (let i = 0, n = headers.length; i < n; i++) {
       columns.push({ name: headers[i] });
     }
     columns.at(-1).totalsRowFunction = "count"; //optional
@@ -627,7 +627,7 @@ const exportExcelFile = () => {
 
   function datafy() {
     let rows = [];
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0, n = data.length; i < n; i++) {
       let values = Object.values(data[i]);
       rows.push(values);
     }

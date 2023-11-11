@@ -41,12 +41,12 @@ function App() {
 
       let tempData = [...filteredOut, ...filtered];
 
-      for (let i = 0; i < data.length; i++) {
+      for (let i = 0, n = data.length; i < n; i++) {
         ["rateFormated", "diffFormated", "diff", "date", "validFromDate"].forEach((e) => delete data[i][e]);
       }
 
-      for (let i = 0; i < tempData.length; i++) {
-        for (let ii = 0; ii < countryData.length; ii++) {
+      for (let i = 0, n = tempData.length; i < n; i++) {
+        for (let ii = 0, n = countryData.length; ii < n; ii++) {
           if (tempData[i].code == countryData[ii].currencyCode) {
             tempData[i].nameENG = countryData[ii].currencyName;
             tempData[i].countryCode3 = countryData[ii].countryCode3;
@@ -60,7 +60,7 @@ function App() {
 
       tempData.splice(0, 0, georgia);
 
-      for (let i = 0; i < tempData.length; i++) {
+      for (let i = 0, n = tempData.length; i < n; i++) {
         if (tempData[i].code == "EUR") {
           tempData[i].nameENG = "EU Euro";
           tempData[i].flag = Eu;

@@ -137,7 +137,7 @@ function resultFor(category) {
     }
   });
 
-  for (let i = 0; i < filtered.length; i++) {
+  for (let i = 0, n = filtered.length; i < n; i++) {
     let node = `
       <article>
       <img src="${filtered[i].img}" alt="${filtered[i].title}" />
@@ -151,9 +151,9 @@ function resultFor(category) {
     dishes.innerHTML += node;
   }
   // active category style switcher
-  for (let i = 0; i < button.length; i++) {
+  for (let i = 0, n = button.length; i < n; i++) {
     button[i].addEventListener("click", function () {
-      for (let i = 0; i < button.length; i++) {
+      for (let i = 0; i < n; i++) {
         button[i].classList.remove("active");
       }
       button[i].classList.add("active");

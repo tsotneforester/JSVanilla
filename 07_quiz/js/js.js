@@ -49,6 +49,7 @@ const answerB = document.querySelectorAll("label")[1];
 const answerC = document.querySelectorAll("label")[2];
 const answerD = document.querySelectorAll("label")[3];
 let input = document.querySelectorAll("input");
+let inputLength = document.querySelectorAll("input").length;
 let questionCounter = 0;
 let correctCounter = 0;
 
@@ -57,7 +58,7 @@ let correctCounter = 0;
 //||||||||||||||||||||||||||||||||||||||||||||||||||
 
 sumbitButton.addEventListener("click", function () {
-  for (let i = 0; i < input.length; i++) {
+  for (let i = 0; i < inputLength; i++) {
     if (input[i].checked) {
       if (input[i].id == quizData[questionCounter].correct) {
         correctCounter++;
@@ -86,7 +87,7 @@ function render(i) {
 }
 //||||||||||||||||||||||||| 2 ||||||||||||||||||||||||
 function resetRadio() {
-  for (let i = 0; i < input.length; i++) {
+  for (let i = 0; i < inputLength; i++) {
     input[i].checked = false;
   }
 }

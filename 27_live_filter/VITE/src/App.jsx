@@ -571,7 +571,7 @@ const exportExcelFile = () => {
 
   function datafy() {
     let rows = [];
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0, n = data.length; i < n; i++) {
       let values = Object.values(data[i]);
       rows.push(values);
     }

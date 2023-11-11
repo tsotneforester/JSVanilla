@@ -17,7 +17,7 @@ textarea.addEventListener("input", function (e) {
   let array = inputString.split(",").filter((e) => e);
   //Generates html node from array and writes it in HTML
   let html = "";
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0, n = array.length; i < n; i++) {
     html += `<span class="tag">${array[i]}</span>`;
   }
   tags.innerHTML = html;

@@ -12,7 +12,7 @@ function Context({ children }) {
     let zones = res1.data.zones;
 
     let trimmed = zones.filter((e) => {
-      for (let i = 0; i < regions.length; i++) {
+      for (let i = 0, n = regions.length; i < n; i++) {
         if (e.zoneName == regions[i]) {
           return e;
         }

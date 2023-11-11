@@ -48,7 +48,7 @@ generateButton.addEventListener("click", function () {
 //|||||||||||||||||||||| 1 |||||||||||||||
 function makePattern() {
   pattern = ["lowercase"];
-  for (let i = 0; i < checkboxes.length; i++) {
+  for (let i = 0, n = checkboxes.length; i < n; i++) {
     if (checkboxes[i].checked) {
       pattern.push(checkboxes[i].value);
     }

@@ -78,7 +78,7 @@ function countify(arr) {
   let count = 0;
   let price = 0;
 
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0, n = arr.length; i < n; i++) {
     count += arr[i].amount;
     price += arr[i].price * arr[i].amount;
   }

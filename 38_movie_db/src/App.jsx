@@ -27,7 +27,7 @@ function App() {
         return true;
       });
 
-      for (let i = 0; i < movieData.length; i++) {
+      for (let i = 0, n = movieData.length; i < n; i++) {
         let genres = [];
         movieData[i].genre_ids.forEach((code) => {
           genresData.forEach((element) => {
