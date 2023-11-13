@@ -739,6 +739,16 @@ export default [
     shipping: true,
     category: "chest",
   },
+  {
+    id: 175,
+    name: "Shatili, Svaneti, Georgia",
+    price: 25,
+    image: "75.png",
+    colors: ["#FFF"],
+    artist: "tsotneforester",
+    shipping: true,
+    category: "chest",
+  },
 ];
 
 //literature
