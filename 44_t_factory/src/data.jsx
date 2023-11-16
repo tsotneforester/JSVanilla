@@ -749,6 +749,16 @@ export default [
     shipping: true,
     category: "chest",
   },
+  {
+    id: 176,
+    name: "Mtkheta, Georgia",
+    price: 29,
+    image: "76.png",
+    colors: ["#00A1D1"],
+    artist: "tsotneforester",
+    shipping: true,
+    category: "chest",
+  },
 ];
 
 //literature
