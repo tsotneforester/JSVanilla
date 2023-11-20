@@ -759,6 +759,16 @@ export default [
     shipping: true,
     category: "chest",
   },
+  {
+    id: 177,
+    name: "Cucaracha, Georgian movie",
+    price: 34,
+    image: "77.png",
+    colors: ["#00A1D1"],
+    artist: "tsotneforester",
+    shipping: true,
+    category: "movie",
+  },
 ];
 
 //literature
