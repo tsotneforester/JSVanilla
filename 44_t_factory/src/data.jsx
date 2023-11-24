@@ -769,6 +769,16 @@ export default [
     shipping: true,
     category: "movie",
   },
+  {
+    id: 178,
+    name: "Whitesnake",
+    price: 16,
+    image: "78.png",
+    colors: ["#524025"],
+    artist: "tsotneforester",
+    shipping: true,
+    category: "music",
+  },
 ];
 
 //literature

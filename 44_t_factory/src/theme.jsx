@@ -12,3 +12,8 @@ export const device = {
 };
 
 
+@include view(480px) {
+
+  }
+
+border: 1px solid #403f44;
