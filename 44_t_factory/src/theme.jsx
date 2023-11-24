@@ -1,4 +1,3 @@
-
 export const root = {
   theme_icon_size: "30px",
   animation_time: "0.2s",
@@ -10,10 +9,3 @@ export const device = {
   laptop: `(min-width: 1024px)`,
   desktop: `(min-width: 1280px)`,
 };
-
-
-@include view(480px) {
-
-  }
-
-border: 1px solid #403f44;
