@@ -779,6 +779,16 @@ export default [
     shipping: true,
     category: "music",
   },
+  {
+    id: 179,
+    name: "Architecture Drill",
+    price: 23,
+    image: "98.png",
+    colors: ["#1D1E1D"],
+    artist: "tsotneforester",
+    shipping: true,
+    category: "chest",
+  },
 ];
 
 //literature
