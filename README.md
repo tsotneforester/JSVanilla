@@ -9,8 +9,6 @@
 
 </div>
 
-
-# About The Project
 <h1 align="center"> About The Project </h1> 
 
 _**"The root of learning is bitter, but the crown is sweet"**_.... - Ancient Georgian (:bow_and_arrow:ქართული:crossed_swords:) proverb.
