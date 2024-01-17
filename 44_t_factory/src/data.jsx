@@ -783,7 +783,7 @@ export default [
     id: 179,
     name: "Architecture Drill",
     price: 23,
-    image: "98.png",
+    image: "79.png",
     colors: ["#1D1E1D"],
     artist: "tsotneforester",
     shipping: true,
