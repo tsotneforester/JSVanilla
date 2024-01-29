@@ -16,7 +16,7 @@
       Difficulty -
       <img src="https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742" alt="qr-code" />
   <br/>
-    <a href="https://tsotneforester.github.io/Javascript/15_simple_slider/" target="_blank">🖥️ View Demo</a>
+    <a href="https://gpx.ge/js/pages/1029_simple_slider" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
     <br>
