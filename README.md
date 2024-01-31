@@ -116,9 +116,5 @@ For Vite Projects
 <!-- |Project #|CSS+HTML+JS Comentary |README|React| -->
 
 
-## About Me
-
-[![Top Langs](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tsotneforester&theme=github_dark)](https://github.com/anuraghazra/github-readme-stats)
-
 
 <!-- https://home.aveek.io/GitHub-Profile-Badges/ -->
