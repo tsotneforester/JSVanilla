@@ -72,7 +72,7 @@ For Vite Projects
   ```sh
   npm run dev
   ```
-
+<!-- 
 |Project #|CSS+HTML+JS Comentary |README|React|
 |:--:| :-----: | :-----: |:-----: |
 |08|❌|❌|❌|
@@ -110,7 +110,7 @@ For Vite Projects
 |40|✅|✅|❌|
 |41|✅|✅|✅|
 |42|✅|✅|✅|
-|43|✅|✅|✅|
+|43|✅|✅|✅| -->
 
 
 <!-- |Project #|CSS+HTML+JS Comentary |README|React| -->
