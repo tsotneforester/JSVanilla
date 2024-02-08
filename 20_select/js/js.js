@@ -3,7 +3,7 @@
 // ╢▒▒╖  ╢╗@╝  ╢▒▒╝  ███  ███ ▐███████  ▄▓█▓▓█▄       ▐██▌ ▐██▌ ██████
 //  ╙╢▒╢╖ ║╜,╢▒▒╝    ███▄▄███ ▐██▌     ▐██▌ ▐███  ███ ▐███▄███▌ ███▄▄▄▄
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀  ▀▀      ▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
-
+"use strict";
 let data = [
   "afghanistan",
   "albania",
@@ -184,52 +184,55 @@ let data = [
   "zimbabwe",
 ];
 
-("use strict");
-let country = document.querySelector(".country");
-let option = document.querySelector("ul");
-let input = document.querySelector("input");
-let content = document.querySelector(".content");
-let arrow = document.querySelector(".arrow");
+const search_box = document.querySelector(".search-box");
+const active_country = document.querySelector(".active-country");
+const countries_list = document.querySelector(".countries-list");
+const input = document.querySelector("input");
+const arrow = document.querySelector("img");
 
-function toggle() {
-  content.classList.toggle("toggle");
-  arrow.classList.toggle("rotate");
-}
-
-function makeList(array) {
-  option.innerHTML = "";
-  input.innerHTML = "";
-  for (let i = 0, n = array.length; i < n; i++) {
-    let text = `<li onClick="zorg(this)">${array[i]}</li>`;
-    option.insertAdjacentHTML("beforeend", text);
-  }
-}
+//------ Expand / collapse search-box with arrow Click ----------
 
 arrow.addEventListener("click", function () {
-  console.log(content.classList.contains("toggle"));
-  if (!content.classList.contains("toggle")) {
-    makeList(data);
-    input.value = "";
+  toggleSearchBox(); // 1
+  if (search_box.classList.contains("visible")) {
+    makeList(data); // 2
   }
-  toggle();
 });
 
-function zorg(e) {
-  input.value = "";
-  country.innerHTML = e.innerHTML;
-  toggle();
-}
-
+//------ search input in country list ----------
 input.addEventListener("input", function () {
   let newNumbers = data.filter((e) => {
     return e.includes(input.value.toLowerCase());
   });
 
   if (newNumbers.length > 0) {
-    option.innerHTML = "";
+    countries_list.innerHTML = "";
     makeList(newNumbers);
   } else {
-    option.innerHTML = "";
-    option.insertAdjacentHTML("beforeend", "ooops");
+    countries_list.innerHTML = "";
+    countries_list.insertAdjacentHTML("beforeend", "Not Found 😥");
   }
 });
+
+//|||||||||||||||||   1  |||||||||||||||||||||||
+function toggleSearchBox() {
+  search_box.classList.toggle("visible");
+  arrow.classList.toggle("rotate");
+}
+
+//|||||||||||||||||   2  |||||||||||||||||||||||
+function makeList(array) {
+  countries_list.innerHTML = "";
+  input.innerHTML = "";
+  for (let i = 0, n = array.length; i < n; i++) {
+    let text = `<li onClick="chooseCountry(this)">${array[i]}</li>`; // 3
+    countries_list.insertAdjacentHTML("beforeend", text);
+  }
+}
+//|||||||||||||||||   3  |||||||||||||||||||||||
+function chooseCountry(e) {
+  countries_list.innerHTML = "";
+  input.value = "";
+  active_country.innerHTML = e.innerHTML;
+  toggleSearchBox();
+}

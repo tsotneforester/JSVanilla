@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Select</title>
     <meta name="description" content="Code anything, anywhere, anytime" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://gpx.ge/root/img/infinite.png" />
+    <meta name="theme-color" content="#ECB159" />
+
+    <title>Select</title>
+
+    <link rel="icon" href="favicon/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://gpx.ge/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="GPXcript - Carousel" />
+    <meta property="og:title" content="GPXcript - Select" />
     <meta property="og:description" content="Code anything, anywhere, anytime" />
     <meta property="og:image" content="https://gpx.ge/root/img/yellowLaptop.png" />
 
@@ -18,7 +23,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="gpx.ge" />
     <meta property="twitter:url" content="https://gpx.ge/" />
-    <meta name="twitter:title" content="GPXcript - Carousel" />
+    <meta name="twitter:title" content="GPXcript - Select" />
     <meta name="twitter:description" content="Code anything, anywhere, anytime" />
     <meta name="twitter:image" content="https://gpx.ge/root/img/yellowLaptop.png" />
 
@@ -29,15 +34,13 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="selected">
-      <div class="country">Select Country</div>
-      <img class="arrow" src="img/arrow.svg" alt="arrow" />
+    <div class="selected-box">
+      <div class="active-country">Select Country</div>
+      <img src="img/arrow.svg" alt="arrow" />
     </div>
-    <div class="content">
-      <div class="search">
-        <input type="text" placeholder="Search" />
-      </div>
-      <ul class="options"></ul>
+    <div class="search-box">
+      <input type="text" placeholder="Search" />
+      <ul class="countries-list"></ul>
     </div>
 
     <script src="js/js.js"></script>

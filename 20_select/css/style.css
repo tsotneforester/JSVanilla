@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 *,
 ::before,
 ::after {
@@ -80,19 +79,19 @@ pre {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #4285f4;
+  background-color: #8cb9bd;
   font-family: "Nunito", sans-serif;
   scrollbar-width: thin;
   padding-top: 60px;
   gap: 30px;
 }
 
-.selected {
+.selected-box {
   width: 330px;
   height: 65px;
   border-radius: 6px;
@@ -108,15 +107,15 @@ body {
   text-align: left;
   text-transform: capitalize;
 }
-.selected .arrow {
+.selected-box img {
   transform: rotate(0);
   transition: all 0.6s ease;
 }
-.selected .rotate {
+.selected-box .rotate {
   transform: rotate(180deg);
 }
 
-.content {
+.search-box {
   width: 330px;
   height: auto;
   border-radius: 6px;
@@ -131,34 +130,29 @@ body {
   opacity: 0;
   transition: all 0.6s ease;
 }
-.content .search {
-  width: auto;
-  height: auto;
-  border-radius: 0;
-  background-color: transparent;
-}
-.content .search input {
+.search-box input {
   width: 100%;
-  height: 50px;
+  height: auto;
   border-radius: 5px;
   background-color: transparent;
   font-size: 20px;
   color: black;
   font-weight: 400;
   text-align: left;
+  padding: 8px 4px;
   text-indent: 46px;
   border: 1px gray solid;
   background-image: url(../img/search.png);
   background-repeat: no-repeat;
   background-position: left 10px center;
 }
-.content .search input::-moz-placeholder {
+.search-box input::-moz-placeholder {
   font-size: 20px;
 }
-.content .search input::placeholder {
+.search-box input::placeholder {
   font-size: 20px;
 }
-.content .options {
+.search-box .countries-list {
   width: 100%;
   height: auto;
   border-radius: 0;
@@ -167,7 +161,7 @@ body {
   overflow-y: auto;
   text-transform: capitalize;
 }
-.content .options li {
+.search-box .countries-list li {
   width: 100%;
   height: 54px;
   border-radius: 5px;
@@ -175,7 +169,7 @@ body {
   list-style: none;
   padding: 10px;
 }
-.content .options li:hover {
+.search-box .countries-list li:hover {
   list-style: none;
   width: 100%;
   height: 54px;
@@ -183,21 +177,21 @@ body {
   background-color: #f2f2f2;
   cursor: pointer;
 }
-.content .options::-webkit-scrollbar {
+.search-box .countries-list::-webkit-scrollbar {
   width: 7px;
 }
-.content .options::-webkit-scrollbar-track {
+.search-box .countries-list::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 25px;
 }
-.content .options::-webkit-scrollbar-thumb {
+.search-box .countries-list::-webkit-scrollbar-thumb {
   background: #ccc;
   border-radius: 25px;
 }
-.content .options::-webkit-scrollbar-thumb:hover {
+.search-box .countries-list::-webkit-scrollbar-thumb:hover {
   background: #b3b3b3;
 }
 
-.toggle {
+.visible {
   opacity: 1;
 }
