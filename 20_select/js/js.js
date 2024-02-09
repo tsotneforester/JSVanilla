@@ -4,196 +4,41 @@
 //  ╙╢▒╢╖ ║╜,╢▒▒╝    ███▄▄███ ▐██▌     ▐██▌ ▐███  ███ ▐███▄███▌ ███▄▄▄▄
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀  ▀▀      ▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
-let data = [
-  "afghanistan",
-  "albania",
-  "algeria",
-  "andorra",
-  "angola",
-  "argentina",
-  "armenia",
-  "australia",
-  "austria",
-  "azerbaijan",
-  "bahamas",
-  "bahrain",
-  "bangladesh",
-  "barbados",
-  "belarus",
-  "belgium",
-  "belize",
-  "benin",
-  "bhutan",
-  "bolivia",
-  "botswana",
-  "brazil",
-  "brunei",
-  "bulgaria",
-  "burkina faso",
-  "burundi",
-  "côte d'ivoire",
-  "cabo verde",
-  "cambodia",
-  "cameroon",
-  "canada",
-  "chad",
-  "chile",
-  "china",
-  "colombia",
-  "comoros",
-  "costa rica",
-  "croatia",
-  "cuba",
-  "cyprus",
-  "czechia",
-  "denmark",
-  "djibouti",
-  "dominica",
-  "ecuador",
-  "egypt",
-  "el salvador",
-  "eritrea",
-  "estonia",
-  "eswatini",
-  "ethiopia",
-  "fiji",
-  "finland",
-  "france",
-  "gabon",
-  "gambia",
-  "georgia",
-  "germany",
-  "ghana",
-  "greece",
-  "grenada",
-  "guatemala",
-  "guinea",
-  "guinea-bissau",
-  "guyana",
-  "haiti",
-  "holy see",
-  "honduras",
-  "hungary",
-  "iceland",
-  "india",
-  "indonesia",
-  "iran",
-  "iraq",
-  "ireland",
-  "israel",
-  "italy",
-  "jamaica",
-  "japan",
-  "jordan",
-  "kazakhstan",
-  "kenya",
-  "kiribati",
-  "kuwait",
-  "kyrgyzstan",
-  "laos",
-  "latvia",
-  "lebanon",
-  "lesotho",
-  "liberia",
-  "libya",
-  "liechtenstein",
-  "lithuania",
-  "luxembourg",
-  "madagascar",
-  "malawi",
-  "malaysia",
-  "maldives",
-  "mali",
-  "malta",
-  "mauritania",
-  "mauritius",
-  "mexico",
-  "micronesia",
-  "moldova",
-  "monaco",
-  "mongolia",
-  "montenegro",
-  "morocco",
-  "mozambique",
-  "myanmar",
-  "namibia",
-  "nauru",
-  "nepal",
-  "netherlands",
-  "new zealand",
-  "nicaragua",
-  "niger",
-  "nigeria",
-  "north korea",
-  "north macedonia",
-  "norway",
-  "oman",
-  "pakistan",
-  "palau",
-  "panama",
-  "paraguay",
-  "peru",
-  "philippines",
-  "poland",
-  "portugal",
-  "qatar",
-  "romania",
-  "russia",
-  "rwanda",
-  "saint lucia",
-  "samoa",
-  "san marino",
-  "saudi arabia",
-  "senegal",
-  "serbia",
-  "seychelles",
-  "sierra leone",
-  "singapore",
-  "slovakia",
-  "slovenia",
-  "somalia",
-  "south africa",
-  "south korea",
-  "south sudan",
-  "spain",
-  "sri lanka",
-  "sudan",
-  "suriname",
-  "sweden",
-  "switzerland",
-  "syria",
-  "tajikistan",
-  "tanzania",
-  "thailand",
-  "timor-leste",
-  "togo",
-  "tonga",
-  "tunisia",
-  "turkey",
-  "turkmenistan",
-  "tuvalu",
-  "uganda",
-  "ukraine",
-  "uruguay",
-  "uzbekistan",
-  "vanuatu",
-  "venezuela",
-  "vietnam",
-  "yemen",
-  "zambia",
-  "zimbabwe",
-];
 
+const URL = "https://restcountries.com/v3.1/all";
 const search_box = document.querySelector(".search-box");
 const active_country = document.querySelector(".active-country");
 const countries_list = document.querySelector(".countries-list");
+const loading_spinner = document.querySelector(".loading-spinner");
 const input = document.querySelector("input");
 const arrow = document.querySelector("img");
+let data = [];
+
+(async function () {
+  try {
+    let req = await axios.get(URL);
+    data = req["data"].map((entry) => {
+      return entry.name.common;
+    });
+  } catch (error) {
+    if (error.response) {
+      console.log("server responded with " + error.response.status);
+    } else if (!error.response) {
+      console.log("server does not responded - " + error);
+    }
+  } finally {
+    loading_spinner.style.display = "none";
+    input.classList.toggle("hidden");
+    countries_list.classList.toggle("hidden");
+    makeList(data); // 2
+  }
+})();
 
 //------ Expand / collapse search-box with arrow Click ----------
 
 arrow.addEventListener("click", function () {
   toggleSearchBox(); // 1
+
   if (search_box.classList.contains("visible")) {
     makeList(data); // 2
   }
@@ -207,7 +52,7 @@ input.addEventListener("input", function () {
 
   if (newNumbers.length > 0) {
     countries_list.innerHTML = "";
-    makeList(newNumbers);
+    makeList(newNumbers); // 2
   } else {
     countries_list.innerHTML = "";
     countries_list.insertAdjacentHTML("beforeend", "Not Found 😥");

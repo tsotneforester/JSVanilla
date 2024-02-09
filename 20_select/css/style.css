@@ -111,6 +111,10 @@ body {
   transform: rotate(0);
   transition: all 0.6s ease;
 }
+.selected-box .active-country {
+  white-space: nowrap;
+  overflow: hidden;
+}
 .selected-box .rotate {
   transform: rotate(180deg);
 }
@@ -123,18 +127,16 @@ body {
   max-height: 355px;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  justify-content: center;
   align-items: stretch;
-  gap: 10px;
   padding: 20px;
   opacity: 0;
   transition: all 0.6s ease;
 }
 .search-box input {
   width: 100%;
-  height: auto;
-  border-radius: 5px;
   background-color: transparent;
+  border-radius: 5px;
   font-size: 20px;
   color: black;
   font-weight: 400;
@@ -145,6 +147,13 @@ body {
   background-image: url(../img/search.png);
   background-repeat: no-repeat;
   background-position: left 10px center;
+}
+.search-box .hidden {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
 }
 .search-box input::-moz-placeholder {
   font-size: 20px;
@@ -160,6 +169,7 @@ body {
   font-size: 21px;
   overflow-y: auto;
   text-transform: capitalize;
+  margin-top: 10px;
 }
 .search-box .countries-list li {
   width: 100%;
@@ -168,6 +178,8 @@ body {
   background-color: white;
   list-style: none;
   padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .search-box .countries-list li:hover {
   list-style: none;
@@ -191,7 +203,19 @@ body {
 .search-box .countries-list::-webkit-scrollbar-thumb:hover {
   background: #b3b3b3;
 }
+.search-box .hidden {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.search-box .loading-spinner {
+  width: 64px;
+  margin: 0 auto;
+}
 
 .visible {
   opacity: 1;
+  height: auto;
 }

@@ -32,6 +32,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="selected-box">
@@ -39,8 +40,9 @@
       <img src="img/arrow.svg" alt="arrow" />
     </div>
     <div class="search-box">
-      <input type="text" placeholder="Search" />
-      <ul class="countries-list"></ul>
+      <img class="loading-spinner" src="img/loading.gif" alt="spinner" />
+      <input class="hidden" type="text" placeholder="Search" />
+      <ul class="countries-list hidden"></ul>
     </div>
 
     <script src="js/js.js"></script>
