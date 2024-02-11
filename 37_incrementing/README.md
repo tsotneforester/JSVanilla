@@ -1,3 +1,4 @@
+<!-- surge -->
 <h1 align="center">Incrementing</h1>
 
 <div align="center">
@@ -12,13 +13,11 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742" alt="qr-code" />
   <br/>
-    <a href="https://gpx.ge/js/pages/1060_incrementing" target="_blank">🖥️ View Demo</a>
+    <a href="https://incrementing-tsotneforester.surge.sh/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
   </div>
-
-
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")

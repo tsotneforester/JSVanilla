@@ -32,55 +32,58 @@
     <!-- StyleSheet -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <main>
-      <form action="">
+      <form>
         <input placeholder="type country name" type="text" />
       </form>
-      <div class="general">
-        <div class="capital">
-          <h2>Capital</h2>
-          <h3>--</h3>
+      <div id="capital">
+        <h2>Capital</h2>
+        <h3>--</h3>
+      </div>
+      <div id="region">
+        <h2>Continent</h2>
+        <h3>--</h3>
+      </div>
+
+      <img id="flag" src="img/loading.gif" alt="flag" />
+
+      <div id="area" class="horizontal">
+        <div class="label">
+          <img src="img/area.png" alt="area" />
+          <h2>Area</h2>
         </div>
-        <div class="region">
-          <h2>Continent</h2>
+        <div class="amount">
           <h3>--</h3>
+          <em>Sq.km</em>
         </div>
       </div>
-      <img class="flag" src="img/loading.gif" alt="flag" />
-
-      <div class="statistics">
-        <div class="area">
-          <section>
-            <img src="img/area.png" alt="area" />
-            <h2>Area</h2>
-          </section>
-          <section class="result"><span>--</span><em>Sq.km</em></section>
+      <div id="population" class="horizontal">
+        <div class="label">
+          <img src="img/popilation.png" alt="population" />
+          <h2>Population</h2>
         </div>
-        <div class="population">
-          <section>
-            <img src="img/popilation.png" alt="population" />
-            <h2>Population</h2>
-          </section>
-          <section class="result"><span></span></section>
+        <div class="amount"><h3></h3></div>
+      </div>
+      <div id="location" class="horizontal">
+        <div class="label">
+          <img src="img/location.png" alt="location" />
+          <h2>Locatiol</h2>
         </div>
-        <div class="location">
-          <section>
-            <img src="img/location.png" alt="location" />
-            <h2>Locatiol</h2>
-          </section>
-          <section class="result"><span></span><span></span></section>
+        <div class="amount">
+          <h3></h3>
+          <h3></h3>
         </div>
-        <div class="neighbours">
-          <section>
-            <img src="img/neighbour.png" alt="neighbour" />
-            <h2>Neighbours</h2>
-          </section>
-          <section class="result"><span></span></section>
+      </div>
+      <div id="neighbours" class="horizontal">
+        <div class="label">
+          <img src="img/neighbour.png" alt="neighbour" />
+          <h2>Neighbours</h2>
         </div>
+        <div class="amount"><h3></h3></div>
       </div>
     </main>
 

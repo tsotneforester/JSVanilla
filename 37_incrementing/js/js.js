@@ -5,12 +5,12 @@
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀  ▀▀      ▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
 
-let results = document.querySelectorAll("span"); //Incrementing ones
-let flag = document.querySelector(".flag");
+let results = document.querySelectorAll(".horizontal h3"); //Incrementing ones
+let flag = document.querySelector("#flag");
 let country_title = document.querySelector("input");
 let form = document.querySelector("form");
-let capital_title = document.querySelector(".capital h3");
-let region_title = document.querySelector(".region h3");
+let capital_title = document.querySelector("#capital h3");
+let region_title = document.querySelector("#region h3");
 
 countrify("Georgia");
 document.querySelector("input").focus();

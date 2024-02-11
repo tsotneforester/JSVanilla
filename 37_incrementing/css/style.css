@@ -90,19 +90,22 @@ body {
 
 main {
   width: 310px;
-  height: 510px;
+  height: auto;
   border-radius: 20px;
   background-color: white;
   padding: 16px;
   outline: 1px solid black;
   outline-offset: -6px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-template-areas: "form form" "capital region" "flag flag" "area area" "population population" "location location" "neighbours neighbours";
 }
 
-input {
+form {
+  grid-area: form;
+}
+form input {
   font-size: 26px;
   color: rgb(34, 7, 108);
   font-weight: 700;
@@ -112,88 +115,93 @@ input {
   border: #b8c6db 1px solid;
   width: 100%;
 }
-
-input:focus {
+form input:focus {
   box-shadow: 0 0 8px 2px rgba(29, 180, 208, 0.8);
 }
 
-.general {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.general div {
-  width: 50%;
+#capital {
+  grid-area: capital;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.general .capital {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.general .region {
+
+#region {
+  grid-area: region;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-}
-.general h3 {
-  font-size: 16px;
-  color: rgb(34, 7, 108);
-  font-weight: bold;
-  text-align: left;
-}
-
-.flag {
-  border-radius: 8px;
-  border: #b8c6db 1px solid;
-  max-height: 200px;
-}
-
-.statistics {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-}
-.statistics div {
-  border-top: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3px 0;
-}
-.statistics div section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.statistics img {
-  width: 30px;
 }
 
 h2 {
   font-family: "Courier New", Courier, monospace;
   font-style: italic;
   font-size: 16px;
-  color: black;
+  color: #454444;
   font-weight: 400;
   text-align: center;
 }
 
-span,
+h3 {
+  font-size: 20px;
+  color: rgb(34, 7, 108);
+  font-weight: 700;
+  text-align: left;
+  font-family: Nunito;
+}
+
 em {
   font-size: 18px;
   color: rgb(34, 7, 108);
   font-weight: 700;
   text-align: center;
   font-style: normal;
+}
+
+#flag {
+  border-radius: 8px;
+  border: #b8c6db 1px solid;
+  max-height: 200px;
+  grid-area: flag;
+}
+
+#area {
+  grid-area: area;
+}
+
+#population {
+  grid-area: population;
+}
+
+#location {
+  grid-area: location;
+}
+
+#neighbours {
+  grid-area: neighbours;
+}
+
+.label {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.amount {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.horizontal {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
