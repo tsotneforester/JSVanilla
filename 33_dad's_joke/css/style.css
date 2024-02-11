@@ -79,20 +79,12 @@ pre {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #b8c6db;
-}
-
-h1 {
-  font-size: 26px;
-  color: #151413;
-  font-weight: 700;
-  text-align: left;
-  font-family: "Nunito", sans-serif;
 }
 
 main {
@@ -101,13 +93,21 @@ main {
   border-radius: 12px;
   background-color: #f9f3d9;
   display: flex;
-  flex-direction: row;
+  flex-flow: column nowrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   max-width: 450px;
   padding: 14px;
   gap: 20px;
   box-shadow: 4px 4px 4px gray;
+}
+
+h1 {
+  font-size: 26px;
+  color: #151413;
+  font-weight: 700;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
 }
 
 img {
@@ -136,15 +136,4 @@ button:hover {
 button:active {
   transform: translateY(2px);
   box-shadow: 2px 2px 4px gray;
-}
-
-.card {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
-  gap: 20px;
-  padding: 12px;
-  border-radius: 12px;
-  border: 8px #b8c6db solid;
 }

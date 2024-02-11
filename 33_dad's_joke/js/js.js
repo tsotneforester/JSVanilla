@@ -19,24 +19,10 @@ async function generateJoke() {
     },
   };
 
-  const res = await fetch("https://icanhazdadjoke.com", config);
-
-  const data = await res.json();
-
-  joke.innerHTML = data.joke;
+  try {
+    const res = await axios.get("https://icanhazdadjoke.com", config);
+    joke.innerHTML = res.data.joke;
+  } catch (error) {
+    console.error(error.message);
+  }
 }
-
-// USING .then()
-// function generateJoke() {
-//   const config = {
-//     headers: {
-//       Accept: 'application/json',
-//     },
-//   }
-
-//   fetch('https://icanhazdadjoke.com', config)
-//     .then((res) => res.json())
-//     .then((data) => {
-//       jokeEl.innerHTML = data.joke
-//     })
-// }
