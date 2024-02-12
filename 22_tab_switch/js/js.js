@@ -22,31 +22,34 @@ const data = [
     comment: "Shota Rustaveli was born in 1166. He started serving Queen Tamar as a Minister of Finance in 1191. His poem itself, namely the prologue, provides a clue to his identity: the poet identifies himself as 'a certain Rustveli.' 'Rustveli' is not a surname, but a territorial epithet that can be interpreted as 'of/from/holder of Rustavi'. Later Georgian authors from the 15th through 18th centuries are more informative; they are almost unanimous in identifying him as Shota Rustaveli, a name that is preserved on a fresco and a document from the formerly Georgian Monastery of the Holy Cross at Jerusalem.",
   },
 ];
+//||||||||||||||||||||||  selects ||||||||||||
 
 const count = data.length;
+const authors_switch = document.querySelector(".authors-switch");
+const biography = document.querySelector(".biography");
 
-const author = document.querySelector(".author");
-const comment = document.querySelector(".comment");
+//||||||||||||||  render & activate 1st tab    ||||||||||||||
 
-for (let i = 0; i < count; i++) {
-  author.insertAdjacentHTML("beforeend", `<div class='tab' id=${i}>${data[i].name}</div>`);
+for (let i = 0, count = data.length; i < count; i++) {
+  authors_switch.insertAdjacentHTML("beforeend", `<div class='tab' id=${i}>${data[i].name}</div>`);
 }
-comment.innerHTML = data[0].comment;
 
-author.children[0].classList.add("clicked");
+biography.innerHTML = data[0].comment;
+authors_switch.children[0].classList.add("clicked");
 
-console.log(author.children);
-console.log(document.querySelectorAll(".tab"));
-document.querySelectorAll(".tab").forEach((e) => {
-  e.addEventListener("click", function () {
-    unclickAll();
-    e.classList.add("clicked");
-    comment.innerHTML = data[e.id].comment;
+//||||||||||||||  tab click event    ||||||||||||||
+
+document.querySelectorAll(".tab").forEach((tab) => {
+  tab.addEventListener("click", function () {
+    unclickAll(); // 1
+    tab.classList.add("clicked");
+    biography.innerHTML = data[tab.id].comment;
   });
 });
 
+//|||||||||||||||||||||  1   ||||||||||||||||\
 function unclickAll() {
   for (let i = 0; i < count; i++) {
-    author.children[i].classList.remove("clicked");
+    authors_switch.children[i].classList.remove("clicked");
   }
 }

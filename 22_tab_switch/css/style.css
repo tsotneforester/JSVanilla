@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 *,
 ::before,
 ::after {
@@ -79,39 +78,72 @@ pre {
   border: none;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #b8c6db;
-  font-family: "Nunito", sans-serif;
+:root {
+  --gray: #b8c6db;
+  --blue: #63a7fc;
+  --dark-blue: #326eb7;
+  --white: #fff;
 }
 
-.container {
+body {
+  min-height: 100svh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+  font-family: "Nunito", sans-serif;
+  padding: 10px;
+}
+
+main {
   width: 600px;
   height: auto;
   border-radius: 0;
-  background-color: red;
+  background-color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.author {
+.authors-switch {
   width: 100%;
   height: auto;
   border-radius: 0;
   background-color: transparent;
   display: flex;
-  flex-direction: row;
+  flex-flow: column nowrap;
   justify-content: stretch;
-  align-items: center;
+  align-items: stretch;
+  transition: all 0.6s;
+}
+@media only screen and (min-width: 480px) {
+  .authors-switch {
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+}
+
+.biography {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  background-color: var(--white);
+  text-align: left;
+  padding: 10px;
+  font-size: 1.2em;
+  text-indent: 40px;
+  min-height: 280px;
+}
+
+.clicked {
+  background-color: var(--white);
 }
 
 .tab {
   width: auto;
   height: auto;
   border-radius: 0;
-  background-color: #dae2ec;
+  background-color: var(--blue);
   font-size: 22px;
   color: black;
   font-weight: 400;
@@ -121,23 +153,6 @@ body {
   flex: auto;
   cursor: pointer;
 }
-
-.comment {
-  width: 100%;
-  height: auto;
-  border-radius: 0;
-  background-color: #fff;
-  text-align: left;
-  padding: 10px;
-  font-size: 1.2em;
-  text-indent: 40px;
-  min-height: 358px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.clicked {
-  background-color: #ffffff;
+.tab:hover {
+  background-color: var(--dark-blue);
 }
