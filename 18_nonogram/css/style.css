@@ -6,8 +6,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --cube: 26px;
+  --font: 16px;
+}
+
 body {
-  min-height: 100vh;
+  min-height: 100svh;
+  background-color: #b8c6db;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,14 +21,13 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
-#project {
+main {
   display: flex;
   border-left: 3px solid rgb(0, 0, 0);
   border-top: 3px solid rgb(0, 0, 0);
 
   flex-direction: column;
   width: 314.3px;
-  height: 300px;
   margin: 0 auto;
   padding-top: 0.3px;
 }
@@ -33,24 +38,26 @@ h2 {
 [id^="line"] {
   flex-wrap: nowrap;
   display: inline-flex;
-  /* grid-gap: 0.4px; */
   justify-content: end;
-  /* margin: 0.3px; */
 }
 
 .cell {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   border: solid 1px black;
-  width: 26px;
-  height: 26px;
+  width: var(--cube);
+  height: var(--cube);
   user-select: none;
   flex-shrink: 0;
-  margin-top: -1.3px;
+  font-size: var(--font);
+  text-align: center;
 }
 
-#result {
+.hint {
+  background-color: rgb(175, 180, 180);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.solved {
   font-size: 2em;
   font-style: italic;
   color: green;
@@ -63,14 +70,6 @@ h2 {
 
 .whitebox {
   background-color: rgb(255, 255, 255);
-}
-
-.hint {
-  background-color: rgb(175, 180, 180);
-  cursor: pointer;
-  padding-top: 2px;
-  font-weight: bold;
-  font-size: 18px;
 }
 
 .noborder {
@@ -95,7 +94,6 @@ h2 {
 
 .wronghint {
   border: red 3px solid;
-  /* background-color: red; */
   color: rgb(43, 42, 42);
   box-sizing: border-box;
 }
@@ -108,45 +106,8 @@ h2 {
   border-right: 3px solid rgb(0, 0, 0);
 }
 
-#check {
-  padding: 3px 10px;
-  /* width: 100px; */
-  background-color: blue;
-  border-radius: 8px;
-  font-weight: bold;
-  color: wheat;
-}
-
-#check:active {
-  outline: rgb(0, 0, 0) 2px solid;
-}
-
-#check:hover {
-  background-color: rgb(64, 64, 234);
-  color: white;
-}
-
-#clear {
-  padding: 3px 10px;
-  /* width: 100px; */
-  background-color: green;
-  border-radius: 8px;
-  font-weight: bold;
-  color: wheat;
-}
-
-#clear:active {
-  outline: rgb(0, 0, 0) 2px solid;
-}
-
-#clear:hover {
-  background-color: rgb(25, 147, 25);
-  color: white;
-}
-
 #back {
   padding: 3px 10px;
-  /* width: 100px; */
   background-color: brown;
   border-radius: 8px;
   font-weight: bold;
@@ -162,14 +123,37 @@ h2 {
   color: white;
 }
 
-.navbar {
-  text-align: center;
-  margin: 15px;
-  height: 25px;
-}
-
 .crossbox {
   background-image: url("../img/g.png");
   background-size: contain;
-  /* background-color: aqua; */
+}
+
+footer {
+  margin-top: 20px;
+}
+
+/*------------------ experimental--------------------- */
+
+header {
+  display: grid;
+  grid-template-areas:
+    "blank hinth"
+    "hintv grid";
+  outline: rgb(0, 0, 0) 1px solid;
+}
+
+.blank {
+  grid-area: blank;
+}
+
+.hintv {
+  grid-area: hintv;
+}
+
+.hinth {
+  grid-area: hinth;
+}
+
+.grid {
+  grid-area: grid;
 }

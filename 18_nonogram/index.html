@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nonogram</title>
     <meta name="description" content="Code anything, anywhere, anytime" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://gpx.ge/root/img/infinite.png" />
+
+    <link rel="icon" href="favicon/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://gpx.ge/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="GPXcript - Carousel" />
+    <meta property="og:title" content="GPXcript - Nonogram" />
     <meta property="og:description" content="Code anything, anywhere, anytime" />
     <meta property="og:image" content="https://gpx.ge/root/img/yellowLaptop.png" />
 
@@ -18,22 +22,20 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="gpx.ge" />
     <meta property="twitter:url" content="https://gpx.ge/" />
-    <meta name="twitter:title" content="GPXcript - Carousel" />
+    <meta name="twitter:title" content="GPXcript - Nonogram" />
     <meta name="twitter:description" content="Code anything, anywhere, anytime" />
     <meta name="twitter:image" content="https://gpx.ge/root/img/yellowLaptop.png" />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- StyleSheet -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="navbar">
-      <h2 id="result"></h2>
-    </div>
+    <h1 class="solved"></h1>
 
-    <div value="d001" id="project">
+    <main data-puzzle="d001">
       <div id="line-1-hint">
         <div class="cell hint"></div>
         <div class="cell hint thickv"></div>
@@ -64,7 +66,7 @@
         <div id="h2-9" class="cell hint thickh">1</div>
         <div id="h2-10" class="cell hint thickv thickh">1</div>
       </div>
-      <!-- ---- -->
+
       <div id="line-1-chart">
         <div class="cell hint"></div>
         <div class="cell hint thickv">1</div>
@@ -224,11 +226,12 @@
         <div id="c10-9" class="cell thickh chart whitebox"></div>
         <div id="c10-10" class="cell thickh thickv chart whitebox"></div>
       </div>
-    </div>
-    <div class="navbar">
-      <button id="check">Check</button>
-      <button id="clear">Clear</button>
-    </div>
+    </main>
+
+    <footer>
+      <button class="btn btn-success">Check</button>
+      <button class="btn btn-warning">Clear</button>
+    </footer>
   </body>
   <script src="js/js.js"></script>
 </html>

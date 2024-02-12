@@ -30,6 +30,33 @@ const DATA = {
   },
 };
 
+let blank = document.querySelector(`.blank`);
+let hinth = document.querySelector(`.hinth`);
+let hintv = document.querySelector(`.hintv`);
+let grid = document.querySelector(`.grid`);
+
+function table(x, y, style, data) {
+  let node = "";
+  node += "<table>";
+  for (let i = 0; i < y; i++) {
+    node += "<tr>";
+    for (let ii = 0; ii < x; ii++) {
+      node += `<td class="cell ${style}">${data ? data[i][ii] : ""}</td>`;
+    }
+
+    node += "</tr>";
+  }
+  node += "</table>";
+  return node;
+}
+
+blank.insertAdjacentHTML("afterbegin", table(2, 2, "hint"));
+hinth.insertAdjacentHTML("afterbegin", table(10, 2, "hint", data.horizontalHints));
+hintv.insertAdjacentHTML("afterbegin", table(2, 10, "hint", data.verticalHints));
+grid.insertAdjacentHTML("afterbegin", table(10, 10, "whitebox"));
+
+//--------------------------------------------
+
 let body = document.getElementsByTagName("body");
 
 let solved = document.querySelector(`.solved`);
@@ -40,7 +67,7 @@ let clear = document.querySelector(`clear`);
 
 let puzzle = document.querySelector(`main`);
 let puzzle_id = puzzle.dataset.puzzle;
-let solution = DATA[puzzle_id].solution;
+let solution = data[puzzle_id];
 
 let mychart = document.querySelectorAll(".chart");
 let myhint = document.querySelectorAll(".hint");
