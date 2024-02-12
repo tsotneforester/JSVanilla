@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Slider</title>
     <meta name="description" content="Code anything, anywhere, anytime" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://gpx.ge/root/img/infinite.png" />
 
+    <link rel="icon" href="favicon/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://gpx.ge/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="GPXcript - Carousel" />
+    <meta property="og:title" content="GPXcript - Simple Slider" />
     <meta property="og:description" content="Code anything, anywhere, anytime" />
     <meta property="og:image" content="https://gpx.ge/root/img/yellowLaptop.png" />
 
@@ -19,43 +21,35 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="gpx.ge" />
     <meta property="twitter:url" content="https://gpx.ge/" />
-    <meta name="twitter:title" content="GPXcript - Carousel" />
+    <meta name="twitter:title" content="GPXcript - Simple Slider" />
     <meta name="twitter:description" content="Code anything, anywhere, anytime" />
     <meta name="twitter:image" content="https://gpx.ge/root/img/yellowLaptop.png" />
 
     <!-- StyleSheet -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="slides">
+    <main>
+      <div class="slide-stack">
         <div class="slide">
-          <img src="img/1.png" alt="" />
-          <div class="slide-content"></div>
+          <img src="https://via.placeholder.com/540x360.jpg/FF0000/FFFFFF?text=1" alt="1" />
         </div>
         <div class="slide">
-          <img src="img/2.png" alt="" />
+          <img src="https://via.placeholder.com/540x360.jpg/1F01FF/FFFFFF?text=2" alt="2" />
         </div>
         <div class="slide">
-          <img src="img/3.png" alt="" />
+          <img src="https://via.placeholder.com/540x360.jpg/E82EFF/FFFFFF?text=3" alt="3" />
         </div>
         <div class="slide">
-          <img src="img/4.png" alt="" />
+          <img src="https://via.placeholder.com/540x360.jpg/3B8004/FFFFFF?text=4" alt="4" />
         </div>
       </div>
       <div class="slide-controls">
-        <button id="prev-btn">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <button id="next-btn">
-          <i class="fas fa-chevron-right"></i>
-        </button>
+        <img id="next-btn" src="img/left.png" alt="left" />
+        <img id="prev-btn" src="img/right.png" alt="right" />
       </div>
-    </div>
+    </main>
 
-    <script src="main.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

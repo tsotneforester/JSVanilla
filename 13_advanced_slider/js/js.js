@@ -171,7 +171,7 @@ function slider(containerID, direction = "horizontal", timerMS, imagePath, contr
     });
   }
 
-  //|||||||||||||||||||||||||||Automatation and Hover Pause|||||||||||||||||||||||
+  //||||||||||||||||||||||Automatation and Hover Pause|||||||||||||||||
   let standBy;
   const startSlide = () => {
     standBy = setInterval(() => {
