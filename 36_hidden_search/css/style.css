@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 *,
 ::before,
 ::after {
@@ -80,15 +79,16 @@ pre {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   font-family: "Nunito", sans-serif;
+  background-color: #b8c6db;
 }
 
-main {
+form {
   width: 76px;
   height: 76px;
   border-radius: 0;
@@ -100,13 +100,6 @@ main {
   overflow: hidden;
   transition: all 0.8s ease;
   border-radius: 12px;
-}
-
-.active {
-  width: 306px;
-  height: 76px;
-  border-radius: 12px;
-  background-color: #2196f3;
 }
 
 img {
@@ -127,6 +120,7 @@ input {
   border: none;
   color: white;
   font-size: 22px;
+  min-width: 0;
 }
 
 input::-moz-placeholder {
@@ -135,4 +129,11 @@ input::-moz-placeholder {
 
 input::placeholder {
   color: white;
+}
+
+.active {
+  width: 206px;
+  height: 76px;
+  border-radius: 12px;
+  background-color: #2196f3;
 }

@@ -4,10 +4,10 @@
 //  ╙╢▒╢╖ ║╜,╢▒▒╝    ███▄▄███ ▐██▌     ▐██▌ ▐███  ███ ▐███▄███▌ ███▄▄▄▄
 //    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀  ▀▀      ▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
 "use strict";
-let main = document.querySelector("main");
+let form = document.forms[0];
 let img = document.querySelector("img");
 //|||||||||||| No Comment ;) |||||||||||||||||
 img.addEventListener("click", function () {
-  main.classList.toggle("active");
+  form.classList.toggle("active");
 });
 //||||||||||||||||||||||||||||||||||||||||||||

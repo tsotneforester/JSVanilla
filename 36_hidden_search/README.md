@@ -1,3 +1,5 @@
+<!-- surge -->
+
 <h1 align="center">Hidden Search</h1>
 
 <div align="center">
@@ -11,12 +13,11 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
   <br/>
-    <a href="https://gpx.ge/js/pages/1026_hidden_search" target="_blank">🖥️ View Demo</a>
+    <a href="https://hidden_search-tsotneforester.surge.sh/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 
   </div>
-
 
 <!-- ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")
