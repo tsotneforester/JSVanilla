@@ -116,5 +116,12 @@ For Vite Projects
 <!-- |Project #|CSS+HTML+JS Comentary |README|React| -->
 
 
+<!-- surge teardown -tsotneforester.surge.sh
+surge --domain -tsotneforester.surge.sh -->
 
-<!-- https://home.aveek.io/GitHub-Profile-Badges/ -->
+
+
+
+<!-- ideas -->
+<!-- chartify-like app and other 3 -->
+<!-- https://github.com/zero-to-mastery/javascript20-projects -->
