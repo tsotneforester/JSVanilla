@@ -20,3 +20,4 @@ design/
 *.vscode
 *.ini
 *.code-workspace
+*.eslintrc

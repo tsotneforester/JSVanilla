@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import resetImg from "./assets/reset.png";
 
-let random = Math.floor(Math.random() * 101);
+let digit = Math.floor(Math.random() * 101);
 
 function App() {
-  let [value, setValue] = useState(random);
+  let [randomValue, setRandomValue] = useState(digit);
 
   return (
-    <div className="card">
-      <h1>{value}</h1>
+    <main>
+      <h1>{randomValue}</h1>
       <div className="controls">
         <button
           className="decrease"
           onClick={() => {
-            setValue(value - 1);
+            setRandomValue((previousValue) => previousValue - 1);
           }}>
           -
         </button>
@@ -22,19 +22,19 @@ function App() {
             src={resetImg}
             alt="reset"
             onClick={() => {
-              setValue(random);
+              setRandomValue(digit);
             }}
           />
         </button>
         <button
           className="increase"
           onClick={() => {
-            setValue(value + 1);
+            setRandomValue((previousValue) => previousValue + 1);
           }}>
           +
         </button>
       </div>
-    </div>
+    </main>
   );
 }
 

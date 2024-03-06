@@ -30,6 +30,10 @@ input::-ms-clear {
   display: none;
 }
 
+input {
+  min-width: 0;
+}
+
 button {
   cursor: pointer;
   border: none;
@@ -43,6 +47,7 @@ button::-moz-focus-inner {
 img {
   max-width: 100%;
   display: block;
+  min-width: 0;
 }
 
 ul li {
@@ -67,6 +72,36 @@ pre {
   margin: 0;
 }
 
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --bg-body: #eadfb4;
+  --bg-box: #9bb0c1;
+  --bg-change: #ed7d31;
+  --bg-reset: #51829b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-body: #2d3250;
+    --bg-box: #424769;
+    --bg-change: #f6b17a;
+    --bg-reset: #7077a1;
+  }
+}
+
+body {
+  min-height: 100svh;
+  background-color: var(--bg-body);
+}
+
 #root {
   min-height: 100vh;
   display: flex;
@@ -76,11 +111,11 @@ pre {
   font-family: "Nunito", sans-serif;
 }
 
-.card {
+main {
   width: 92%;
   height: 306px;
   border-radius: 18px;
-  background-color: rgb(14, 54, 114);
+  background-color: var(--bg-box);
   max-width: 400px;
   display: flex;
   flex-direction: column;
@@ -102,7 +137,7 @@ h1 {
   align-items: center;
   gap: 20px;
 }
-.controls button {
+button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -116,15 +151,14 @@ h1 {
   font-weight: 400;
   text-align: center;
 }
-.controls .decrease {
-  background-color: red;
+.decrease,
+.increase {
+  background-color: var(--bg-change);
 }
 .controls .reset {
-  background-color: black;
+  background-color: var(--bg-reset);
 }
-.controls .increase {
-  background-color: rgb(12, 161, 133);
-}
+
 .controls img {
   width: 34px;
   height: auto;
