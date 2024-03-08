@@ -1,3 +1,4 @@
+<!-- surged -->
 <h1 align="center">Our Menu</h1>
 
 <div align="center">
@@ -12,7 +13,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
   <br/>
-    <a href="https://gpx.ge/js/pages/1002_our_menu" target="_blank">🖥️ View Demo</a>
+    <a href="https://our_menu-tsotneforester.surge.sh/" target="_blank">🖥️ View Demo</a>
     ·
     <a href="https://github.com/tsotneforester/Javascript/issues">🛠Submit Issue</a>
 

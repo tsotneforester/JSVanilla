@@ -6,7 +6,7 @@ function Menu({ data }) {
           <article key={e.id}>
             <img src={e.img} alt={e.title} />
             <section className="heading">
-              <h2>{e.title}</h2>
+              <h1 title={e.title}>{e.title}</h1>
               <span className="price">$ {e.price}</span>
             </section>
             <section className="desc">{e.desc}</section>

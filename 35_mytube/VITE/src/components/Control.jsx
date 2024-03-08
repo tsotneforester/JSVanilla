@@ -3,14 +3,14 @@ import styled from "styled-components";
 const Control = ({ handler }) => {
   return (
     <>
-      <ButtonStyled onClick={handler}></ButtonStyled>
+      <Button onClick={handler}></Button>
     </>
   );
 };
 
 export default Control;
 
-const ButtonStyled = styled.button`
+const Button = styled.button`
   width: 40px;
   height: 40px;
   border-radius: 6px;

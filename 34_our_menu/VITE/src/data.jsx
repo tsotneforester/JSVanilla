@@ -1,4 +1,4 @@
-const data = [
+const DATA = [
   {
     id: 1,
     title: "buttermilk pancakes",
@@ -112,4 +112,7 @@ const data = [
     desc: `attraction touch steady acknowledge favor tongue composition cluster involvement gesture skilled insect freeze`,
   },
 ];
-export default data;
+
+const CATEGORIES = ["all", ...new Set(Array.from(DATA, (obj) => obj.category))];
+
+export { DATA, CATEGORIES };

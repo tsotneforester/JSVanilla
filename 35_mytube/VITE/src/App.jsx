@@ -24,10 +24,10 @@ const App = () => {
 
   return (
     <>
-      <S.Wrapper>
+      <S.TV>
         <Line refLine={refLine} />
         <Video refVideo={refVideo} />
-      </S.Wrapper>
+      </S.TV>
       <Control handler={handler} />
     </>
   );
@@ -37,7 +37,7 @@ export default App;
 
 const S = {};
 
-S.Wrapper = styled.main`
+S.TV = styled.main`
   width: 100%;
   max-width: 640px;
   display: flex;

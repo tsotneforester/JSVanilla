@@ -67,25 +67,53 @@ pre {
   margin: 0;
 }
 
-body {
-  min-height: 100vh;
+#wrapper {
+  min-height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+
+:root {
+  color-scheme: light dark;
+  --bg-body: #eadfb4;
+  --bg-card: #9bb0c1;
+  --bg-change: #ed7d31;
+  --bg-reset: #51829b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-body: #2d3250;
+    --bg-card: #424769;
+    --bg-change: #f6b17a;
+    --bg-reset: #7077a1;
+  }
+}
+body {
+  min-height: 100svh;
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   font-family: "Nunito", sans-serif;
+  background-color: var(--bg-body);
 }
 
 .card {
+  max-width: 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   width: 92%;
   height: 306px;
   border-radius: 18px;
-  background-color: rgb(14, 54, 114);
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--bg-card);
 }
 
 h1 {
@@ -97,14 +125,14 @@ h1 {
 
 .controls {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 .controls button {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   width: 54px;
@@ -116,14 +144,12 @@ h1 {
   font-weight: 400;
   text-align: center;
 }
-.controls .decrease {
-  background-color: red;
+.controls .decrease,
+.controls .increase {
+  background-color: var(--bg-change);
 }
 .controls .reset {
-  background-color: black;
-}
-.controls .increase {
-  background-color: rgb(12, 161, 133);
+  background-color: var(--bg-reset);
 }
 .controls img {
   width: 34px;

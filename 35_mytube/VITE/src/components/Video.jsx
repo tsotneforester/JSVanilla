@@ -3,16 +3,17 @@ import styled from "styled-components";
 const Video = ({ refVideo }) => {
   return (
     <>
-      <VideoStyled ref={refVideo} poster="img/poster.jpg">
+      <S.Video ref={refVideo} poster="img/poster.jpg">
         <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-      </VideoStyled>
+      </S.Video>
     </>
   );
 };
 
 export default Video;
+const S = {};
 
-const VideoStyled = styled.video`
+S.Video = styled.video`
   max-width: 640px;
   width: 100%;
   height: auto;

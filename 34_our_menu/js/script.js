@@ -142,7 +142,7 @@ function resultFor(category) {
       <article>
       <img src="${filtered[i].img}" alt="${filtered[i].title}" />
         <section class="heading">
-          <h2>${filtered[i].title}</h2>
+          <h1>${filtered[i].title}</h1>
           <span class="price">$ ${filtered[i].price}</span>
         </section>
         <section class="desc">${filtered[i].desc}</section>
