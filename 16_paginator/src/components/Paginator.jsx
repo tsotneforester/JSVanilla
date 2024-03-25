@@ -3,10 +3,10 @@ import styled, { css } from "styled-components";
 import dateFormat from "dateformat";
 import { root, device } from "../theme";
 
-function Paginator({ rawData, singlePageLines, headerArray }) {
+function Paginator({ data, singlePageLines }) {
   let [activePage, setActivePage] = useState(1);
-  let displaydData = rawData.slice((activePage - 1) * singlePageLines, activePage * singlePageLines);
-  let pageCount = Math.ceil(rawData.length / singlePageLines);
+  let displaydData = data.slice((activePage - 1) * singlePageLines, activePage * singlePageLines);
+  let pageCount = Math.ceil(data.length / singlePageLines);
 
   function handlePrev() {
     if (activePage == 1) {
@@ -30,7 +30,7 @@ function Paginator({ rawData, singlePageLines, headerArray }) {
         <Table>
           <thead>
             <tr>
-              {headerArray.map((header, ind) => {
+              {Object.keys(data[0]).map((header, ind) => {
                 return <th key={ind}>{header}</th>;
               })}
             </tr>
@@ -52,7 +52,7 @@ function Paginator({ rawData, singlePageLines, headerArray }) {
         </Table>
 
         <Footer>
-          <h1>Total Orders : {rawData.length}</h1>
+          <h1>Total Orders : {data.length}</h1>
           <Controls>
             <Prev onClick={handlePrev}>Prev</Prev>
             <FirstPage bg={activePage == 1 && "dark"} onClick={() => setActivePage(1)}>
