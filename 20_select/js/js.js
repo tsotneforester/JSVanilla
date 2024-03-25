@@ -18,7 +18,7 @@ let data = [];
   try {
     let req = await axios.get(URL);
     data = req["data"].map((entry) => {
-      return entry.name.common;
+      return entry.name.common.toLowerCase();
     });
   } catch (error) {
     if (error.response) {
