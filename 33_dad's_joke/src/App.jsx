@@ -6,7 +6,7 @@ const URL = "https://icanhazdadjoke.com/";
 //https://www.npmjs.com/package/react-spinners
 
 function App() {
-  const { data, loading, setNewJoke, setLoading, newJoke } = useFetch(URL);
+  const { data, refetch, loading, error } = useFetch(URL);
 
   return (
     <>
@@ -14,14 +14,15 @@ function App() {
         <div className="card">
           <img src="./joke.png" alt="joke" />
 
-          {loading ? <BeatLoader color={"#7c8ba1"} loading={loading} size={15} aria-label="Loading Spinner" data-testid="loader" /> : <p>{data}</p>}
-          <button
-            onClick={() => {
-              setNewJoke(!newJoke);
-              setLoading(!loading);
-            }}>
-            Another
-          </button>
+          {loading && <BeatLoader color={"#7c8ba1"} loading={loading} size={15} aria-label="Loading Spinner" data-testid="loader" />}
+          {error ? (
+            <p>{error}</p>
+          ) : (
+            <>
+              <p>{data}</p>
+              <button onClick={() => refetch()}>Another</button>
+            </>
+          )}
         </div>
       </main>
     </>

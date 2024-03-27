@@ -32,6 +32,7 @@ const Container = styled.div`
     font-size: 16px;
     width: 100%;
     flex-grow: 1;
+    
   }
 
   & span {
