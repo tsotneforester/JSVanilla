@@ -10,7 +10,7 @@ import errorCounterIn from "./errorCounter.js";
 
 //|||||||||||||||||||| Selectors ||||||||||||||||||||||
 
-let puzzle_id = "d002";
+let puzzle_id = "d001";
 puzzleRender.call(DATA[puzzle_id]); //  1
 
 //|||||||||||||||||||||   1   |||||||||||||||||||||||||||
