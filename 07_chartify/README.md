@@ -2,7 +2,7 @@
 <h1 align="center">Chartify</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/raw/1070_chartify.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/1012_chartify.gif" alt="qr-code" />
 </div>
 
   <div align="center">

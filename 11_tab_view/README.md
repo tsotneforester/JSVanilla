@@ -2,7 +2,7 @@
 <h1 align="center">Tab View</h1>
 
 <div align="center">
-  <img src="https://gpx.ge/js/img/raw/1064_tab_view.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/1026_tab_view.gif" alt="qr-code" />
 </div>
 
   <div align="center">
