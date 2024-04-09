@@ -1,33 +1,33 @@
 import React, { useState, useEffect } from "react";
-import { GlobalStyles } from "./theme";
+import { GlobalStyles } from "./styled";
 import axios from "axios";
 const AppContext = React.createContext();
-let regions = ["Asia/Tbilisi", "Asia/Tokyo", "Asia/Bishkek", "Asia/Ashgabat", "Asia/Colombo", "Asia/Damascus", "America/Asuncion"];
+const REGIONS = ["Asia/Tbilisi", "Asia/Tokyo", "Asia/Bishkek", "Asia/Ashgabat", "Asia/Damascus", "America/Asuncion"];
+const URL = "https://api.timezonedb.com/v2.1/list-time-zone?key=OYUED61XIOW8&format=json";
 
 function Context({ children }) {
-  const [rawData, setRawData] = useState("");
+  const [zones, setZones] = useState(null);
 
-  async function CallAPI() {
-    const res1 = await axios(`https://api.timezonedb.com/v2.1/list-time-zone?key=OYUED61XIOW8&format=json`);
-    let zones = res1.data.zones;
+  async function CallAPI(url) {
+    const response = await axios(url);
 
-    let trimmed = zones.filter((e) => {
-      for (let i = 0, n = regions.length; i < n; i++) {
-        if (e.zoneName == regions[i]) {
+    let filteredZones = response.data.zones.filter((e) => {
+      for (let i = 0, n = REGIONS.length; i < n; i++) {
+        if (e.zoneName == REGIONS[i]) {
           return e;
         }
       }
     });
 
-    setRawData(trimmed);
+    setZones(filteredZones);
   }
 
   useEffect(() => {
-    CallAPI();
+    CallAPI(URL);
   }, []);
 
   return (
-    <AppContext.Provider value={{ rawData }}>
+    <AppContext.Provider value={{ zones }}>
       <GlobalStyles />
       {children}
     </AppContext.Provider>

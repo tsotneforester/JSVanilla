@@ -10,7 +10,7 @@ function Card({ data }) {
       <S.wrapper key={id}>
         <div className="img-side">
           <LazyLoadImage
-            // width="100%"
+            width="100%"
             height="100%"
             src={"https://image.tmdb.org/t/p/original" + poster} //
             alt={title}
@@ -40,7 +40,6 @@ const S = {};
 S.wrapper = styled.article`
   width: 100%;
   max-width: 280px;
-  // height: 482px;
   border-radius: 12px;
   background-color: transparent;
   margin: 20px;
@@ -72,7 +71,7 @@ S.wrapper = styled.article`
 
     & img {
       object-fit: cover;
-      object-position: top;
+      /* object-position: top; */
     }
   }
 

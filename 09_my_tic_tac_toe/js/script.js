@@ -8,7 +8,7 @@
 const x_score_count = document.getElementById("x-score-count");
 const o_score_count = document.getElementById("o-score-count");
 const tie_score_count = document.getElementById("tie-score-count");
-const draw_boxes = document.querySelectorAll(".draw-boxes");
+const draw_boxes = document.querySelectorAll(".draw-box");
 let progressArray = [];
 let gameStarted = false;
 let isHumanTurn;

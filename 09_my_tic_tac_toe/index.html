@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Tic Tac Toe</title>
+    <title>My Tic Tac Toe</title>
     <meta name="description" content="Code anything, anywhere, anytime" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon/favicon.ico" sizes="32x32" />
@@ -14,7 +14,7 @@
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://gpx.ge/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="GPXcript - Carousel" />
+    <meta property="og:title" content="GPXcript - My Tic Tac Toe" />
     <meta property="og:description" content="Code anything, anywhere, anytime" />
     <meta property="og:image" content="https://gpx.ge/root/img/yellowLaptop.png" />
 
@@ -22,31 +22,28 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="gpx.ge" />
     <meta property="twitter:url" content="https://gpx.ge/" />
-    <meta name="twitter:title" content="GPXcript - Carousel" />
+    <meta name="twitter:title" content="GPXcript - My Tic Tac Toe" />
     <meta name="twitter:description" content="Code anything, anywhere, anytime" />
     <meta name="twitter:image" content="https://gpx.ge/root/img/yellowLaptop.png" />
 
-    <!-- StyleSheet -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <main>
-      <div class="draw-boxes"></div>
-      <div class="draw-boxes"></div>
-      <div class="draw-boxes"></div>
-      <div class="draw-boxes"></div>
-      <div class="draw-boxes"></div>
-      <div class="draw-boxes"></div>
-      <div class="draw-boxes"></div>
-      <div class="draw-boxes"></div>
-      <div class="draw-boxes"></div>
+      <div class="draw-box"></div>
+      <div class="draw-box"></div>
+      <div class="draw-box"></div>
+      <div class="draw-box"></div>
+      <div class="draw-box"></div>
+      <div class="draw-box"></div>
+      <div class="draw-box"></div>
+      <div class="draw-box"></div>
+      <div class="draw-box"></div>
     </main>
     <footer>
-      <img src="img/user.png" alt="" /> - <span id="x-score-count">0</span>&emsp; <img src="img/microchip.png" alt="" /> - <span id="tie-score-count">0</span>&emsp; <img src="img/microchip.png" alt="" /> -
-      <span id="o-score-count">0</span>
+      <div class="score-box"><img src="img/user.png" alt="user" /> - <span id="x-score-count">0</span></div>
+      <div class="score-box"><img src="img/microchip.png" alt="chip" /> - <span id="y-score-count">0</span></div>
+      <div class="score-box"><img src="img/coffee.png" alt="draw" /> - <span id="o-score-count">0</span></div>
     </footer>
     <script src="js/script.js"></script>
   </body>

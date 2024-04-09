@@ -6,104 +6,32 @@
   box-sizing: border-box;
 }
 
-:focus,
-:active {
-  outline: none;
-}
-
-a:link,
-a:visited,
-a:focus,
-a:hover,
-a:active {
-  text-decoration: none;
-  outline: none;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-ul li {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-size: inherit;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-}
-
-pre {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-#wrapper {
-  min-height: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border: none;
-}
-
 body {
-  font-family: "Nunito", sans-serif;
   background-color: #b8c6db;
-  min-height: 100vh;
+  min-height: 100svh;
+  font-family: "Courier New", Courier, monospace;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  padding: 15px;
+  gap: 30px;
 }
 
 main {
-  width: 456px;
-  height: 456px;
+  width: 100%;
+  max-width: 456px;
   border-radius: 0;
   background-color: transparent;
-  margin: 40px auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
 }
 main div {
-  font-family: "Courier New", Courier, monospace;
-  width: 250px;
-  height: 150px;
+  width: auto;
+  aspect-ratio: 1;
   color: black;
-  flex-basis: 150px;
-  font-size: 130px;
+  font-size: clamp(5px, 20vw, 100px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,12 +67,18 @@ main div:nth-of-type(8) {
 }
 
 footer {
-  font-family: "Courier New", Courier, monospace;
   font-size: 30px;
   text-align: center;
   color: black;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .score-box {
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }

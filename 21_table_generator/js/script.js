@@ -32,7 +32,7 @@ createTable(row.value, column.value);
 //||| on each input change main function is called||||
 inputs.forEach((input) => {
   input.addEventListener("input", function () {
-    createTable(row.value, column.value);
+    createTable(row.value > 10 ? 10 : row.value, column.value > 10 ? 10 : column.value);
   });
 });
 //||||||||||||||||||||||||||||||||||||||||||||||||||||
