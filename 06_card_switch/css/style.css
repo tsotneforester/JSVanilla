@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 *,
 ::before,
 ::after {
@@ -68,37 +67,25 @@ pre {
   margin: 0;
 }
 
-#wrapper {
-  min-height: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border: none;
-}
-
 body {
   font-family: "Nunito", sans-serif;
-  min-height: 100vh;
+  min-height: 100svh;
   background-color: #5f72b7;
   background-size: cover;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 15px;
 }
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
   row-gap: 10px;
   width: 390px;
-  height: 620px;
   border-radius: 10px;
   background-color: honeydew;
   box-shadow: 6px 2px 12px rgb(56, 56, 56);
@@ -108,7 +95,6 @@ main {
 .img-container {
   width: 160px;
   height: 160px;
-  border-radius: 0;
   background-color: transparent;
   position: relative;
 }
@@ -122,7 +108,7 @@ main {
   top: 20px;
   z-index: 100;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -174,17 +160,15 @@ main {
 }
 
 .review {
-  height: 264px;
   overflow: auto;
   transition: 0.8s ease;
-  font-family: "Poppins", sans-serif;
   margin-top: 14px;
   white-space: pre-line;
 }
 
 .controls {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   -moz-column-gap: 20px;

@@ -989,7 +989,7 @@ let gameStatus = false;
 let word = [];
 let arr = [];
 //|||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-// Game starts by enabling gameS and chooses random word ||
+// Game starts by enabling game and chooses random word ||
 //   creates letter boxes and binds them to variable     ||
 //|||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 (function () {

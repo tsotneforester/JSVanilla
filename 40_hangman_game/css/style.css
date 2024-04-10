@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 *,
 ::before,
 ::after {
@@ -80,9 +79,9 @@ pre {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   row-gap: 28px;
@@ -91,32 +90,28 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  padding: 15px;
 }
 
 .desk {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  gap: 16px;
 }
 .desk div {
   width: 52px;
   height: 76px;
   border-radius: 2px;
   background-color: transparent;
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
+  border: black 2px solid;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   font-size: 26px;
   color: rgb(34, 117, 4);
-  font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
   transform: scale(1);
   transition: all 1.6s;
@@ -133,16 +128,15 @@ body {
 }
 
 .keyboard {
-  width: 320px;
-  height: 200px;
+  width: 100%;
+  max-width: 320px;
   border-radius: 2px;
   background-color: transparent;
   padding: 10px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 8px;
 }
 .keyboard div {
@@ -151,11 +145,9 @@ body {
   border-radius: 2px;
   background-color: rgb(105, 105, 105);
   color: white;
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
+  border: black 1px solid;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
@@ -170,7 +162,7 @@ body {
 
 .remaining {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   -moz-column-gap: 20px;
