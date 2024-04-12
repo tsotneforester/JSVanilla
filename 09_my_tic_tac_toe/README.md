@@ -14,7 +14,6 @@
     Difficulty - <img src="https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604" alt="qr-code" />
   <br/>
     <!-- <a href="https://carousel-tsotneforester.surge.sh/" target="_blank">🖥️ View Demo</a> -->
-
     <a href="https://github.com/tsotneforester/JSVanilla/issues">🛠Submit Issue</a>
 
   </div>
