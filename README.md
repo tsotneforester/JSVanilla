@@ -38,7 +38,7 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skills.thijs.gg/icons?i=js,html,css,sass,codepen,figma,git,ps,vscode" />
+    <img src="https://skills.thijs.gg/icons?i=js,html,css,sass,regex,codepen,figma,git,ps,vscode" />
   </a>
 </p>
 

@@ -1,20 +1,20 @@
 <h1 align="center">Hidden Search</h1>
 
 <!-- <div align="center">
-  <img src="https://gpx.ge/js/img/raw/1015_carousel.gif" alt="qr-code" />
+  <img src="https://gpx.ge/js/img/raw/1015_carousel.gif" alt="" />
 </div> -->
 
   <div align="center">
-    Built With - <img src="https://img.shields.io/badge/-HTML-6abecd" alt="qr-code" />
-  <img src="https://img.shields.io/badge/-CSS-3e54a3" alt="qr-code" />
-  <img src="https://img.shields.io/badge/-JS-cf6390" alt="qr-code" />
+    Built With - <img src="https://img.shields.io/badge/-HTML-6abecd" alt="HTML" />
+  <img src="https://img.shields.io/badge/-CSS-3e54a3" alt="CSS" />
+  <img src="https://img.shields.io/badge/-JS-cf6390" alt="JS" />
  
   
   <br/>
-    Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="qr-code" />
+    Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="newbie" />
   <br/>
     <!-- <a href="https://carousel-tsotneforester.surge.sh/" target="_blank">🖥️ View Demo</a> -->
-    <a href="https://github.com/tsotneforester/JSVanilla/issues">🛠Submit Issue</a>
+    
 
   </div>
 
