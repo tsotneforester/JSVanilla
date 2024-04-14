@@ -1,4 +1,4 @@
-<h1 align="center">My Tic Tac Toe</h1>
+<h1 align="center">Tic Tac Toe</h1>
 
 <!-- <div align="center">
   <img src="https://gpx.ge/js/img/raw/1015_carousel.gif" alt="" />
@@ -13,7 +13,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604" alt="intermediate" />
   <br/>
-  <a href="https://gpx.ge/jsvanilla/_" target="_blank">🖥️ View Demo</a>
+  <a href="https://gpx.ge/jsvanilla/09_tic_tac_toe" target="_blank">🖥️ View Demo</a>
     
 
   </div>

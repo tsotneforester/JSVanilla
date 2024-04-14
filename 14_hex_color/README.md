@@ -13,7 +13,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="newbie" />
   <br/>
-  <a href="https://gpx.ge/jsvanilla/_" target="_blank">🖥️ View Demo</a>
+  <a href="https://gpx.ge/jsvanilla/14_hex_color" target="_blank">🖥️ View Demo</a>
     
 
   </div>

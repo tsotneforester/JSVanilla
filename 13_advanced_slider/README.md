@@ -13,7 +13,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%204%20-advanced-white?labelColor=bf4605" alt="advanced" />
   <br/>
-  <a href="https://gpx.ge/jsvanilla/_" target="_blank">🖥️ View Demo</a>
+  <a href="https://gpx.ge/jsvanilla/13_advanced_slider" target="_blank">🖥️ View Demo</a>
     
 
   </div>
