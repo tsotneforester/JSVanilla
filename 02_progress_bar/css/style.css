@@ -67,24 +67,14 @@ pre {
   margin: 0;
 }
 
-#wrapper {
-  min-height: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border: none;
-}
-
 body {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   font-family: "Nunito", sans-serif;
+  background-color: #b8c6db;
 }
 
 .progress-box {
@@ -94,7 +84,7 @@ body {
   border-radius: 8px;
   background-color: transparent;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   max-width: 620px;
@@ -117,7 +107,7 @@ body {
   border-radius: 50%;
   background-color: white;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   border: 3px #8f5566 solid;
@@ -153,9 +143,6 @@ body {
 
 .progress-controls .btn {
   font-size: 24px;
-  color: white;
-  font-weight: 400;
-  text-align: center;
   background-color: #383838;
   color: #fff;
   border: 0;
