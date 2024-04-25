@@ -12,9 +12,6 @@
 /.prettierignore
 **/root/*.scss
 **/root/*.css
-**/dist
-**/__REACT
-**/node_modules
 **/build
 design/
 *.htmlhintrc
@@ -22,3 +19,4 @@ design/
 *.ini
 *.code-workspace
 *.eslintrc
+**/ideas
