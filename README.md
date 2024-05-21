@@ -38,7 +38,7 @@ _**"The root of learning is bitter, but the crown is sweet"**_.... - Ancient Geo
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons/icons?i=js,html,css,sass,regex,codepen,figma,git,ps,vscode" />
+    <img src="https://skillicons.dev/icons?i=js,html,css,sass,regex,codepen,figma,git,ps,vscode" />
   </a>
 </p>
 
