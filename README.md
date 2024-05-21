@@ -11,14 +11,11 @@
 
 <h1 align="center"> About The Project </h1> 
 
-_**"The root of learning is bitter, but the crown is sweet"**_.... - Ancient Georgian (:bow_and_arrow:ქართული:crossed_swords:) proverb.
+🔰 This repository contains a collection of projects developed using pure JavaScript. These projects showcase various features and capabilities of vanilla JS and represent the early stages of my programming career. Each project is designed to demonstrate specific concepts and techniques in web development, including DOM manipulation, event handling, AJAX, and more. The repository serves as a testament to my learning journey and growth as a developer 🔥
 
-.................
 
 ## Getting Started
 
-- Project GIF
-- Project Name
 - Main build language  
 ![html](https://img.shields.io/badge/-HTML-6abecd "image")
 ![css](https://img.shields.io/badge/-CSS-3e54a3 "image")
@@ -29,8 +26,7 @@ _**"The root of learning is bitter, but the crown is sweet"**_.... - Ancient Geo
 ![junior](https://img.shields.io/badge/%202%20-junior-white?labelColor=aad742 "image")
 ![intermediate](https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604 "image")
 ![advanced](https://img.shields.io/badge/%204%20-advanced-white?labelColor=bf4605 "image")
-
-- Summery
+- Summary
 
 
 
