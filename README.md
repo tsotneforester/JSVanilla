@@ -13,7 +13,7 @@
 
 _**"The root of learning is bitter, but the crown is sweet"**_.... - Ancient Georgian (:bow_and_arrow:ქართული:crossed_swords:) proverb.
 
-After first steps in Web Development (HTML+CSS), it was Javascript, which really drove my nuts, but now thing are getting better as experience growth. On my Js journey, I've come up to many interesting tasks and I am going to share it to you! :partying_face::partying_face::partying_face:
+.................
 
 ## Getting Started
 
@@ -38,7 +38,7 @@ After first steps in Web Development (HTML+CSS), it was Javascript, which really
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skills.thijs.gg/icons?i=js,html,css,sass,regex,codepen,figma,git,ps,vscode" />
+    <img src="https://skillicons/icons?i=js,html,css,sass,regex,codepen,figma,git,ps,vscode" />
   </a>
 </p>
 
