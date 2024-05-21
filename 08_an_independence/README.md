@@ -15,9 +15,7 @@
   <br/>
   <a href="https://gpx.ge/jsvanilla/08_an_independence" target="_blank">🖥️ View Demo</a>
     
-
   </div>
-
 
 <!-- https://img.shields.io/badge/-API-aad742 -->
 

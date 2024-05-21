@@ -1,3 +1,4 @@
+@import "root.css";
 *,
 ::before,
 ::after {
@@ -80,11 +81,12 @@ pre {
 
 body {
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: "Nunito", sans-serif;
+  background-color: #caceb6;
 }
 
 main {
