@@ -11,7 +11,7 @@ const data = [
     title: "buttermilk pancakes",
     category: "lunch",
     price: 15.99,
-    img: "https://gpx.ge/root/img/menu/item-1.jpg",
+    img: "https://geojs.one/root/img/menu/item-1.jpg",
     desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed`,
   },
   {
@@ -19,7 +19,7 @@ const data = [
     title: "diner double",
     category: "breakfast",
     price: 13.99,
-    img: "https://gpx.ge/root/img/menu/item-2.jpg",
+    img: "https://geojs.one/root/img/menu/item-2.jpg",
     desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing`,
   },
   {
@@ -27,7 +27,7 @@ const data = [
     title: "godzilla milkshake",
     category: "breakfast",
     price: 6.99,
-    img: "https://gpx.ge/root/img/menu/item-3.jpg",
+    img: "https://geojs.one/root/img/menu/item-3.jpg",
     desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral`,
   },
   {
@@ -35,7 +35,7 @@ const data = [
     title: "country delight",
     category: "breakfast",
     price: 20.99,
-    img: "https://gpx.ge/root/img/menu/item-4.jpg",
+    img: "https://geojs.one/root/img/menu/item-4.jpg",
     desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut`,
   },
   {
@@ -43,7 +43,7 @@ const data = [
     title: "egg attack",
     category: "breakfast",
     price: 22.99,
-    img: "https://gpx.ge/root/img/menu/item-5.jpg",
+    img: "https://geojs.one/root/img/menu/item-5.jpg",
     desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up`,
   },
   {
@@ -51,7 +51,7 @@ const data = [
     title: "oreo dream",
     category: "shakes",
     price: 18.99,
-    img: "https://gpx.ge/root/img/menu/item-6.jpg",
+    img: "https://geojs.one/root/img/menu/item-6.jpg",
     desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
   },
   {
@@ -59,7 +59,7 @@ const data = [
     title: "bacon overflow",
     category: "shakes",
     price: 8.99,
-    img: "https://gpx.ge/root/img/menu/item-7.jpg",
+    img: "https://geojs.one/root/img/menu/item-7.jpg",
     desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird`,
   },
   {
@@ -67,7 +67,7 @@ const data = [
     title: "american classic",
     category: "shakes",
     price: 12.99,
-    img: "https://gpx.ge/root/img/menu/item-8.jpg",
+    img: "https://geojs.one/root/img/menu/item-8.jpg",
     desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut`,
   },
   {
@@ -75,7 +75,7 @@ const data = [
     title: "quarantine buddy",
     category: "shakes",
     price: 16.99,
-    img: "https://gpx.ge/root/img/menu/item-9.jpg",
+    img: "https://geojs.one/root/img/menu/item-9.jpg",
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing`,
   },
   {
@@ -83,7 +83,7 @@ const data = [
     title: "Kvass",
     category: "shakes",
     price: 5.99,
-    img: "https://gpx.ge/root/img/menu/item-10.jpg",
+    img: "https://geojs.one/root/img/menu/item-10.jpg",
     desc: `gentleman milk tribal suck infrastructure love ideal failure live side slam helicopter similarly leather draft screen`,
   },
   {
@@ -91,7 +91,7 @@ const data = [
     title: "Khinkali",
     category: "lunch",
     price: 5.99,
-    img: "https://gpx.ge/root/img/menu/item-11.jpg",
+    img: "https://geojs.one/root/img/menu/item-11.jpg",
     desc: `calendar apparently consult direction estimate steal collector work manufacturer rain civil benefit broad`,
   },
   {
@@ -99,7 +99,7 @@ const data = [
     title: "Cesar Salad",
     category: "lunch",
     price: 5.99,
-    img: "https://gpx.ge/root/img/menu/item-12.jpg",
+    img: "https://geojs.one/root/img/menu/item-12.jpg",
     desc: `traffic lawn publish pound grandmother can terms clear style array collector pop clinical daily vocal mess`,
   },
   {
@@ -107,7 +107,7 @@ const data = [
     title: "Beer",
     category: "lunch",
     price: 13.99,
-    img: "https://gpx.ge/root/img/menu/item-13.jpg",
+    img: "https://geojs.one/root/img/menu/item-13.jpg",
     desc: `property fact till tip hidden cake plane Bible cat display rational prior rain receive unknown conflict`,
   },
   {
@@ -115,7 +115,7 @@ const data = [
     title: "Mtsvadi",
     category: "breakfast",
     price: 25.99,
-    img: "https://gpx.ge/root/img/menu/item-14.jpg",
+    img: "https://geojs.one/root/img/menu/item-14.jpg",
     desc: `attraction touch steady acknowledge favor tongue composition cluster involvement gesture skilled insect freeze`,
   },
 ];

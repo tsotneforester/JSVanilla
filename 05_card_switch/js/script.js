@@ -8,7 +8,7 @@
 const data = [
   {
     id: 1,
-    image: "https://gpx.ge/root/img/writers/1.jpg",
+    image: "https://geojs.one/root/img/writers/1.jpg",
     fullName: "nodar dumbadze",
     review: {
       book: "white flags",
@@ -18,7 +18,7 @@ const data = [
 
   {
     id: 2,
-    image: "https://gpx.ge/root/img/writers/2.jpg",
+    image: "https://geojs.one/root/img/writers/2.jpg",
     fullName: "david kldiashvili",
     review: {
       book: "a tragedy without a hero",
@@ -27,7 +27,7 @@ const data = [
   },
   {
     id: 3,
-    image: "https://gpx.ge/root/img/writers/3.jpg",
+    image: "https://geojs.one/root/img/writers/3.jpg",
     fullName: "mikheil javakhishvili",
     review: {
       book: "jaqo's dispossessed",
@@ -36,7 +36,7 @@ const data = [
   },
   {
     id: 4,
-    image: "https://gpx.ge/root/img/writers/4.jpg",
+    image: "https://geojs.one/root/img/writers/4.jpg",
     fullName: "iakob gogebashvili",
     review: {
       book: "boasting pot",
@@ -45,7 +45,7 @@ const data = [
   },
   {
     id: 5,
-    image: "https://gpx.ge/root/img/writers/5.jpg",
+    image: "https://geojs.one/root/img/writers/5.jpg",
     fullName: "luka razikashvili",
     review: {
       book: "it rises, lights up!",
@@ -54,7 +54,7 @@ const data = [
   },
   {
     id: 6,
-    image: "https://gpx.ge/root/img/writers/6.jpg",
+    image: "https://geojs.one/root/img/writers/6.jpg",
     fullName: "akaki tsereteli",
     review: {
       book: "bashi-achuki",
@@ -63,7 +63,7 @@ const data = [
   },
   {
     id: 7,
-    image: "https://gpx.ge/root/img/writers/7.jpg",
+    image: "https://geojs.one/root/img/writers/7.jpg",
     fullName: "ilia chavchavadze",
     review: {
       book: "man-human?",
@@ -73,7 +73,7 @@ const data = [
 
   {
     id: 8,
-    image: "https://gpx.ge/root/img/writers/8.jpg",
+    image: "https://geojs.one/root/img/writers/8.jpg",
     fullName: "guram dochanashvili",
     review: {
       book: "a man who loved literature very much",
@@ -83,7 +83,7 @@ const data = [
 
   {
     id: 9,
-    image: "https://gpx.ge/root/img/writers/9.jpg",
+    image: "https://geojs.one/root/img/writers/9.jpg",
     fullName: "eric frank russell",
     review: {
       book: "and then there were none",

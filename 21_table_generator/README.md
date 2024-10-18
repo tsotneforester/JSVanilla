@@ -1,7 +1,7 @@
 <h1 align="center">Table Generator</h1>
 
 <!-- <div align="center">
-  <img src="https://gpx.ge/js/img/raw/1015_carousel.gif" alt="" />
+  <img src="https://geojs.one/js/img/raw/1015_carousel.gif" alt="" />
 </div> -->
 
   <div align="center">
@@ -13,7 +13,7 @@
   <br/>
     Difficulty - <img src="https://img.shields.io/badge/%201%20-newbie-white?labelColor=6abecd" alt="newbie" />
   <br/>
-  <a href="https://gpx.ge/jsvanilla/21_table_generator" target="_blank">🖥️ View Demo</a>
+  <a href="https://geojs.one/jsvanilla/21_table_generator" target="_blank">🖥️ View Demo</a>
     
 
   </div>
