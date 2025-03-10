@@ -1,8 +1,8 @@
 <h1 align="center">Nonogram</h1>
 
-<!-- <div align="center">
-  <img src="https://geojs.one/js/img/raw/1015_carousel.gif" alt="" />
-</div> -->
+<div align="center">
+  <img src="./design/preview.jpg" alt="preview" />
+</div>
 
   <div align="center">
     Built With - 
@@ -13,7 +13,6 @@
     Difficulty - <img src="https://img.shields.io/badge/%203%20-intermediate-white?labelColor=f1b604" alt="intermediate" />
   <br/>
   <a href="https://geojs.one/jsvanilla/18_nonogram" target="_blank">🖥️ View Demo</a>
-    
 
   </div>
 
