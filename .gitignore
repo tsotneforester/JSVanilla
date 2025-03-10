@@ -13,7 +13,6 @@
 **/root/*.scss
 **/root/*.css
 **/build
-design/
 *.htmlhintrc
 *.vscode
 *.ini
