@@ -1,14 +1,9 @@
-//   ,@▒▒╜  ╣▒║╖     ▄▓█████  ▐██████▄ ▐██▌  ██▓       ▄█████▌  ███████
-// ╓╣▒▒╜ @╝╣╖`╢▒▒╗   ███      ▐██▌ ███  █▓█▄███▀      ▐██▌      ███▌
-// ╢▒▒╖  ╢╗@╝  ╢▒▒╝  ███  ███ ▐███████  ▄▓█▓▓█▄       ▐██▌ ▐██▌ ██████
-//  ╙╢▒╢╖ ║╜,╢▒▒╝    ███▄▄███ ▐██▌     ▐██▌ ▐███  ███ ▐███▄███▌ ███▄▄▄▄
-//    `╢▒╜  ╣▒╜       ▀▀▀▀▀▀▀  ▀▀      ▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀▀  ▀▀▀▀▀▀▀
-"use strict";
+'use strict';
 
-const x_score_count = document.getElementById("x-score-count");
-const o_score_count = document.getElementById("o-score-count");
-const tie_score_count = document.getElementById("tie-score-count");
-const draw_boxes = document.querySelectorAll(".draw-box");
+const x_score_count = document.getElementById('x-score-count');
+const o_score_count = document.getElementById('o-score-count');
+const tie_score_count = document.getElementById('tie-score-count');
+const draw_boxes = document.querySelectorAll('.draw-box');
 let progressArray = [];
 let gameStarted = false;
 let isHumanTurn;
@@ -21,7 +16,7 @@ function randomizer() {
   if (!isHumanTurn) {
     CPUDraws();
   }
-  console.log("Human Starts - ", isHumanTurn);
+  console.log('Human Starts - ', isHumanTurn);
 }
 randomizer();
 //||||||||||||||||||||||||||
@@ -29,8 +24,8 @@ randomizer();
 //||||||||||||||||||||||||||
 function humanDraws(e) {
   if (isHumanTurn && gameStarted) {
-    if (e.target.innerHTML == "") {
-      e.target.innerHTML = "x";
+    if (e.target.innerHTML == '') {
+      e.target.innerHTML = 'x';
       isHumanTurn = !isHumanTurn; //toggles turn
       progressify(); //Creater progrees array like this - ['', '', 'x', 'o', 'x', '', 'o', '', 'o']
       winChecker(); //Checks all possible variations for win
@@ -39,7 +34,7 @@ function humanDraws(e) {
     }
   }
 }
-draw_boxes.forEach((box) => {
+draw_boxes.forEach(box => {
   box.onclick = humanDraws;
 });
 //----------------------------------------------------
@@ -50,13 +45,13 @@ function CPUDraws() {
       //let's create array with empty cell's nth numbers and choose random
       let emptyCells = [];
       for (let i = 0; i < 9; i++) {
-        if (draw_boxes[i].innerHTML === "") {
+        if (draw_boxes[i].innerHTML === '') {
           emptyCells.push(i);
         }
       }
       let emptyCell = emptyCells[Math.floor(Math.random() * emptyCells.length)];
       //this is like when human draws
-      draw_boxes[emptyCell].innerHTML = "o";
+      draw_boxes[emptyCell].innerHTML = 'o';
       isHumanTurn = !isHumanTurn;
       progressify();
       winChecker();
@@ -87,16 +82,16 @@ function winChecker() {
   lineChecker(2, 4, 6);
 }
 function tieChecker() {
-  if (!progressArray.includes("") && progressArray.length != 0) {
+  if (!progressArray.includes('') && progressArray.length != 0) {
     scorify(tie_score_count);
   }
 }
 function lineChecker(a, b, c) {
-  if (progressArray[a] == progressArray[b] && progressArray[b] == progressArray[c] && progressArray[b] !== "") {
-    if (progressArray[a] == "x") {
+  if (progressArray[a] == progressArray[b] && progressArray[b] == progressArray[c] && progressArray[b] !== '') {
+    if (progressArray[a] == 'x') {
       isHumanTurn = 1;
       scorify(x_score_count);
-    } else if (progressArray[a] == "o") {
+    } else if (progressArray[a] == 'o') {
       isHumanTurn = 1;
       scorify(o_score_count);
     }
@@ -118,7 +113,7 @@ function scorify(selector, time = 1000) {
 //|||||||||||||||||||||||||||||||||||||||||||||||||||
 function resetDesk() {
   for (let i = 0; i < 9; i++) {
-    draw_boxes[i].innerHTML = "";
+    draw_boxes[i].innerHTML = '';
   }
 }
 //|||||||||||||||||||||||||||||||||||||||||||||||||||
